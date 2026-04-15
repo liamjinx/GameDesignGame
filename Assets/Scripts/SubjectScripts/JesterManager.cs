@@ -9,12 +9,12 @@ public class JesterManager : MonoBehaviour
         int max = transform.parent.childCount - 1;
         int accusedNumber = Random.Range(0, max);
         GameObject accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        while (gameObject.tag == "Ghost" && accused.tag == "Ghost")
+        while (gameObject.tag == "Ghost" && accused.tag == "Ghost" && gameObject.tag != "Ghost")
         {
             accusedNumber = Random.Range(0, max);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
         } 
-        while (gameObject.tag != "Ghost" && accused.tag != "Ghost")
+        while (accused.tag != "Ghost" && gameObject.tag != "Ghost")
         {
             accusedNumber = Random.Range(0, max);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
