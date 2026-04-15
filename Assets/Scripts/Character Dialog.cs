@@ -8,7 +8,7 @@ public class CharacterDialogue : MonoBehaviour
     [TextArea] public string dialogue;
     [SerializeField] private TextMeshProUGUI dialogueText;
     public static CharacterDialogue selectedCharacter;
-    [SerializeField] private PetrifyManager petrifyManager;
+    private PetrifyManager petrifyManager;
     public void Start()
     {
         petrifyManager = GetComponentInParent<PetrifyManager>();
@@ -18,6 +18,11 @@ public class CharacterDialogue : MonoBehaviour
         //Debug.Log(petrifyManager.isActive);
     }
     public void OnMouseUpAsButton()
+    {
+        //Petrify();
+        //Speak();
+    }
+    public void Petrify()
     {
         if (petrifyManager.isActive)
         {
@@ -29,10 +34,8 @@ public class CharacterDialogue : MonoBehaviour
             {
                 dialogueText.text = "Oh no! You petrified a subject!";
             }
-                Destroy(gameObject);
-            return;
+            Destroy(gameObject);
         }
-        Speak();
     }
     public void Speak()
     {

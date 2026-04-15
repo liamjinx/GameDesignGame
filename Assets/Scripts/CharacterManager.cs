@@ -6,13 +6,13 @@ public class CharacterManager : MonoBehaviour
     public bool isActive = false;
     private GameObject ghost1;
     private GameObject ghost2;
-    void Start()
+    void Awake()
     {
-        int ghostnumber1 = Random.Range(0, 7);
-        int ghostnumber2 = Random.Range(0, 7);
+        int ghostnumber1 = Random.Range(0, 5);
+        int ghostnumber2 = Random.Range(0, 5);
         while (ghostnumber1 == ghostnumber2)
         {
-            ghostnumber2 = Random.Range(0, 7);
+            ghostnumber2 = Random.Range(0, 5);
         }
         ghost1 = gameObject.transform.GetChild(ghostnumber1).gameObject;
         ghost2 = gameObject.transform.GetChild(ghostnumber2).gameObject;
