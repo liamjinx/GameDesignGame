@@ -9,14 +9,18 @@ public class JesterManager : MonoBehaviour
     {
         int accusedNumber = Random.Range(0, 5);
         accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        if (gameObject.tag == "Ghost" && accused.tag == "Ghost")
+        Debug.Log(accused.name);
+        while (gameObject.tag == "Ghost" && accused.tag == "Ghost")
         {
             accusedNumber = Random.Range(0, 5);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        } else if (gameObject.tag != "Ghost" && accused.tag != "Ghost")
+            //Debug.Log(accused.name);
+        } 
+        while (gameObject.tag != "Ghost" && accused.tag != "Ghost")
         {
             accusedNumber = Random.Range(0, 5);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
+            Debug.Log(accused.name);
         }
     }
 

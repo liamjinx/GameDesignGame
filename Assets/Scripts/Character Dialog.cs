@@ -15,7 +15,7 @@ public class CharacterDialogue : MonoBehaviour
     }
     public void Update()
     {
-        //Debug.Log(petrifyManager.isActive);
+
     }
     public void OnMouseUpAsButton()
     {

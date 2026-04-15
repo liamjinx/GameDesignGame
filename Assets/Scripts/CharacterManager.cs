@@ -18,8 +18,6 @@ public class CharacterManager : MonoBehaviour
         ghost2 = gameObject.transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        Debug.Log(ghost1);
-        Debug.Log(ghost2);
     }
 
     // Update is called once per frame
