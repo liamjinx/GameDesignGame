@@ -239,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogue: My name is Jester
   dialogueText: {fileID: 1763050585}
+  petrifyManager: {fileID: 0}
 --- !u!61 &387640994
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -319,6 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogue: My name is Queen
   dialogueText: {fileID: 1763050585}
+  petrifyManager: {fileID: 0}
 --- !u!61 &407783442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -681,6 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogue: My name is Queen
   dialogueText: {fileID: 1763050585}
+  petrifyManager: {fileID: 0}
 --- !u!61 &792367446
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -847,6 +850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogue: My name is Jester
   dialogueText: {fileID: 1763050585}
+  petrifyManager: {fileID: 0}
 --- !u!212 &1260314817
 SpriteRenderer:
   serializedVersion: 2
@@ -1013,6 +1017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogue: My name is Jester
   dialogueText: {fileID: 1763050585}
+  petrifyManager: {fileID: 0}
 --- !u!212 &1391109042
 SpriteRenderer:
   serializedVersion: 2
@@ -1316,6 +1321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogue: My name is Queen
   dialogueText: {fileID: 1763050585}
+  petrifyManager: {fileID: 0}
 --- !u!61 &1532563071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1482,6 +1488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogue: My name is Jester
   dialogueText: {fileID: 1763050585}
+  petrifyManager: {fileID: 0}
 --- !u!212 &1594580512
 SpriteRenderer:
   serializedVersion: 2
@@ -1624,6 +1631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1710691323}
   - component: {fileID: 1710691324}
+  - component: {fileID: 1710691325}
   m_Layer: 0
   m_Name: CharacterManager
   m_TagString: Untagged
@@ -1666,6 +1674,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfe5991f7592324ea562c81b86349fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PetrifyManager
+  isActive: 0
+--- !u!114 &1710691325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710691322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79446546e2c9174eb02d12e2d9c85f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterManager
   isActive: 0
 --- !u!1 &1763050583
 GameObject:
@@ -1838,6 +1859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogue: My name is Queen
   dialogueText: {fileID: 1763050585}
+  petrifyManager: {fileID: 0}
 --- !u!61 &1893309062
 BoxCollider2D:
   m_ObjectHideFlags: 0

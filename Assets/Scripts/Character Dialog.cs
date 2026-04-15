@@ -21,7 +21,15 @@ public class CharacterDialogue : MonoBehaviour
     {
         if (petrifyManager.isActive)
         {
-            Destroy(gameObject);
+            if (gameObject.tag == "Ghost")
+            {
+                dialogueText.text = "Congratulations! You found a ghost!";
+            }
+            else
+            {
+                dialogueText.text = "Oh no! You petrified a subject!";
+            }
+                Destroy(gameObject);
             return;
         }
         Speak();
