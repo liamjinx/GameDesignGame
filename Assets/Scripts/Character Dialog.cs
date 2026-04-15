@@ -12,10 +12,6 @@ public class CharacterDialogue : MonoBehaviour
     {
         petrifyManager = GetComponentInParent<PetrifyManager>();
     }
-    public void Update()
-    {
-
-    }
     public void Petrify()
     {
         if (petrifyManager.isActive)

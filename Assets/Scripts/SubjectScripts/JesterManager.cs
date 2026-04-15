@@ -22,12 +22,6 @@ public class JesterManager : MonoBehaviour
         }
         dialogue = "Either I am the ghost or " + accused.name + " is the ghost";
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void OnMouseUpAsButton()
     {
         Speak();

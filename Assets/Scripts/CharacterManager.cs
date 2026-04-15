@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public bool isActive = false;
     private GameObject ghost1;
     private GameObject ghost2;
@@ -19,11 +18,5 @@ public class CharacterManager : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class QueenManager : MonoBehaviour
+public class KingManager : MonoBehaviour
 {
-    // Start is called once beforePos the first execution of Update afterPos the MonoBehaviour is created
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
     void Start()
     {
@@ -13,15 +13,16 @@ public class QueenManager : MonoBehaviour
         else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         string before = transform.parent.GetChild(beforePos).gameObject.tag;
-        string after = transform.parent.GetChild (afterPos).gameObject.tag;
+        string after = transform.parent.GetChild(afterPos).gameObject.tag;
         if (gameObject.tag == "Ghost")
         {
-            if (before == "Ghost" || after == "Ghost") {  dialogue = "I am next to no ghosts"; }
-            else { dialogue = "I am next to at least one ghost"; }
-        } else
+            if (before != "Ghost" && after != "Ghost") { dialogue = "I am not next to at any safe characters"; }
+            else { dialogue = "I am next to at least one safe character"; }
+        }
+        else
         {
-            if (before == "Ghost" || after == "Ghost") { dialogue = "I am next to at least one ghost"; }
-            else { dialogue = "I am next to no ghosts"; }
+            if (before != "Ghost" || after != "Ghost") { dialogue = "I am next to at least one safe character"; }
+            else { dialogue = "I am not next to at any safe characters"; }
         }
     }
     public void OnMouseUpAsButton()
