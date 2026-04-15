@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4736410723846464707}
   - component: {fileID: 1100099063139132455}
   m_Layer: 0
-  m_Name: Cleric
+  m_Name: Nun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

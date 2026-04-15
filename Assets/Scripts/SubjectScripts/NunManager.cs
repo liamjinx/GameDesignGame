@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ClericManager : MonoBehaviour
+public class NunManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
