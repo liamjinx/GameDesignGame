@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a38f18c58b83f40febf13429dcc1689e
+guid: c2a6618ce0dc64e4a88ea2148081b8e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7519753400087680208
-    second: Queen_0
+      213: -7083545565698355939
+    second: Jester_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Queen_0
+      name: Jester_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,10 +112,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0d413c240e78b5860800000000000000
-      internalID: 7519753400087680208
+      spriteID: 501ed94959e9548c5b92dad3e84eb926
+      internalID: -1210074573
       vertices: []
       indices: 
       edges: []
@@ -123,7 +123,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9b57ee85df9e24867943248267a1b5b2
+    spriteID: bd9de3e40e47d4b90aa3a78ec3b90800
     internalID: 0
     vertices: []
     indices: 
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Queen_0: 7519753400087680208
+      Jester_0: -1210074573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
