@@ -5,7 +5,6 @@ using System;
 
 public class CharacterDialogue : MonoBehaviour
 {
-    [TextArea] public string dialogue;
     [SerializeField] private TextMeshProUGUI dialogueText;
     public static CharacterDialogue selectedCharacter;
     private PetrifyManager petrifyManager;
@@ -16,11 +15,6 @@ public class CharacterDialogue : MonoBehaviour
     public void Update()
     {
 
-    }
-    public void OnMouseUpAsButton()
-    {
-        //Petrify();
-        //Speak();
     }
     public void Petrify()
     {
@@ -37,8 +31,9 @@ public class CharacterDialogue : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void Speak()
+    public void Speak(string dialogue)
     {
+        Petrify();
         dialogueText.text = dialogue;
         selectedCharacter = this;
     }

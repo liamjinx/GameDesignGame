@@ -7,21 +7,20 @@ public class JesterManager : MonoBehaviour
     private GameObject accused;
     void Start()
     {
-        int accusedNumber = Random.Range(0, 5);
+        int max = transform.parent.childCount - 1;
+        int accusedNumber = Random.Range(0, max);
         accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        Debug.Log(accused.name);
         while (gameObject.tag == "Ghost" && accused.tag == "Ghost")
         {
-            accusedNumber = Random.Range(0, 5);
+            accusedNumber = Random.Range(0, max);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-            //Debug.Log(accused.name);
         } 
         while (gameObject.tag != "Ghost" && accused.tag != "Ghost")
         {
-            accusedNumber = Random.Range(0, 5);
+            accusedNumber = Random.Range(0, max);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-            Debug.Log(accused.name);
         }
+        dialogue = "Either I am the ghost or " + accused.name + " is the ghost";
     }
 
     // Update is called once per frame
@@ -36,11 +35,6 @@ public class JesterManager : MonoBehaviour
 
     public void Speak()
     {
-        CharacterDialogue character = gameObject.GetComponent<CharacterDialogue>();
-        character.Petrify();
-        dialogue = "Either I am the ghost or " + accused.name + " is the ghost";
-        character.dialogue = dialogue;
-        character.Speak();
-
+        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
 }

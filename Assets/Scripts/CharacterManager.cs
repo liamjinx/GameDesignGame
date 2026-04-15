@@ -8,14 +8,15 @@ public class CharacterManager : MonoBehaviour
     private GameObject ghost2;
     void Awake()
     {
-        int ghostnumber1 = Random.Range(0, 5);
-        int ghostnumber2 = Random.Range(0, 5);
+        int max = transform.childCount - 1;
+        int ghostnumber1 = Random.Range(0, max);
+        int ghostnumber2 = Random.Range(0, max);
         while (ghostnumber1 == ghostnumber2)
         {
-            ghostnumber2 = Random.Range(0, 5);
+            ghostnumber2 = Random.Range(0, max);
         }
-        ghost1 = gameObject.transform.GetChild(ghostnumber1).gameObject;
-        ghost2 = gameObject.transform.GetChild(ghostnumber2).gameObject;
+        ghost1 = transform.GetChild(ghostnumber1).gameObject;
+        ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
     }
