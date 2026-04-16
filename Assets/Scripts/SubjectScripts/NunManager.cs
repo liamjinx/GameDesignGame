@@ -16,20 +16,10 @@ public class NunManager : MonoBehaviour
         }
         int accused2Number = Random.Range(0, max);
         GameObject accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        if (gameObject.tag == "Ghost")
+        while (accused1Number == accused2Number || accused2.CompareTag(gameObject.tag))
         {
-            while (accused1Number == accused2Number || accused2.tag == "Ghost" || accused2 == gameObject)
-            {
-                accused2Number = Random.Range(0, max);
-                accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-            }
-        } else if (gameObject.tag != "Ghost")
-        {
-            while (accused1Number == accused2Number || accused2.tag != "Ghost")
-            {
-                accused2Number = Random.Range(0, max);
-                accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-            }
+            accused2Number = Random.Range(0, max);
+            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         }
         dialogue = accused1.name + " and " + accused2.name + " could be ghosts";
     }

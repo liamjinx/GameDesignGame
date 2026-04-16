@@ -9,12 +9,7 @@ public class ManservantManager : MonoBehaviour
         int max = transform.parent.childCount - 1;
         int accusedNumber = Random.Range(0, max);
         GameObject accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        while (gameObject.tag == "Ghost" && accused.tag != "Ghost")
-        {
-            accusedNumber = Random.Range(0, max);
-            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        }
-        while (gameObject.tag != "Ghost" && accused.tag == "Ghost")
+        while (!accused.CompareTag(gameObject.tag))
         {
             accusedNumber = Random.Range(0, max);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
