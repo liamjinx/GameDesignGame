@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ExecutionerManager : MonoBehaviour
+public class KnightManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
