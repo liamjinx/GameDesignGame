@@ -697,6 +697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Queen
       objectReference: {fileID: 0}
+    - target: {fileID: 5187741237272405026, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5528964993566863079, guid: 2345d056460d14b99ae9b6c9186a7901, type: 3}
     - target: {fileID: 6779731328385100938, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1012,6 +1016,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4633831725745409009, guid: 45919525e7326f745a6e6282628848d5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 519265716, guid: 72ade6c1184dc4ed0b581e2a09812a43, type: 3}
+    - target: {fileID: 4633831725745409009, guid: 45919525e7326f745a6e6282628848d5, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7153787546359176545, guid: 45919525e7326f745a6e6282628848d5, type: 3}
       propertyPath: m_Name
       value: Jester
@@ -1318,6 +1330,22 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1763050585}
+    - target: {fileID: 3686366552913529399, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686366552913529399, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686366552913529399, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686366552913529399, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 6.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7427193402019431563, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
       propertyPath: m_Size.x
       value: 6.4
