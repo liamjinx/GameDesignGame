@@ -8,6 +8,10 @@ public class CharacterDialogue : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     public static CharacterDialogue selectedCharacter;
     private PetrifyManager petrifyManager;
+    
+    public string lastSpokenLine = "";
+    public string characterName;
+    
     public void Start()
     {
         petrifyManager = GetComponentInParent<PetrifyManager>();
@@ -31,6 +35,10 @@ public class CharacterDialogue : MonoBehaviour
     {
         Petrify();
         dialogueText.text = dialogue;
+        
+        lastSpokenLine = dialogue;
+        characterName = gameObject.name;
+        
         selectedCharacter = this;
     }
 }
