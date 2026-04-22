@@ -1196,6 +1196,22 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1763050585}
+    - target: {fileID: 5672770676015989650, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -323001468344157065, guid: 76cd34045a6384587ae5ba571ced7fa1, type: 3}
+    - target: {fileID: 5672770676015989650, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672770676015989650, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672770676015989650, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1601,6 +1617,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manservant
       objectReference: {fileID: 0}
+    - target: {fileID: 6671736420740350673, guid: a49753e4c91a03947872527dbb399c41, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2056336121653047261, guid: 2b196e9cd22b348da9472d8133bd5db5, type: 3}
+    - target: {fileID: 6671736420740350673, guid: a49753e4c91a03947872527dbb399c41, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671736420740350673, guid: a49753e4c91a03947872527dbb399c41, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671736420740350673, guid: a49753e4c91a03947872527dbb399c41, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8470246664457051484, guid: a49753e4c91a03947872527dbb399c41, type: 3}
       propertyPath: dialogueText
       value: 
@@ -1623,6 +1655,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1710691323}
     m_Modifications:
+    - target: {fileID: 901820193999580170, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -827016883341640748, guid: dface4db1f89b45b0ab45ffb6d42eb3c, type: 3}
+    - target: {fileID: 901820193999580170, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 901820193999580170, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 901820193999580170, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5877534626115152542, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
       propertyPath: dialogueText
       value: 
