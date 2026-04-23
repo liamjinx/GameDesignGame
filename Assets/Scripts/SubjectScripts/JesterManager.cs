@@ -18,15 +18,6 @@ public class JesterManager : MonoBehaviour
     }
     public void OnMouseUpAsButton()
     {
-        int max = transform.parent.childCount - 1;
-        int accusedNumber = Random.Range(0, max);
-        GameObject accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        while (accused.CompareTag(gameObject.tag))
-        {
-            accusedNumber = Random.Range(0, max);
-            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        }
-        dialogue = "Either I am the ghost or " + accused.name + " is the ghost";
         Speak();
     }
 
