@@ -2622,6 +2622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 5733802941755400500, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8251546191257020460, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 6.4
