@@ -33,12 +33,12 @@ public class CharacterDialogue : MonoBehaviour
     }
     public void Speak(string dialogue)
     {
-        Petrify();
         dialogueText.text = dialogue;
         
         lastSpokenLine = dialogue;
         characterName = gameObject.name;
         
         selectedCharacter = this;
+        Petrify();
     }
 }
