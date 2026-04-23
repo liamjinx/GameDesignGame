@@ -1335,6 +1335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PetrifyManager
   isActive: 0
+  petrifyButton: {fileID: 1965649165}
 --- !u!114 &1710691325
 MonoBehaviour:
   m_ObjectHideFlags: 0

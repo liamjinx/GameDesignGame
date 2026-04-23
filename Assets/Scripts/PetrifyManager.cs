@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PetrifyManager : MonoBehaviour
 {
     public bool isActive = false;
+    [SerializeField] private Button petrifyButton;
     void Start()
     {
         
@@ -16,12 +18,12 @@ public class PetrifyManager : MonoBehaviour
     void ActivatePetrify()
     {
         isActive = true;
-        Debug.Log("active");
+        petrifyButton.GetComponent<Image>().color = Color.red;
     }
 
     void DeactivatePetrify()
     {
         isActive = false;
-        Debug.Log("inactive");
+        petrifyButton.GetComponent<Image>().color = Color.white;
     }
 }
