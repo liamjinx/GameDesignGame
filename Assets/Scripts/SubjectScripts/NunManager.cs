@@ -6,21 +6,6 @@ public class NunManager : MonoBehaviour
     private string dialogue;
     void Start()
     {
-        /*int max = transform.parent.childCount - 1;
-        int accused1Number = Random.Range(0, max);
-        GameObject accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
-        while (accused1.tag == "Ghost" && gameObject.tag == "Ghost")
-        {
-            accused1Number = Random.Range(0, max);
-            accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
-        }
-        int accused2Number = Random.Range(0, max);
-        GameObject accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        while (accused1Number == accused2Number || accused2.CompareTag(gameObject.tag))
-        {
-            accused2Number = Random.Range(0, max);
-            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        }*/
         int max = transform.parent.childCount - 1;
         int accused1Number = Random.Range(0, max);
         GameObject accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
