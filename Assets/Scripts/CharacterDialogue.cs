@@ -6,7 +6,6 @@ using System;
 public class CharacterDialogue : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueText;
-    public static CharacterDialogue selectedCharacter;
     private PetrifyManager petrifyManager;
     
     public string lastSpokenLine = "";
@@ -37,8 +36,7 @@ public class CharacterDialogue : MonoBehaviour
         
         lastSpokenLine = dialogue;
         characterName = gameObject.name;
-        
-        selectedCharacter = this;
+        transform.GetComponentInParent<CharacterManager>().selectedCharacter = gameObject;
         Petrify();
     }
 }
