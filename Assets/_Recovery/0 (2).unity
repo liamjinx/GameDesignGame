@@ -1293,10 +1293,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1893309065}
   - {fileID: 792367449}
-  - {fileID: 1903826756}
   - {fileID: 716189769}
+  - {fileID: 1903826756}
+  - {fileID: 1893309065}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1710691324
@@ -1496,10 +1496,6 @@ PrefabInstance:
     - target: {fileID: 1657075833103104306, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: m_Name
       value: Queen
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657075833103104306, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
-      propertyPath: m_TagString
-      value: Ghost
       objectReference: {fileID: 0}
     - target: {fileID: 5187741237272405026, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: m_Sprite
@@ -2000,10 +1996,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jester
       objectReference: {fileID: 0}
-    - target: {fileID: 7153787546359176545, guid: 45919525e7326f745a6e6282628848d5, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2110,10 +2102,6 @@ PrefabInstance:
     - target: {fileID: 1252186036065937170, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
       propertyPath: m_Name
       value: Nun
-      objectReference: {fileID: 0}
-    - target: {fileID: 1252186036065937170, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4395364226931217598, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
       propertyPath: m_Pivot.x
