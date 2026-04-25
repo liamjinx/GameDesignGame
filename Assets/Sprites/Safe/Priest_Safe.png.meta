@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f46d691d45f42444d94a0d87343c3ea5
+guid: b0db16b0250c74677adbb31f5f15e3aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 218015466660097104
-    second: Alchemist_Sus_0
+      213: 346618950373979157
+    second: Priest_Safe_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Alchemist_Sus_0
+      name: Priest_Safe_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05ce0dd69eb860300800000000000000
-      internalID: 218015466660097104
+      spriteID: 514b57159107fc400800000000000000
+      internalID: 346618950373979157
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 767fb7b31abbf4c48bc35f817ee01ed8
+    spriteID: 3d75be468270f45fc99aef62f7d65745
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Alchemist_Sus_0: 218015466660097104
+      Priest_Safe_0: 346618950373979157
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
