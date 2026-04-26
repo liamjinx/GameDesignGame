@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71a698e418a7f4a64be4f7dc835c26b5
+guid: 01a56ba90d24a4376b13d2abea0e1a79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4506250295028507687
-    second: bard_0
+      213: -2950854452939852620
+    second: Bard 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bard_0
+      name: Bard_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,10 +113,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7246c28a4ca698e30800000000000000
-      internalID: 4506250295028507687
+      spriteID: b8f0c54d2c6054040ae015f4ec4bbc0f
+      internalID: 227439739
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0df8638c4b1d44299a471f4431836683
+    spriteID: 5dfcd3f2a88db4d7386c8f4381177624
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      bard_0: 4506250295028507687
+      Bard_0: 227439739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

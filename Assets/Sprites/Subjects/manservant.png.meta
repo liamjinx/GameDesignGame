@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b196e9cd22b348da9472d8133bd5db5
+guid: f11d5b69db98a4a48829b58e21d6c33c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2056336121653047261
-    second: manservant_0
+      213: -8080717300841808333
+    second: manservant 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: manservant_0
+      name: Manservant_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,10 +113,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 320d01a313d6673e0800000000000000
-      internalID: -2056336121653047261
+      spriteID: 50d2efe2e8f864f13a17f4643c03c32e
+      internalID: 946244963
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a7346c043463c4930b7b1b99b3baca35
+    spriteID: 622714c1f08f94407baa7f56d602fb94
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      manservant_0: -2056336121653047261
+      Manservant_0: 946244963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
