@@ -3735,9 +3735,13 @@ PrefabInstance:
       value: Ghost
       objectReference: {fileID: 0}
     - target: {fileID: 5187741237272405026, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
+      propertyPath: m_Size.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187741237272405026, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1304825820, guid: 1755eb3a1b70d4957a80e1cf2eee7032, type: 3}
+      objectReference: {fileID: 7519753400087680208, guid: 1755eb3a1b70d4957a80e1cf2eee7032, type: 3}
     - target: {fileID: 5187741237272405026, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
