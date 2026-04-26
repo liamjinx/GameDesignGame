@@ -26,8 +26,9 @@ public class CharacterDialogue : MonoBehaviour
             else
             {
                 dialogueText.text = "Oh no! You petrified a subject!";
+                gameObject.GetComponent<QueenManager>().PetrifyAnimation();
             }
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
     public void Speak(string dialogue)
