@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 4622
+  controlID: 4895
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 4623
+  controlID: 4896
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID:
-    m_Data: 44180
+    m_Data: 44188
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1042,7 +1042,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Subjects
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites/Subjects
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/zahliasearle/Desktop/Game Design Methodologies/GameDesignGame
   m_LockTracker:
@@ -1061,9 +1061,9 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 44148
+    - m_Data: 43040
     m_LastClickedID:
-      m_Data: 44148
+      m_Data: 43040
     m_ExpandedIDs:
     - m_Data: 0
     - m_Data: 42932
@@ -1131,10 +1131,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: 44188
+    m_SelectedInstanceIDs: []
     m_LastClickedEntityId:
-      m_Data: 44188
+      m_Data: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 52194
@@ -1276,11 +1275,12 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 44188
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
+      - m_Data: -20268
+      - m_Data: -19964
       - m_Data: -9022
       - m_Data: -8836
       - m_Data: -8532
@@ -1295,6 +1295,7 @@ MonoBehaviour:
       - m_Data: 44034
       - m_Data: 45274
       - m_Data: 46840
+      - m_Data: 48204
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
