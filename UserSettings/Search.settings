@@ -9,7 +9,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.66F56946" = "build"
+	"last_search.66F56946" = "player se"
 	"OpenInspectorPreview.66F56946" = "0"
 	"currentGroup.66F56946" = "all"
 }
@@ -68,6 +68,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"player"
 	"build"
 	"build sett"
 ]
