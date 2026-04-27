@@ -9,7 +9,7 @@ public class TutorialUIManager : MonoBehaviour
     [SerializeField] private GameObject instructions;
     void Start()
     {
-        Debug.Log("test");
+        
     }
 
     // Update is called once per frame
