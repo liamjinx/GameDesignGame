@@ -9,6 +9,6 @@ public class Tutorial : MonoBehaviour
         int max = transform.childCount - 1;
         int ghostnumber1 = Random.Range(0, max);        
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
-        //ghost1.tag = "Ghost";
+        ghost1.tag = "Ghost";
     }
 }

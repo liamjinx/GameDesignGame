@@ -9,11 +9,14 @@ public class CharacterManager : MonoBehaviour
     InputAction safeAction;
     InputAction neutralAction;
     InputAction susAction;
+    public int ghostCount = 0;
     private void Start()
     {
         safeAction = InputSystem.actions.FindAction("Safe");
         neutralAction = InputSystem.actions.FindAction("Neutral");
         susAction = InputSystem.actions.FindAction("Sus");
+        GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+        Debug.Log(ghosts.Length);
     }
     private void Update()
     {
