@@ -22,6 +22,7 @@ public class CharacterDialogue : MonoBehaviour
             if (gameObject.tag == "Ghost")
             {
                 dialogueText.text = "Congratulations! You found a ghost!";
+                gameObject.GetComponent<QueenManager>().PetrifyAnimation();
             }
             else
             {

@@ -3905,15 +3905,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5588388992604784708, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5588388992604784708, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 6.4
       objectReference: {fileID: 0}
     - target: {fileID: 5588388992604784708, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 6.4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6022628604183140303, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: animator
+      value: 
+      objectReference: {fileID: 1903826759}
+    - target: {fileID: 6022628604183140303, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
+      propertyPath: SubjectAnimator
       value: 
       objectReference: {fileID: 1903826759}
     - target: {fileID: 6779731328385100938, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
