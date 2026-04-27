@@ -7,6 +7,7 @@ public class CharacterDialogue : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueText;
     private PetrifyManager petrifyManager;
+
     
     public string lastSpokenLine = "";
     public string characterName;
@@ -17,6 +18,7 @@ public class CharacterDialogue : MonoBehaviour
     }
     public void Petrify()
     {
+        
         if (petrifyManager.isActive)
         {
             if (gameObject.tag == "Ghost")
@@ -27,6 +29,7 @@ public class CharacterDialogue : MonoBehaviour
             else
             {
                 dialogueText.text = "Oh no! You petrified a subject!";
+                gameObject.GetComponent<NunManager>()?.PetrifyAnimation();
                 gameObject.GetComponent<QueenManager>().PetrifyAnimation();
             }
             //Destroy(gameObject);
