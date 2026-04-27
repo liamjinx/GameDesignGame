@@ -4,8 +4,13 @@ public class NunManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
+    [SerializeField] Animator animator;  
+    private PetrifyManager petrifyManager;
     void Start()
     {
+        petrifyManager = GetComponentInParent<PetrifyManager>();
+        Debug.Log("PetrifyManager found: " + petrifyManager);
+        
         int max = transform.parent.childCount - 1;
         int accused1Number = Random.Range(0, max);
         GameObject accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
@@ -22,6 +27,17 @@ public class NunManager : MonoBehaviour
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         }
         dialogue = accused1.name + " and " + accused2.name + " could be ghosts";
+    }
+    
+    public void PetrifyAnimation()
+    {
+        if (petrifyManager.isActive)
+        {
+            if (gameObject.tag == "Untagged")
+            {
+                animator.SetTrigger("PetrifySubject");
+            }
+        }
     }
     public void OnMouseUpAsButton()
     {
