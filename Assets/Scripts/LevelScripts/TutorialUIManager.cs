@@ -1,0 +1,34 @@
+using UnityEngine;
+
+public class TutorialUIManager : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject noteButton;
+    [SerializeField] private GameObject instructionsButton;
+    [SerializeField] private GameObject petrifyButton;
+    [SerializeField] private GameObject instructions;
+    void Start()
+    {
+        Debug.Log("test");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void ShowInstructions()
+    {
+        noteButton.SetActive(!noteButton.activeSelf);
+        instructionsButton.SetActive(!instructionsButton.activeSelf);
+        petrifyButton.SetActive(!petrifyButton.activeSelf);
+        gameObject.SetActive(!gameObject.activeSelf);
+    }
+    public void HideInstructions()
+    {
+        noteButton.SetActive(!noteButton.activeSelf);
+        instructionsButton.SetActive(!instructionsButton.activeSelf);
+        petrifyButton.SetActive(!petrifyButton.activeSelf);
+        gameObject.SetActive(!gameObject.activeSelf);
+    }
+}
