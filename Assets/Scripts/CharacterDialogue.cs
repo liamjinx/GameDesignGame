@@ -10,7 +10,7 @@ public class CharacterDialogue : MonoBehaviour
     private Canvas UICanvas;
     private Canvas lostStage;
     private Canvas beatStage;
-    private int remainingGhosts;
+    private CharacterManager ghostCount;
 
     
     public string lastSpokenLine = "";
@@ -22,7 +22,7 @@ public class CharacterDialogue : MonoBehaviour
         UICanvas = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<Canvas>();
         lostStage = GameObject.FindGameObjectWithTag("LostStage").GetComponent<Canvas>();
         beatStage = GameObject.FindGameObjectWithTag("BeatStage").GetComponent<Canvas>();
-        remainingGhosts = GetComponentInParent<CharacterManager>().ghostCount;
+        ghostCount = GetComponentInParent<CharacterManager>();
     }
     public void Petrify()
     {
@@ -32,8 +32,8 @@ public class CharacterDialogue : MonoBehaviour
             {
                 dialogueText.text = "Congratulations! You found a ghost!";
                 //gameObject.GetComponent<QueenManager>().PetrifyAnimation();
-                --remainingGhosts;
-                if (remainingGhosts <= 0)
+                --ghostCount.ghostCount;
+                if (ghostCount.ghostCount <= 0)
                 {
                     UICanvas.enabled = false;
                     beatStage.enabled = true;
@@ -42,8 +42,8 @@ public class CharacterDialogue : MonoBehaviour
             else
             {
                 dialogueText.text = "Oh no! You petrified a subject!";
-                gameObject.GetComponent<NunManager>()?.PetrifyAnimation();
-                gameObject.GetComponent<QueenManager>().PetrifyAnimation();
+                //gameObject.GetComponent<NunManager>()?.PetrifyAnimation();
+                //gameObject.GetComponent<QueenManager>().PetrifyAnimation();
                 UICanvas.enabled = false;
                 lostStage.enabled = true;
             }

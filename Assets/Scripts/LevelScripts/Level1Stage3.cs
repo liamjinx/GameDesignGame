@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level1Stage3 : MonoBehaviour
 {
@@ -18,5 +19,10 @@ public class Level1Stage3 : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
+    }
+
+    public void LoadNextLevel()
+    {
+        //SceneManager.LoadScene("Level1Stage3", LoadSceneMode.Additive);
     }
 }

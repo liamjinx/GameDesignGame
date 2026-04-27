@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
 {
@@ -10,5 +11,9 @@ public class Tutorial : MonoBehaviour
         int ghostnumber1 = Random.Range(0, max);        
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost1.tag = "Ghost";
+    }
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene("Level1Stage3", LoadSceneMode.Single);
     }
 }
