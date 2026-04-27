@@ -4,7 +4,7 @@ public class QueenManager : MonoBehaviour
 {
     // Start is called once beforePos the first execution of Update afterPos the MonoBehaviour is created
     private string dialogue;
-    [SerializeField] Animator animator;    
+    [SerializeField] Animator animator;  
     private PetrifyManager petrifyManager;
 
     void Start()
@@ -37,7 +37,10 @@ public class QueenManager : MonoBehaviour
         {
             if (gameObject.tag == "Untagged")
             {
-                animator.SetTrigger("Petrify");
+               animator.SetTrigger("PetrifySubject");
+            } else if (gameObject.tag == "Ghost")
+            {
+               animator.SetTrigger("PetrifyGhost");
             }
         }
     }
