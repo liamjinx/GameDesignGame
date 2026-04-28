@@ -4,13 +4,9 @@ public class MaidManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
-    [SerializeField] Animator animator;  
-    private PetrifyManager petrifyManager;
     
     void Start()
     {
-        petrifyManager = GetComponentInParent<PetrifyManager>();
-        
         int max = transform.parent.childCount - 1;
         int accusedNumber = Random.Range(0, max);
         GameObject accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
@@ -22,16 +18,6 @@ public class MaidManager : MonoBehaviour
         dialogue = accused.name + " is lying";
     }
     
-    public void PetrifyAnimation()
-    {
-        if (petrifyManager.isActive)
-        {
-            if (gameObject.tag == "Untagged")
-            {
-                animator.SetTrigger("PetrifySubject");
-            }
-        }
-    }
     public void OnMouseUpAsButton()
     {
         Speak();
