@@ -4,6 +4,7 @@ public class MaidManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
+    
     void Start()
     {
         int max = transform.parent.childCount - 1;
@@ -16,6 +17,7 @@ public class MaidManager : MonoBehaviour
         }
         dialogue = accused.name + " is lying";
     }
+    
     public void OnMouseUpAsButton()
     {
         Speak();

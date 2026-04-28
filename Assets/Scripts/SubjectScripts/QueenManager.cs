@@ -4,14 +4,9 @@ public class QueenManager : MonoBehaviour
 {
     // Start is called once beforePos the first execution of Update afterPos the MonoBehaviour is created
     private string dialogue;
-    [SerializeField] Animator animator;  
-    private PetrifyManager petrifyManager;
 
     void Start()
     {
-        //animator = GetComponent<Animator>();
-        petrifyManager = GetComponentInParent<PetrifyManager>();
-
         int currentPos = transform.GetSiblingIndex();
         int max = transform.parent.childCount - 1;
         int beforePos; int afterPos;
@@ -28,20 +23,6 @@ public class QueenManager : MonoBehaviour
         {
             if (before == "Ghost" || after == "Ghost") { dialogue = "I am next to at least one ghost"; }
             else { dialogue = "I am next to no ghosts"; }
-        }
-    }
-
-    public void PetrifyAnimation()
-    {
-        if (petrifyManager.isActive)
-        {
-            if (gameObject.tag == "Untagged")
-            {
-               animator.SetTrigger("PetrifySubject");
-            } else if (gameObject.tag == "Ghost")
-            {
-               animator.SetTrigger("PetrifyGhost");
-            }
         }
     }
 
