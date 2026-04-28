@@ -4862,12 +4862,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1763050585}
     - target: {fileID: 1785798051293439671, guid: 45919525e7326f745a6e6282628848d5, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1785798051293439671, guid: 45919525e7326f745a6e6282628848d5, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 6.4
       objectReference: {fileID: 0}
     - target: {fileID: 1785798051293439671, guid: 45919525e7326f745a6e6282628848d5, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 6.4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2722583045555781572, guid: 45919525e7326f745a6e6282628848d5, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4965,6 +4969,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7029358769461715277, guid: 45919525e7326f745a6e6282628848d5, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2062558862}
     - target: {fileID: 7153787546359176545, guid: 45919525e7326f745a6e6282628848d5, type: 3}
       propertyPath: m_Name
       value: Jester
@@ -5666,6 +5674,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 6.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6977895793526637087, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2101665242}
     - target: {fileID: 7427193402019431563, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
       propertyPath: m_Size.x
       value: 6.4

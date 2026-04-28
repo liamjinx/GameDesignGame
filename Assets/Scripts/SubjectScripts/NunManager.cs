@@ -9,7 +9,6 @@ public class NunManager : MonoBehaviour
     void Start()
     {
         petrifyManager = GetComponentInParent<PetrifyManager>();
-        //Debug.Log("PetrifyManager found: " + petrifyManager);
         
         int max = transform.parent.childCount - 1;
         int accused1Number = Random.Range(0, max);
