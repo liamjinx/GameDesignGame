@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ghost
   - Lying
+  - UICanvas
+  - LostStage
+  - BeatStage
   layers:
   - Default
   - TransparentFX
