@@ -42,7 +42,7 @@ public class CharacterDialogue : MonoBehaviour
             else
             {
                 dialogueText.text = "Oh no! You petrified a subject!";
-                //gameObject.GetComponent<NunManager>()?.PetrifyAnimation();
+                //gameObject.GetComponent<NunManager>().PetrifyAnimation();
                 //gameObject.GetComponent<QueenManager>().PetrifyAnimation();
                 UICanvas.enabled = false;
                 lostStage.enabled = true;
