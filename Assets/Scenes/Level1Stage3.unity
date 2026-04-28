@@ -5610,6 +5610,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4afb6c189a7dd4a17ab85b6493137032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
+--- !u!114 &1903826762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674691562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd6b369390aa4a99b34ff7d722b5587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PetrifyAnimation
+  animator: {fileID: 1903826759}
 --- !u!1 &1907486804
 GameObject:
   m_ObjectHideFlags: 0
@@ -6166,6 +6179,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1961323084}
     m_AddedComponents: []
+      addedObject: {fileID: 2062558862}
+    - targetCorrespondingSourceObject: {fileID: 7153787546359176545, guid: 45919525e7326f745a6e6282628848d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2062558863}
   m_SourcePrefab: {fileID: 100100000, guid: 45919525e7326f745a6e6282628848d5, type: 3}
 --- !u!1 &2094604617
 GameObject:
@@ -6665,6 +6682,51 @@ PrefabInstance:
       addedObject: {fileID: 205057933}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      addedObject: {fileID: 3964851878477084058}
+    - targetCorrespondingSourceObject: {fileID: 2930451281236445098, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3964851878477084059}
+  m_SourcePrefab: {fileID: 100100000, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+--- !u!1 &3964851878477084057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2930451281236445098, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+  m_PrefabInstance: {fileID: 3964851878477084056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3964851878477084058
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964851878477084057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f57c19b0ef5a48b1b1dc9b5e52fa1ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3964851878477084059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964851878477084057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd6b369390aa4a99b34ff7d722b5587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PetrifyAnimation
+  animator: {fileID: 3964851878477084058}
 --- !u!1001 &6021845260164975304
 PrefabInstance:
   m_ObjectHideFlags: 0

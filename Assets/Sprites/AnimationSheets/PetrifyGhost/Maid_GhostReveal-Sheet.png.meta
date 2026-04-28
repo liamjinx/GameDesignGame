@@ -1,0 +1,639 @@
+fileFormatVersion: 2
+guid: bbf1403cbf2444247a6764d88bc6b202
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -408547744907338014
+    second: Maid_GhostReveal-Sheet_0
+  - first:
+      213: 2255039801994357720
+    second: Maid_GhostReveal-Sheet_1
+  - first:
+      213: -1948831680245204118
+    second: Maid_GhostReveal-Sheet_2
+  - first:
+      213: 76158657650115628
+    second: Maid_GhostReveal-Sheet_3
+  - first:
+      213: 2566311188519960856
+    second: Maid_GhostReveal-Sheet_4
+  - first:
+      213: 879401388115670039
+    second: Maid_GhostReveal-Sheet_5
+  - first:
+      213: 4220864816198330323
+    second: Maid_GhostReveal-Sheet_6
+  - first:
+      213: -1666717876152461061
+    second: Maid_GhostReveal-Sheet_7
+  - first:
+      213: 260171897085201275
+    second: Maid_GhostReveal-Sheet_8
+  - first:
+      213: 9209803069230572774
+    second: Maid_GhostReveal-Sheet_9
+  - first:
+      213: 3650975074613678561
+    second: Maid_GhostReveal-Sheet_10
+  - first:
+      213: 6577069668931309932
+    second: Maid_GhostReveal-Sheet_11
+  - first:
+      213: 4395816903945456437
+    second: Maid_GhostReveal-Sheet_12
+  - first:
+      213: 5482319931538670231
+    second: Maid_GhostReveal-Sheet_13
+  - first:
+      213: 7388789244944960694
+    second: Maid_GhostReveal-Sheet_14
+  - first:
+      213: 8610655724907348714
+    second: Maid_GhostReveal-Sheet_15
+  - first:
+      213: -3454941928302010675
+    second: Maid_GhostReveal-Sheet_16
+  - first:
+      213: -2390684827082496583
+    second: Maid_GhostReveal-Sheet_17
+  - first:
+      213: -6932265864301555546
+    second: Maid_GhostReveal-Sheet_18
+  - first:
+      213: 52792489717159433
+    second: Maid_GhostReveal-Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eed2079dfb845af0800000000000000
+      internalID: -408547744907338014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2880
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dbad3090c28b4f10800000000000000
+      internalID: 2255039801994357720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2880
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6bf4f389eb54f4e0800000000000000
+      internalID: -1948831680245204118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2880
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c244ec745e19e0100800000000000000
+      internalID: 76158657650115628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2880
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811c7d6dd6e5d9320800000000000000
+      internalID: 2566311188519960856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714be9937e2443c00800000000000000
+      internalID: 879401388115670039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1920
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7227eef26839a30800000000000000
+      internalID: 4220864816198330323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1920
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8932b1ce0aed8e0800000000000000
+      internalID: -1666717876152461061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b8d4246f05c9300800000000000000
+      internalID: 260171897085201275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1920
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e46ac8881bcfcf70800000000000000
+      internalID: 9209803069230572774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e157269c7edaa230800000000000000
+      internalID: 3650975074613678561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 960
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6195af5402764b50800000000000000
+      internalID: 6577069668931309932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 960
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b83512f24110d30800000000000000
+      internalID: 4395816903945456437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 960
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79208606eec151c40800000000000000
+      internalID: 5482319931538670231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 960
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bccb29bba04a8660800000000000000
+      internalID: 7388789244944960694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae24946b2c13f7770800000000000000
+      internalID: 8610655724907348714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce94fb0f949d00d0800000000000000
+      internalID: -3454941928302010675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5e4dfe0d492ded0800000000000000
+      internalID: -2390684827082496583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a05db5dce4abcf90800000000000000
+      internalID: -6932265864301555546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maid_GhostReveal-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906566c5d7e8bb000800000000000000
+      internalID: 52792489717159433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fa41afc338d9540f19827865f4997fbe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":4.0},"gridSpriteSize":{"x":640.0,"y":960.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Maid_GhostReveal-Sheet_0: -408547744907338014
+      Maid_GhostReveal-Sheet_1: 2255039801994357720
+      Maid_GhostReveal-Sheet_10: 3650975074613678561
+      Maid_GhostReveal-Sheet_11: 6577069668931309932
+      Maid_GhostReveal-Sheet_12: 4395816903945456437
+      Maid_GhostReveal-Sheet_13: 5482319931538670231
+      Maid_GhostReveal-Sheet_14: 7388789244944960694
+      Maid_GhostReveal-Sheet_15: 8610655724907348714
+      Maid_GhostReveal-Sheet_16: -3454941928302010675
+      Maid_GhostReveal-Sheet_17: -2390684827082496583
+      Maid_GhostReveal-Sheet_18: -6932265864301555546
+      Maid_GhostReveal-Sheet_19: 52792489717159433
+      Maid_GhostReveal-Sheet_2: -1948831680245204118
+      Maid_GhostReveal-Sheet_3: 76158657650115628
+      Maid_GhostReveal-Sheet_4: 2566311188519960856
+      Maid_GhostReveal-Sheet_5: 879401388115670039
+      Maid_GhostReveal-Sheet_6: 4220864816198330323
+      Maid_GhostReveal-Sheet_7: -1666717876152461061
+      Maid_GhostReveal-Sheet_8: 260171897085201275
+      Maid_GhostReveal-Sheet_9: 9209803069230572774
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
