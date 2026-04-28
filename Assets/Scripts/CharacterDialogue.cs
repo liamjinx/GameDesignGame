@@ -31,7 +31,8 @@ public class CharacterDialogue : MonoBehaviour
             if (gameObject.tag == "Ghost")
             {
                 dialogueText.text = "Congratulations! You found a ghost!";
-                //gameObject.GetComponent<QueenManager>().PetrifyAnimation();
+                //GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
+
                 --ghostCount.ghostCount;
                 if (ghostCount.ghostCount <= 0)
                 {
@@ -42,8 +43,8 @@ public class CharacterDialogue : MonoBehaviour
             else
             {
                 dialogueText.text = "Oh no! You petrified a subject!";
-                //gameObject.GetComponent<NunManager>().PetrifyAnimation();
-                //gameObject.GetComponent<QueenManager>().PetrifyAnimation();
+                //GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
+
                 UICanvas.enabled = false;
                 lostStage.enabled = true;
             }
