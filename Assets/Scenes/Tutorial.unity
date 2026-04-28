@@ -4986,7 +4986,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: oh no!\nyoufound a shogst
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
   m_sharedMaterial: {fileID: -699112959996641730, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
@@ -6677,7 +6677,6 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1157640446}
-      objectReference: {fileID: 1763050585}
     - target: {fileID: 5672770676015989650, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
       propertyPath: m_Size.x
       value: 3.6207068
