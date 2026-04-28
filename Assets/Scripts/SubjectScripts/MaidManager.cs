@@ -16,11 +16,12 @@ public class MaidManager : MonoBehaviour
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
         }
         dialogue = accused.name + " is lying";
+        Speak();
     }
     
     public void OnMouseUpAsButton()
     {
-        Speak();
+        gameObject.GetComponent<CharacterDialogue>().Petrify();
     }
     public void Speak()
     {

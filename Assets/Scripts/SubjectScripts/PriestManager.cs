@@ -29,10 +29,11 @@ public class PriestManager : MonoBehaviour
             accused3 = gameObject.transform.parent.GetChild(accused3Number).gameObject;
         }
         dialogue = "Only one of " + accused1.name + ", " + accused2.name + ", or " + accused3.name + " is a ghost";
+        Speak();
     }
     public void OnMouseUpAsButton()
     {
-        Speak();
+        gameObject.GetComponent<CharacterDialogue>().Petrify();
     }
     public void Speak()
     {

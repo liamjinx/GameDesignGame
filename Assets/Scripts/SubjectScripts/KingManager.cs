@@ -24,10 +24,11 @@ public class KingManager : MonoBehaviour
             if (before != "Ghost" || after != "Ghost") { dialogue = "I am next to at least one safe character"; }
             else { dialogue = "I am not next to at any safe characters"; }
         }
+        Speak();
     }
     public void OnMouseUpAsButton()
     {
-        Speak();
+        gameObject.GetComponent<CharacterDialogue>().Petrify();
     }
     public void Speak()
     {

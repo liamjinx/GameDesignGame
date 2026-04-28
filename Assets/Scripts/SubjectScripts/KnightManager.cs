@@ -26,10 +26,11 @@ public class KnightManager : MonoBehaviour
             }
         }
         dialogue = "If " + accused1.name + " is not the ghost, then the " + accused2.name + " is the ghost";
+        Speak();
     }
     public void OnMouseUpAsButton()
     {
-        Speak();
+        gameObject.GetComponent<CharacterDialogue>().Petrify();
     }
     public void Speak()
     {

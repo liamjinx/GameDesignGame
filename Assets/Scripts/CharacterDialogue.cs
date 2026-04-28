@@ -6,6 +6,7 @@ using System;
 public class CharacterDialogue : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueText;
+    TextMeshProUGUI mainText;
     private PetrifyManager petrifyManager;
     private Canvas UICanvas;
     private Canvas lostStage;
@@ -23,6 +24,7 @@ public class CharacterDialogue : MonoBehaviour
         lostStage = GameObject.FindGameObjectWithTag("LostStage").GetComponent<Canvas>();
         beatStage = GameObject.FindGameObjectWithTag("BeatStage").GetComponent<Canvas>();
         ghostCount = GetComponentInParent<CharacterManager>();
+        mainText = UICanvas.GetComponentInChildren<TextMeshProUGUI>();
     }
     public void Petrify()
     {
@@ -30,7 +32,7 @@ public class CharacterDialogue : MonoBehaviour
         {
             if (gameObject.tag == "Ghost")
             {
-                dialogueText.text = "Congratulations! You found a ghost!";
+                mainText.text = "Congratulations!\n You found a ghost!";
                 //GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
 
                 --ghostCount.ghostCount;
@@ -42,14 +44,16 @@ public class CharacterDialogue : MonoBehaviour
             }
             else
             {
-                dialogueText.text = "Oh no! You petrified a subject!";
+                mainText.text = "Oh no!\n You petrified a subject!";
                 //GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
 
                 UICanvas.enabled = false;
                 lostStage.enabled = true;
             }
             //Destroy(gameObject);
+            return;
         }
+        transform.GetComponentInParent<CharacterManager>().selectedCharacter = gameObject;
     }
     public void Speak(string dialogue)
     {
@@ -57,7 +61,5 @@ public class CharacterDialogue : MonoBehaviour
         
         lastSpokenLine = dialogue;
         characterName = gameObject.name;
-        transform.GetComponentInParent<CharacterManager>().selectedCharacter = gameObject;
-        Petrify();
     }
 }

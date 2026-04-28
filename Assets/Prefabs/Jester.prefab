@@ -138,7 +138,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 4, y: 1}
+  m_SizeDelta: {x: 4, y: -0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7274924300458535346
 CanvasRenderer:
@@ -170,8 +170,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jester
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
+  m_sharedMaterial: {fileID: -699112959996641730, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -254,6 +254,8 @@ GameObject:
   - component: {fileID: 4633831725745409009}
   - component: {fileID: 1297214361858598655}
   - component: {fileID: 7029358769461715277}
+  - component: {fileID: 483466158605709948}
+  - component: {fileID: 912882302368692306}
   m_Layer: 0
   m_Name: Jester
   m_TagString: Untagged
@@ -327,8 +329,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
-    newSize: {x: 6.4, y: 6.4}
+    oldSize: {x: 6.4, y: 7}
+    newSize: {x: 6.4, y: 7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -384,12 +386,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1210074573, guid: c2a6618ce0dc64e4a88ea2148081b8e3, type: 3}
+  m_Sprite: {fileID: 495873350, guid: 9cde13c442e6049e2af8ac89499f9b4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.4, y: 6.4}
+  m_Size: {x: 6.4, y: 7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -407,6 +409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogueText: {fileID: 0}
+  lastSpokenLine: 
+  characterName: 
 --- !u!114 &7029358769461715277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,3 +423,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea838c745c1a5944ae792dfd80c489a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JesterManager
+--- !u!95 &483466158605709948
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153787546359176545}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fdab942276fc042e7ba9b5672f281fa6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &912882302368692306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153787546359176545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd6b369390aa4a99b34ff7d722b5587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PetrifyAnimation
+  animator: {fileID: 483466158605709948}

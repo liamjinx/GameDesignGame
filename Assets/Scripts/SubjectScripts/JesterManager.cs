@@ -15,11 +15,12 @@ public class JesterManager : MonoBehaviour
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
         } 
         dialogue = "Either I am the ghost or " + accused.name + " is the ghost";
+        Speak();
     }
     
     public void OnMouseUpAsButton()
     {
-        Speak();
+        gameObject.GetComponent<CharacterDialogue>().Petrify();
     }
 
     public void Speak()

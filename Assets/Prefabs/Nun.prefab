@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6517991645958846882}
   - component: {fileID: 4736410723846464707}
   - component: {fileID: 1100099063139132455}
+  - component: {fileID: 5740752561704978545}
+  - component: {fileID: 8501070213842153994}
   m_Layer: 0
   m_Name: Nun
   m_TagString: Untagged
@@ -98,8 +100,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7519753400087680208, guid: a38f18c58b83f40febf13429dcc1689e, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 103407449, guid: a1f91ccf0c4ac40429f5aed7968e641f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -146,7 +148,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
+    oldSize: {x: 6.4, y: 6.4}
     newSize: {x: 6.4, y: 6.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -167,6 +169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogueText: {fileID: 0}
+  lastSpokenLine: 
+  characterName: 
 --- !u!114 &1100099063139132455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +183,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770b0e118452acd4aa2c7b6356f54330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BardManager
+--- !u!95 &5740752561704978545
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252186036065937170}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 120756abc51004937a2be612c9587be7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8501070213842153994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252186036065937170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd6b369390aa4a99b34ff7d722b5587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PetrifyAnimation
+  animator: {fileID: 5740752561704978545}
 --- !u!1 &3808358269316496490
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +253,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 4, y: 1}
+  m_SizeDelta: {x: 4, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7681611010127283478
 CanvasRenderer:
@@ -246,8 +285,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nun
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
+  m_sharedMaterial: {fileID: -699112959996641730, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
