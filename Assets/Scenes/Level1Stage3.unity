@@ -4576,7 +4576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Congratulations!\n You found a ghost!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
   m_sharedMaterial: {fileID: -699112959996641730, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
@@ -5476,7 +5476,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3504514795759978784, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
   m_PrefabInstance: {fileID: 3964851878477084056}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 3964851878477084057}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4afb6c189a7dd4a17ab85b6493137032, type: 3}
@@ -5610,19 +5610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4afb6c189a7dd4a17ab85b6493137032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
---- !u!114 &1903826762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674691562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dd6b369390aa4a99b34ff7d722b5587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PetrifyAnimation
-  animator: {fileID: 1903826759}
 --- !u!1 &1907486804
 GameObject:
   m_ObjectHideFlags: 0
@@ -6179,10 +6166,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1961323084}
     m_AddedComponents: []
-      addedObject: {fileID: 2062558862}
-    - targetCorrespondingSourceObject: {fileID: 7153787546359176545, guid: 45919525e7326f745a6e6282628848d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2062558863}
   m_SourcePrefab: {fileID: 100100000, guid: 45919525e7326f745a6e6282628848d5, type: 3}
 --- !u!1 &2094604617
 GameObject:
@@ -6680,8 +6663,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1832076173046490962, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
       insertIndex: -1
       addedObject: {fileID: 205057933}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2930451281236445098, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 3964851878477084058}
     - targetCorrespondingSourceObject: {fileID: 2930451281236445098, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
       insertIndex: -1
