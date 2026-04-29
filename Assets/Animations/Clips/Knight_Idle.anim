@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Priest_Idle
+  m_Name: Knight_Idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 844341371, guid: 5e67359433b554d5c8fdd65769ad6e92, type: 3}
+      value: {fileID: -300787186, guid: 9ed10292c2b9f407b8789b33eb91a71f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 844341371, guid: 5e67359433b554d5c8fdd65769ad6e92, type: 3}
+    - {fileID: -300787186, guid: 9ed10292c2b9f407b8789b33eb91a71f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
