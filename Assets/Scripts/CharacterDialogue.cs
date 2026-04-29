@@ -36,6 +36,10 @@ public class CharacterDialogue : MonoBehaviour
     
     public void Start()
     {
+
+        isSetup = false;
+        lives = 3;
+        
         petrifyManager = GetComponentInParent<PetrifyManager>();
         UICanvas = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<Canvas>();
         lostStage = GameObject.FindGameObjectWithTag("LostStage").GetComponent<Canvas>();
