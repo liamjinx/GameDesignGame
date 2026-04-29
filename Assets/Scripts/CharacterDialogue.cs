@@ -33,7 +33,7 @@ public class CharacterDialogue : MonoBehaviour
             if (gameObject.tag == "Ghost")
             {
                 mainText.text = "Congratulations!\n You found a ghost!";
-                //GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
+                GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
 
                 --ghostCount.ghostCount;
                 if (ghostCount.ghostCount <= 0)
@@ -45,7 +45,7 @@ public class CharacterDialogue : MonoBehaviour
             else
             {
                 mainText.text = "Oh no!\n You petrified a subject!";
-                //GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
+                GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
 
                 UICanvas.enabled = false;
                 lostStage.enabled = true;
