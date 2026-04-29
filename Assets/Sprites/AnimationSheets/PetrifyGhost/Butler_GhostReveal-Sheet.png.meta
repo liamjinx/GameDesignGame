@@ -1,73 +1,67 @@
 fileFormatVersion: 2
-guid: 157f5b865e72b4bc49b6f0503eb549f4
+guid: a959543157202455998900b51e60439a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 351071319716800665
-    second: Bard_Petrified-Sheet-Packed_0
+      213: 1731414069527801955
+    second: Butler_GhostReveal-Sheet_0
   - first:
-      213: -2362278258085738663
-    second: Bard_Petrified-Sheet-Packed_1
+      213: 2747098309239692591
+    second: Butler_GhostReveal-Sheet_1
   - first:
-      213: -3713806960427762155
-    second: Bard_Petrified-Sheet-Packed_2
+      213: 1349711464672262456
+    second: Butler_GhostReveal-Sheet_2
   - first:
-      213: -5522932523458667000
-    second: Bard_Petrified-Sheet-Packed_3
+      213: 5975909545871246402
+    second: Butler_GhostReveal-Sheet_3
   - first:
-      213: 5915301148870408732
-    second: Bard_Petrified-Sheet-Packed_4
+      213: 9188666488703642515
+    second: Butler_GhostReveal-Sheet_4
   - first:
-      213: 4198473142640204119
-    second: Bard_Petrified-Sheet-Packed_5
+      213: 8640511967322766421
+    second: Butler_GhostReveal-Sheet_5
   - first:
-      213: 3164724000573766067
-    second: Bard_Petrified-Sheet-Packed_6
+      213: 8047368598900361115
+    second: Butler_GhostReveal-Sheet_6
   - first:
-      213: 9140989380540762502
-    second: Bard_Petrified-Sheet-Packed_7
+      213: 6481579057569084600
+    second: Butler_GhostReveal-Sheet_7
   - first:
-      213: -5301617387385743666
-    second: Bard_Petrified-Sheet-Packed_8
+      213: -117017947730223142
+    second: Butler_GhostReveal-Sheet_8
   - first:
-      213: -6051100947002456107
-    second: Bard_Petrified-Sheet-Packed_9
+      213: 1764304277204848441
+    second: Butler_GhostReveal-Sheet_9
   - first:
-      213: -8956809528041242770
-    second: Bard_Petrified-Sheet-Packed_10
+      213: -4731708881725215577
+    second: Butler_GhostReveal-Sheet_10
   - first:
-      213: -452165805113269124
-    second: Bard_Petrified-Sheet-Packed_11
+      213: 879034063457897825
+    second: Butler_GhostReveal-Sheet_11
   - first:
-      213: 6891784176068606757
-    second: Bard_Petrified-Sheet-Packed_12
+      213: 1732786156278309652
+    second: Butler_GhostReveal-Sheet_12
   - first:
-      213: 5442935171035939766
-    second: Bard_Petrified-Sheet-Packed_13
+      213: -9068100354725822674
+    second: Butler_GhostReveal-Sheet_13
   - first:
-      213: 6040719878039817807
-    second: Bard_Petrified-Sheet-Packed_14
+      213: -6808095632325640536
+    second: Butler_GhostReveal-Sheet_14
   - first:
-      213: 4437735384312777004
-    second: Bard_Petrified-Sheet-Packed_15
+      213: -3984964480264937408
+    second: Butler_GhostReveal-Sheet_15
   - first:
-      213: 2105639604943346921
-    second: Bard_Petrified-Sheet-Packed_16
+      213: -2735332548308147608
+    second: Butler_GhostReveal-Sheet_16
   - first:
-      213: 160446368811269533
-    second: Bard_Petrified-Sheet-Packed_17
+      213: -841742480245576153
+    second: Butler_GhostReveal-Sheet_17
   - first:
-      213: -2145607732559360387
-    second: Bard_Petrified-Sheet-Packed_18
+      213: -2334559024978801934
+    second: Butler_GhostReveal-Sheet_18
   - first:
-      213: -1501557434133399914
-    second: Bard_Petrified-Sheet-Packed_19
-  - first:
-      213: -4590734871224878159
-    second: Bard_Petrified-Sheet-Packed_20
-  - first:
-      213: 1862006827024409947
-    second: Bard_Petrified-Sheet-Packed_21
+      213: -4102065729134999576
+    second: Butler_GhostReveal-Sheet_19
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -159,30 +153,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_0
+      name: Butler_GhostReveal-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 3200
+        y: 2880
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9982c8651814fd400800000000000000
-      internalID: 351071319716800665
+      spriteID: 360715d3ce7370810800000000000000
+      internalID: 1731414069527801955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_1
+      name: Butler_GhostReveal-Sheet_1
       rect:
         serializedVersion: 2
         x: 640
-        y: 3200
+        y: 2880
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 957cb2ea070873fd0800000000000000
-      internalID: -2362278258085738663
+      spriteID: f2dde458b57af1620800000000000000
+      internalID: 2747098309239692591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_2
+      name: Butler_GhostReveal-Sheet_2
       rect:
         serializedVersion: 2
         x: 1280
-        y: 3200
+        y: 2880
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51e745ffe38e57cc0800000000000000
-      internalID: -3713806960427762155
+      spriteID: 839ff011d632bb210800000000000000
+      internalID: 1349711464672262456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_3
+      name: Butler_GhostReveal-Sheet_3
       rect:
         serializedVersion: 2
         x: 1920
-        y: 3200
+        y: 2880
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80e5bc4b12a9a53b0800000000000000
-      internalID: -5522932523458667000
+      spriteID: 244858bf112bee250800000000000000
+      internalID: 5975909545871246402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_4
+      name: Butler_GhostReveal-Sheet_4
       rect:
         serializedVersion: 2
         x: 2560
-        y: 3200
+        y: 2880
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1a71e5ed0f571250800000000000000
-      internalID: 5915301148870408732
+      spriteID: 39b67b2ec73b48f70800000000000000
+      internalID: 9188666488703642515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_5
+      name: Butler_GhostReveal-Sheet_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 2401
+        y: 1920
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +282,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 759561a2419f34a30800000000000000
-      internalID: 4198473142640204119
+      spriteID: 55cf8c9dad349e770800000000000000
+      internalID: 8640511967322766421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_6
+      name: Butler_GhostReveal-Sheet_6
       rect:
         serializedVersion: 2
         x: 640
-        y: 2401
+        y: 1920
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +304,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b93a5a06bb5beb20800000000000000
-      internalID: 3164724000573766067
+      spriteID: b97c61a9a1ffdaf60800000000000000
+      internalID: 8047368598900361115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_7
+      name: Butler_GhostReveal-Sheet_7
       rect:
         serializedVersion: 2
         x: 1280
-        y: 2401
+        y: 1920
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68900ca19615bde70800000000000000
-      internalID: 9140989380540762502
+      spriteID: 8b4340edfc133f950800000000000000
+      internalID: 6481579057569084600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_8
+      name: Butler_GhostReveal-Sheet_8
       rect:
         serializedVersion: 2
         x: 1920
-        y: 2401
+        y: 1920
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,20 +348,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec696d9431fdc66b0800000000000000
-      internalID: -5301617387385743666
+      spriteID: adfd139ebc4406ef0800000000000000
+      internalID: -117017947730223142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_9
+      name: Butler_GhostReveal-Sheet_9
       rect:
         serializedVersion: 2
         x: 2560
-        y: 2401
+        y: 1920
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +370,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d783e1bfbb260ca0800000000000000
-      internalID: -6051100947002456107
+      spriteID: 93f4f7674611c7810800000000000000
+      internalID: 1764304277204848441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_10
+      name: Butler_GhostReveal-Sheet_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 1602
+        y: 960
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,20 +392,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6f7440803503b380800000000000000
-      internalID: -8956809528041242770
+      spriteID: 7ac253c77d7955eb0800000000000000
+      internalID: -4731708881725215577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_11
+      name: Butler_GhostReveal-Sheet_11
       rect:
         serializedVersion: 2
         x: 640
-        y: 1602
+        y: 960
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,20 +414,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7425ae889599b9f0800000000000000
-      internalID: -452165805113269124
+      spriteID: 16d40e9c2d4f23c00800000000000000
+      internalID: 879034063457897825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_12
+      name: Butler_GhostReveal-Sheet_12
       rect:
         serializedVersion: 2
         x: 1280
-        y: 1602
+        y: 960
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,20 +436,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52b3a33a13984af50800000000000000
-      internalID: 6891784176068606757
+      spriteID: 413eea414d71c0810800000000000000
+      internalID: 1732786156278309652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_13
+      name: Butler_GhostReveal-Sheet_13
       rect:
         serializedVersion: 2
         x: 1920
-        y: 1602
+        y: 960
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,20 +458,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b3c31d33b0398b40800000000000000
-      internalID: 5442935171035939766
+      spriteID: e2f39f0b5c2a72280800000000000000
+      internalID: -9068100354725822674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_14
+      name: Butler_GhostReveal-Sheet_14
       rect:
         serializedVersion: 2
         x: 2560
-        y: 1602
+        y: 960
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,20 +480,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4e443659b2f4d350800000000000000
-      internalID: 6040719878039817807
+      spriteID: 8ae775ed719c481a0800000000000000
+      internalID: -6808095632325640536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_15
+      name: Butler_GhostReveal-Sheet_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 803
+        y: 0
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,20 +502,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c290525e1d0069d30800000000000000
-      internalID: 4437735384312777004
+      spriteID: 040624f1bef82b8c0800000000000000
+      internalID: -3984964480264937408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_16
+      name: Butler_GhostReveal-Sheet_16
       rect:
         serializedVersion: 2
         x: 640
-        y: 803
+        y: 0
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,20 +524,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ec54a5801cb83d10800000000000000
-      internalID: 2105639604943346921
+      spriteID: 862678b2a852a0ad0800000000000000
+      internalID: -2735332548308147608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_17
+      name: Butler_GhostReveal-Sheet_17
       rect:
         serializedVersion: 2
         x: 1280
-        y: 803
+        y: 0
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,20 +546,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9d3f725f150a3200800000000000000
-      internalID: 160446368811269533
+      spriteID: 72e2b988ca78154f0800000000000000
+      internalID: -841742480245576153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_18
+      name: Butler_GhostReveal-Sheet_18
       rect:
         serializedVersion: 2
         x: 1920
-        y: 803
+        y: 0
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,20 +568,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7ec77992254932e0800000000000000
-      internalID: -2145607732559360387
+      spriteID: 2fac4f09feaf99fd0800000000000000
+      internalID: -2334559024978801934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_19
+      name: Butler_GhostReveal-Sheet_19
       rect:
         serializedVersion: 2
         x: 2560
-        y: 803
+        y: 0
         width: 640
-        height: 799
+        height: 960
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,118 +590,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 696b1a02875692be0800000000000000
-      internalID: -1501557434133399914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_20
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4
-        width: 640
-        height: 799
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1bb74a615fe6a40c0800000000000000
-      internalID: -4590734871224878159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_21
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 4
-        width: 640
-        height: 799
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b556426085d27d910800000000000000
-      internalID: 1862006827024409947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_22
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 4
-        width: 640
-        height: 799
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b0215a3c722d42e88c4b50b350f1a7a
-      internalID: 87993599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_23
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 4
-        width: 640
-        height: 799
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db0c2506a109b49ea87e8c58daebf5fd
-      internalID: 2143097188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bard_Petrified-Sheet-Packed_24
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 4
-        width: 640
-        height: 799
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2eead23dd5ddd4b40ac2fdf2c5ed0399
-      internalID: -281562429
+      spriteID: 8e7ca99f3f88217c0800000000000000
+      internalID: -4102065729134999576
       vertices: []
       indices: 
       edges: []
@@ -729,7 +600,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d23a94893d5f545b2a5ea08c0eedc565
+    spriteID: f4731f6da320b428d9951f95b469b788
     internalID: 0
     vertices: []
     indices: 
@@ -739,33 +610,28 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":640.0,"y":799.0},"gridSpriteOffset":{"x":0.0,"y":1.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":4.0},"gridSpriteSize":{"x":640.0,"y":960.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Bard_Petrified-Sheet-Packed_0: 351071319716800665
-      Bard_Petrified-Sheet-Packed_1: -2362278258085738663
-      Bard_Petrified-Sheet-Packed_10: -8956809528041242770
-      Bard_Petrified-Sheet-Packed_11: -452165805113269124
-      Bard_Petrified-Sheet-Packed_12: 6891784176068606757
-      Bard_Petrified-Sheet-Packed_13: 5442935171035939766
-      Bard_Petrified-Sheet-Packed_14: 6040719878039817807
-      Bard_Petrified-Sheet-Packed_15: 4437735384312777004
-      Bard_Petrified-Sheet-Packed_16: 2105639604943346921
-      Bard_Petrified-Sheet-Packed_17: 160446368811269533
-      Bard_Petrified-Sheet-Packed_18: -2145607732559360387
-      Bard_Petrified-Sheet-Packed_19: -1501557434133399914
-      Bard_Petrified-Sheet-Packed_2: -3713806960427762155
-      Bard_Petrified-Sheet-Packed_20: -4590734871224878159
-      Bard_Petrified-Sheet-Packed_21: 1862006827024409947
-      Bard_Petrified-Sheet-Packed_22: 87993599
-      Bard_Petrified-Sheet-Packed_23: 2143097188
-      Bard_Petrified-Sheet-Packed_24: -281562429
-      Bard_Petrified-Sheet-Packed_3: -5522932523458667000
-      Bard_Petrified-Sheet-Packed_4: 5915301148870408732
-      Bard_Petrified-Sheet-Packed_5: 4198473142640204119
-      Bard_Petrified-Sheet-Packed_6: 3164724000573766067
-      Bard_Petrified-Sheet-Packed_7: 9140989380540762502
-      Bard_Petrified-Sheet-Packed_8: -5301617387385743666
-      Bard_Petrified-Sheet-Packed_9: -6051100947002456107
+      Butler_GhostReveal-Sheet_0: 1731414069527801955
+      Butler_GhostReveal-Sheet_1: 2747098309239692591
+      Butler_GhostReveal-Sheet_10: -4731708881725215577
+      Butler_GhostReveal-Sheet_11: 879034063457897825
+      Butler_GhostReveal-Sheet_12: 1732786156278309652
+      Butler_GhostReveal-Sheet_13: -9068100354725822674
+      Butler_GhostReveal-Sheet_14: -6808095632325640536
+      Butler_GhostReveal-Sheet_15: -3984964480264937408
+      Butler_GhostReveal-Sheet_16: -2735332548308147608
+      Butler_GhostReveal-Sheet_17: -841742480245576153
+      Butler_GhostReveal-Sheet_18: -2334559024978801934
+      Butler_GhostReveal-Sheet_19: -4102065729134999576
+      Butler_GhostReveal-Sheet_2: 1349711464672262456
+      Butler_GhostReveal-Sheet_3: 5975909545871246402
+      Butler_GhostReveal-Sheet_4: 9188666488703642515
+      Butler_GhostReveal-Sheet_5: 8640511967322766421
+      Butler_GhostReveal-Sheet_6: 8047368598900361115
+      Butler_GhostReveal-Sheet_7: 6481579057569084600
+      Butler_GhostReveal-Sheet_8: -117017947730223142
+      Butler_GhostReveal-Sheet_9: 1764304277204848441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
