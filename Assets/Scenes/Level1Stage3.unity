@@ -4968,6 +4968,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 4274726583551763742, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 800127020, guid: b972b8498865b441d8ec02369ccf04af, type: 3}
     - target: {fileID: 5733802941755400500, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
       propertyPath: m_Name
       value: Knight
@@ -5027,7 +5031,7 @@ Animator:
   m_GameObject: {fileID: 6226469059704289439}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb580639328bb48eebb88d7c3b08f79b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9ffe5f163f2a24b0fb5f6a3085acd199, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
