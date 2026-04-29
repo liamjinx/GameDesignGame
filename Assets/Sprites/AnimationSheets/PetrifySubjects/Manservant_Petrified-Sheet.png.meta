@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 25d3ec3b3c89a41e8b20054551ff8795
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8344176245934081733
+    second: Manservant_Petrified-Sheet_0
+  - first:
+      213: 5995189148807359807
+    second: Manservant_Petrified-Sheet_1
+  - first:
+      213: -5583093686184774604
+    second: Manservant_Petrified-Sheet_2
+  - first:
+      213: 6561155715483864778
+    second: Manservant_Petrified-Sheet_3
+  - first:
+      213: 4617119841921521083
+    second: Manservant_Petrified-Sheet_4
+  - first:
+      213: 3115602611033888505
+    second: Manservant_Petrified-Sheet_5
+  - first:
+      213: 3058496813996585827
+    second: Manservant_Petrified-Sheet_6
+  - first:
+      213: 7987276338182826785
+    second: Manservant_Petrified-Sheet_7
+  - first:
+      213: 1693208289338390273
+    second: Manservant_Petrified-Sheet_8
+  - first:
+      213: -404917993256788219
+    second: Manservant_Petrified-Sheet_9
+  - first:
+      213: -8627559940193113099
+    second: Manservant_Petrified-Sheet_10
+  - first:
+      213: -1884486824095062090
+    second: Manservant_Petrified-Sheet_11
+  - first:
+      213: 2197533945923722351
+    second: Manservant_Petrified-Sheet_12
+  - first:
+      213: 208896051672132607
+    second: Manservant_Petrified-Sheet_13
+  - first:
+      213: 4987075995361887607
+    second: Manservant_Petrified-Sheet_14
+  - first:
+      213: -6829049908526444853
+    second: Manservant_Petrified-Sheet_15
+  - first:
+      213: 3001898371632665137
+    second: Manservant_Petrified-Sheet_16
+  - first:
+      213: 6214728427304368703
+    second: Manservant_Petrified-Sheet_17
+  - first:
+      213: 8076945472385264161
+    second: Manservant_Petrified-Sheet_18
+  - first:
+      213: -5240996044734803842
+    second: Manservant_Petrified-Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6472a16187cc370800000000000000
+      internalID: 8344176245934081733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d60f754c0333350800000000000000
+      internalID: 5995189148807359807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434fa377fddd482b0800000000000000
+      internalID: -5583093686184774604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace80795c58ed0b50800000000000000
+      internalID: 6561155715483864778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5d32f980e431040800000000000000
+      internalID: 4617119841921521083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f654fb4118dc3b20800000000000000
+      internalID: 3115602611033888505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3633ee0d5a6f17a20800000000000000
+      internalID: 3058496813996585827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b254cd28188de60800000000000000
+      internalID: 7987276338182826785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107f2c8d7fb7f7710800000000000000
+      internalID: 1693208289338390273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fd3c00b31716af0800000000000000
+      internalID: -404917993256788219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb2666f1ffb44880800000000000000
+      internalID: -8627559940193113099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7e8e9c735f8d5e0800000000000000
+      internalID: -1884486824095062090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c55a41b753f7e10800000000000000
+      internalID: 2197533945923722351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb26ea2ad526e200800000000000000
+      internalID: 208896051672132607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7754c63f137a53540800000000000000
+      internalID: 4987075995361887607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce0ed04a475a31a0800000000000000
+      internalID: -6829049908526444853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1321dfc0aa2e8a920800000000000000
+      internalID: 3001898371632665137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3abffcd3962f3650800000000000000
+      internalID: 6214728427304368703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a29b71d13171070800000000000000
+      internalID: 8076945472385264161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70da548ddd3447b0800000000000000
+      internalID: -5240996044734803842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de373265f2bb74536b751c7a7328a8e3
+      internalID: -1532529201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0361730ddea4f4db5441c2a77579f8
+      internalID: 881531541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ca01afb41524b899766c52b8d13fbd
+      internalID: 1876119679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d773807ed4c441983980fc4dc6526f
+      internalID: -925249736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manservant_Petrified-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9068e338528d74eb3b2d11032aea5350
+      internalID: 1725176805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f45f96c09aa3d47bc80371125d18b8ca
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":640.0,"y":700.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Manservant_Petrified-Sheet_0: 8344176245934081733
+      Manservant_Petrified-Sheet_1: 5995189148807359807
+      Manservant_Petrified-Sheet_10: -8627559940193113099
+      Manservant_Petrified-Sheet_11: -1884486824095062090
+      Manservant_Petrified-Sheet_12: 2197533945923722351
+      Manservant_Petrified-Sheet_13: 208896051672132607
+      Manservant_Petrified-Sheet_14: 4987075995361887607
+      Manservant_Petrified-Sheet_15: -6829049908526444853
+      Manservant_Petrified-Sheet_16: 3001898371632665137
+      Manservant_Petrified-Sheet_17: 6214728427304368703
+      Manservant_Petrified-Sheet_18: 8076945472385264161
+      Manservant_Petrified-Sheet_19: -5240996044734803842
+      Manservant_Petrified-Sheet_2: -5583093686184774604
+      Manservant_Petrified-Sheet_20: -1532529201
+      Manservant_Petrified-Sheet_21: 881531541
+      Manservant_Petrified-Sheet_22: 1876119679
+      Manservant_Petrified-Sheet_23: -925249736
+      Manservant_Petrified-Sheet_24: 1725176805
+      Manservant_Petrified-Sheet_3: 6561155715483864778
+      Manservant_Petrified-Sheet_4: 4617119841921521083
+      Manservant_Petrified-Sheet_5: 3115602611033888505
+      Manservant_Petrified-Sheet_6: 3058496813996585827
+      Manservant_Petrified-Sheet_7: 7987276338182826785
+      Manservant_Petrified-Sheet_8: 1693208289338390273
+      Manservant_Petrified-Sheet_9: -404917993256788219
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

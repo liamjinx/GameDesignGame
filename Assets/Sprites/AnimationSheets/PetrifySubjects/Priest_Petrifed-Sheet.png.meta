@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: fee01316452aa42b98c2d3488aae1243
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6186604381030797897
+    second: Priest_Petrifed-Sheet_0
+  - first:
+      213: -5164282741128172145
+    second: Priest_Petrifed-Sheet_1
+  - first:
+      213: 505481107705783999
+    second: Priest_Petrifed-Sheet_2
+  - first:
+      213: -5526639642843837240
+    second: Priest_Petrifed-Sheet_3
+  - first:
+      213: 3537565891279870946
+    second: Priest_Petrifed-Sheet_4
+  - first:
+      213: -7222590425947022313
+    second: Priest_Petrifed-Sheet_5
+  - first:
+      213: 7474125857952246355
+    second: Priest_Petrifed-Sheet_6
+  - first:
+      213: 7329878447129640014
+    second: Priest_Petrifed-Sheet_7
+  - first:
+      213: 1620942796630087471
+    second: Priest_Petrifed-Sheet_8
+  - first:
+      213: 902084718110373034
+    second: Priest_Petrifed-Sheet_9
+  - first:
+      213: -6670337376862355014
+    second: Priest_Petrifed-Sheet_10
+  - first:
+      213: -7134101796475380713
+    second: Priest_Petrifed-Sheet_11
+  - first:
+      213: -8389924509855827065
+    second: Priest_Petrifed-Sheet_12
+  - first:
+      213: 6164165168134982652
+    second: Priest_Petrifed-Sheet_13
+  - first:
+      213: -6089403375518550047
+    second: Priest_Petrifed-Sheet_14
+  - first:
+      213: -9130227890438938386
+    second: Priest_Petrifed-Sheet_15
+  - first:
+      213: -5593404354322548221
+    second: Priest_Petrifed-Sheet_16
+  - first:
+      213: -4950355554756965031
+    second: Priest_Petrifed-Sheet_17
+  - first:
+      213: 7939515302467173714
+    second: Priest_Petrifed-Sheet_18
+  - first:
+      213: 2618547781430003289
+    second: Priest_Petrifed-Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942573118eb3bd550800000000000000
+      internalID: 6186604381030797897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8def5f5538c458b0800000000000000
+      internalID: -5164282741128172145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb66979a364d30700800000000000000
+      internalID: 505481107705783999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc83b6b68e6d43b0800000000000000
+      internalID: -5526639642843837240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb564f6f65f71130800000000000000
+      internalID: 3537565891279870946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c5a47464434cb90800000000000000
+      internalID: -7222590425947022313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a2ec14edd69b760800000000000000
+      internalID: 7474125857952246355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c34ffbc95f8b560800000000000000
+      internalID: 7329878447129640014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f275d5aa2eebe7610800000000000000
+      internalID: 1620942796630087471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4f64c8549d48c00800000000000000
+      internalID: 902084718110373034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1cb182f733e63a0800000000000000
+      internalID: -6670337376862355014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71cdb95d6349efc90800000000000000
+      internalID: -7134101796475380713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b33b92c10019b80800000000000000
+      internalID: -8389924509855827065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb858faf838b8550800000000000000
+      internalID: 6164165168134982652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7f62c94e71e7ba0800000000000000
+      internalID: -6089403375518550047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0e5009b1aea4180800000000000000
+      internalID: -9130227890438938386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a3b77ff5c3062b0800000000000000
+      internalID: -5593404354322548221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d44ded9ddcc4bb0800000000000000
+      internalID: -4950355554756965031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d755c2a13de2e60800000000000000
+      internalID: 7939515302467173714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956c5836553f65420800000000000000
+      internalID: 2618547781430003289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353039499993a407db28221cda2a7dea
+      internalID: 61230530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d1819f7af4d4375a3ec38b9f76fe40
+      internalID: -809038689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0328eec75d71457695667c4e616aecc
+      internalID: 1047026014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240c2e032ec1c4ad3ac882cb87d98910
+      internalID: 323170631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priest_Petrifed-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592747c3efaa6442185c125043c9941c
+      internalID: 1870996622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a8e977faed8484107934958bf7776e82
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":640.0,"y":700.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Priest_Petrifed-Sheet_0: 6186604381030797897
+      Priest_Petrifed-Sheet_1: -5164282741128172145
+      Priest_Petrifed-Sheet_10: -6670337376862355014
+      Priest_Petrifed-Sheet_11: -7134101796475380713
+      Priest_Petrifed-Sheet_12: -8389924509855827065
+      Priest_Petrifed-Sheet_13: 6164165168134982652
+      Priest_Petrifed-Sheet_14: -6089403375518550047
+      Priest_Petrifed-Sheet_15: -9130227890438938386
+      Priest_Petrifed-Sheet_16: -5593404354322548221
+      Priest_Petrifed-Sheet_17: -4950355554756965031
+      Priest_Petrifed-Sheet_18: 7939515302467173714
+      Priest_Petrifed-Sheet_19: 2618547781430003289
+      Priest_Petrifed-Sheet_2: 505481107705783999
+      Priest_Petrifed-Sheet_20: 61230530
+      Priest_Petrifed-Sheet_21: -809038689
+      Priest_Petrifed-Sheet_22: 1047026014
+      Priest_Petrifed-Sheet_23: 323170631
+      Priest_Petrifed-Sheet_24: 1870996622
+      Priest_Petrifed-Sheet_3: -5526639642843837240
+      Priest_Petrifed-Sheet_4: 3537565891279870946
+      Priest_Petrifed-Sheet_5: -7222590425947022313
+      Priest_Petrifed-Sheet_6: 7474125857952246355
+      Priest_Petrifed-Sheet_7: 7329878447129640014
+      Priest_Petrifed-Sheet_8: 1620942796630087471
+      Priest_Petrifed-Sheet_9: 902084718110373034
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
