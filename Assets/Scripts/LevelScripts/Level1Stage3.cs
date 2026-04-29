@@ -23,6 +23,10 @@ public class Level1Stage3 : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        //SceneManager.LoadScene("Level1Stage3", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Level1Stage3", LoadSceneMode.Single);
+    }
+    public void ReloadLevel()
+    {
+        SceneManager.LoadScene("Level1Stage3", LoadSceneMode.Single);
     }
 }

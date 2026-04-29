@@ -22,11 +22,12 @@ public class NunManager : MonoBehaviour
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         }
         dialogue = accused1.name + " and " + accused2.name + " could be ghosts";
+        Speak();
     }
     
     public void OnMouseUpAsButton()
     {
-        Speak();
+        gameObject.GetComponent<CharacterDialogue>().Petrify();
     }
     public void Speak()
     {
