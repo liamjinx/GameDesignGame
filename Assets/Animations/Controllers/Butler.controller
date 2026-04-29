@@ -42,7 +42,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Nun_Idle
+  m_Name: Butler_Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -57,7 +57,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 10e6e696c2bc84b79a908e697df96f81, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0812ccda70ad841d9962ea4ed0a40b8e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -120,7 +120,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Nun_Petrified
+  m_Name: Butler_Petrified
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -133,7 +133,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 947d3cbf548b6471d873e039fe274f3e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 05c81984750c24dcc82e4889898651ce, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -174,7 +174,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Nun_GhostReveal
+  m_Name: Butler_GhostReveal
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -187,7 +187,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c4e33ee1e5fef4ac19fa9437f5b38b07, type: 2}
+  m_Motion: {fileID: 7400000, guid: 807d260b3f6aa4780827da6bdeed2e26, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
