@@ -4968,6 +4968,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 4274726583551763742, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -300787186, guid: 9ed10292c2b9f407b8789b33eb91a71f, type: 3}
     - target: {fileID: 5733802941755400500, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
       propertyPath: m_Name
       value: Knight
