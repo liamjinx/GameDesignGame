@@ -23,7 +23,7 @@ public class Level2Stage3 : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(3, LoadSceneMode.Single);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
     public void ReloadLevel()
     {
