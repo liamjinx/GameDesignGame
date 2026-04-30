@@ -2422,12 +2422,16 @@ MonoBehaviour:
     them
 
 
-    5. When you are certain, activate **Petrify Mode** and choose the
-    subject you believe to be a ghost.
+    5. Access general information about character behaviour using the
+    notes button
 
 
-    6. If your judgement is correct, the
-    ghost is revealed. If not, an innocent subject is lost. Choose wisely.
+    5. When you are certain, activate **Petrify Mode** and choose
+    the subject you believe to be a ghost.
+
+
+    6. If your judgement is correct,
+    the ghost is revealed. If not, an innocent subject is lost. Choose wisely.
 
 '
   m_isRightToLeft: 0
@@ -2456,8 +2460,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2682,7 +2686,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 25}
   m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &926356329
