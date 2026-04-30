@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level1Stage3 : MonoBehaviour
+public class Level2Stage3 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private GameObject ghost1;
@@ -23,10 +23,10 @@ public class Level1Stage3 : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene("Level1Stage3", LoadSceneMode.Single);
+        SceneManager.LoadScene(3, LoadSceneMode.Single);
     }
     public void ReloadLevel()
     {
-        SceneManager.LoadScene("Level1Stage3", LoadSceneMode.Single);
+        SceneManager.LoadScene(3, LoadSceneMode.Single);
     }
 }
