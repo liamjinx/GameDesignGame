@@ -11,11 +11,6 @@ public class Character_record : MonoBehaviour
     public void ToggleOverlay()
     {
         overlayPanel.SetActive(!overlayPanel.activeSelf);
-
-        if (overlayPanel.activeSelf)
-        {
-            UpdateOverlay();
-        }
     }
 
     void UpdateOverlay()
