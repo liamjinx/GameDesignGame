@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class CharacterDialogue : MonoBehaviour
 {
@@ -22,12 +23,13 @@ public class CharacterDialogue : MonoBehaviour
     private static Image Life3;
 
     private static int lives = 3;
-    private static bool isSetup = false;
     
     [SerializeField] private Sprite FullLife;
    
     private static Sprite noLifeStatic;
     private static Sprite fullLifeStatic;
+    
+    [SerializeField] private bool isTutorial = false;
     
     //end of lives
     
@@ -36,9 +38,6 @@ public class CharacterDialogue : MonoBehaviour
     
     public void Start()
     {
-
-        isSetup = false;
-        lives = 3;
         
         petrifyManager = GetComponentInParent<PetrifyManager>();
         UICanvas = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<Canvas>();
@@ -53,14 +52,11 @@ public class CharacterDialogue : MonoBehaviour
         if (fullLifeStatic == null && FullLife != null)
             fullLifeStatic = FullLife;
         
-        if (!isSetup)
-        {
-            Life1 = GameObject.Find("Life1")?.GetComponent<Image>();
-            Life2 = GameObject.Find("Life2")?.GetComponent<Image>();
-            Life3 = GameObject.Find("Life3")?.GetComponent<Image>();
-
-            isSetup = true;
-        }
+        Life1 = GameObject.Find("Life1")?.GetComponent<Image>();
+        Life2 = GameObject.Find("Life2")?.GetComponent<Image>();
+        Life3 = GameObject.Find("Life3")?.GetComponent<Image>();
+        
+        UpdateHeartsVisual();
         
     }
     public void Petrify()
@@ -89,25 +85,22 @@ public class CharacterDialogue : MonoBehaviour
             else
             {
                 mainText.text = "Oh no!\n You petrified a subject!";
-                //GetComponentInParent<PetrifyAnimation>().playPetrifyAnimation();
-                // placement
+
                 var anim = GetComponentInParent<PetrifyAnimation>();
-
                 if (anim != null)
-
                 {
-
                     anim.playPetrifyAnimation();
+                }
 
-                }
-                // end placement
+                // lose life FIRST
                 LoseLife();
-                
-                if (lives <= 0)
-                {
-                    UICanvas.enabled = false;
-                    lostStage.enabled = true;
-                }
+
+                // show popup
+                UICanvas.enabled = false;
+                lostStage.enabled = true;
+
+                // wait then restart
+                Invoke(nameof(RestartLevel), 1.5f);
             }
             //Destroy(gameObject);
             return;
@@ -124,8 +117,14 @@ public class CharacterDialogue : MonoBehaviour
 
     private void LoseLife()
     {
+        if (SceneManager.GetActiveScene().name == "Tutorial") 
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            return;
+        }
 
         if (lives <= 0) return;
+        if (noLifeStatic == null) return;
 
         lives--;
 
@@ -138,6 +137,31 @@ public class CharacterDialogue : MonoBehaviour
             Life2.sprite = noLifeStatic;
 
         else if (lives == 0 && Life1 != null)
+            Life1.sprite = noLifeStatic;
+    }
+    
+    void RestartLevel()
+    {
+        if (lives <= 0)
+        {
+            lives = 3;
+            SceneManager.LoadScene("Level2Stage1");
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+    
+    void UpdateHeartsVisual()
+    {
+        if (lives <= 2 && Life3 != null)
+            Life3.sprite = noLifeStatic;
+
+        if (lives <= 1 && Life2 != null)
+            Life2.sprite = noLifeStatic;
+
+        if (lives <= 0 && Life1 != null)
             Life1.sprite = noLifeStatic;
     }
     
