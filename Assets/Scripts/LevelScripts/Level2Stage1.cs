@@ -17,8 +17,8 @@ public class Level2Stage1 : MonoBehaviour
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
-        ghost1.tag = "Ghost";
-        ghost2.tag = "Ghost";
+        //ghost1.tag = "Ghost";
+        //ghost2.tag = "Ghost";
     }
 
     public void LoadNextLevel()
