@@ -4,16 +4,16 @@ using TMPro;
 public class Character_record : MonoBehaviour
 {
     public GameObject overlayPanel;
-    public TextMeshProUGUI overlayText; 
-    public CharacterDialogue[] characters;
-   //public Sprite characterSprite;
+    //public TextMeshProUGUI overlayText; 
+    //public CharacterDialogue[] characters;
+    //public Sprite characterSprite;
     
     public void ToggleOverlay()
     {
         overlayPanel.SetActive(!overlayPanel.activeSelf);
     }
 
-    void UpdateOverlay()
+    /*void UpdateOverlay()
     {
         string fullText = "";
 
@@ -26,5 +26,5 @@ public class Character_record : MonoBehaviour
         }
 
         overlayText.text = fullText;
-    }
+    }*/
 }
