@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,6 +11,7 @@ public class CharacterManager : MonoBehaviour
     InputAction neutralAction;
     InputAction susAction;
     public int ghostCount = 0;
+    [SerializeField] private TextMeshProUGUI ghostNumber;
     private void Start()
     {
         safeAction = InputSystem.actions.FindAction("Safe");
@@ -19,6 +21,7 @@ public class CharacterManager : MonoBehaviour
     }
     private void Update()
     {
+        if (ghostNumber != null) { ghostNumber.text = "Ghosts Left: " + ghostCount.ToString(); }
         if (selectedCharacter == null)
         {
             return;
@@ -35,6 +38,7 @@ public class CharacterManager : MonoBehaviour
         {
             selectedCharacter.GetComponent<SpriteRenderer>().color = Color.red;
         }
+        Debug.Log(ghostNumber.name);
     }
 
 }

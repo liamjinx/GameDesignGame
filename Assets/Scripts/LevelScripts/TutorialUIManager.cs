@@ -10,7 +10,7 @@ public class TutorialUIManager : MonoBehaviour
     [SerializeField] private GameObject instructions;
     void Start()
     {
-        
+        ShowInstructions();
     }
 
     // Update is called once per frame
@@ -23,13 +23,13 @@ public class TutorialUIManager : MonoBehaviour
         noteButton.SetActive(!noteButton.activeSelf);
         instructionsButton.SetActive(!instructionsButton.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
-        gameObject.SetActive(!gameObject.activeSelf);
+        instructions.SetActive(!instructions.activeSelf);
     }
     public void HideInstructions()
     {
         noteButton.SetActive(!noteButton.activeSelf);
         instructionsButton.SetActive(!instructionsButton.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
-        gameObject.SetActive(!gameObject.activeSelf);
+        instructions.SetActive(!instructions.activeSelf);
     }
 }

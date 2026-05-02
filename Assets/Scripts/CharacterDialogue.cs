@@ -60,8 +60,6 @@ public class CharacterDialogue : MonoBehaviour
             Life3 = GameObject.Find("Life3")?.GetComponent<Image>();
 
             isSetup = true;
-
-            Debug.Log("Hearts setup ONCE");
         }
         
     }

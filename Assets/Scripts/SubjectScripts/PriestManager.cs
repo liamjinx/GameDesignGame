@@ -23,7 +23,7 @@ public class PriestManager : MonoBehaviour
         }
         int accused3Number = Random.Range(0, max);
         GameObject accused3 = gameObject.transform.parent.GetChild(accused3Number).gameObject;
-        while (accused3Number == accused2Number || accused3Number == accused1Number || accused2.tag == "Ghost")
+        while (accused3Number == accused2Number || accused3Number == accused1Number || accused3.tag == "Ghost")
         {
             accused3Number = Random.Range(0, max);
             accused3 = gameObject.transform.parent.GetChild(accused3Number).gameObject;
