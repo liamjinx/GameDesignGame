@@ -4,8 +4,9 @@ using TMPro;
 public class TimerManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
-    [SerializeField] private float startSeconds = 90f;
+    [SerializeField] private float startSeconds = 120f;
     private float remainingSeconds;
+    private bool countdownStarted;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +16,16 @@ public class TimerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timerText == null || !timerText.gameObject.activeInHierarchy)
+        {
+            return;
+        }
+
+        if (!countdownStarted)
+        {
+            countdownStarted = true;
+        }
+
         if (remainingSeconds > 0f)
         {
             remainingSeconds -= Time.deltaTime;
@@ -24,10 +35,7 @@ public class TimerManager : MonoBehaviour
             }
         }
 
-        if (timerText != null)
-        {
-            timerText.text = remainingSeconds.ToString("F0") + " Seconds";
-        }
+        timerText.text = remainingSeconds.ToString("F0") + " Seconds";
         
     }
 }
