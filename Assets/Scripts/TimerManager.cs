@@ -1,12 +1,20 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class TimerManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI timerTitleText;
+
+    [SerializeField] private TextMeshProUGUI timerExplanationText;
+    [SerializeField] private TextMeshProUGUI timerRetryText;
+
     [SerializeField] private float startSeconds = 120f;
+    [SerializeField] private Level3Stage1 level3Stage1;
     private float remainingSeconds;
     private bool countdownStarted;
+    private bool timerEnded;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +44,40 @@ public class TimerManager : MonoBehaviour
         }
 
         timerText.text = remainingSeconds.ToString("F0") + " Seconds";
+
+        if (!timerEnded && remainingSeconds <= 0f)
+        {
+            timerEnd();
+        }
         
+    }
+
+    void timerEnd()
+    {
+        timerEnded = true;
+
+        if (level3Stage1 != null)
+        {
+            level3Stage1.ShowTimerExplanation();
+        }
+
+        if (timerExplanationText != null)
+        {
+            timerTitleText.text = "Game Over";
+            timerExplanationText.text = "Time's up! The ghosts have taken over the castle!";
+            timerRetryText.text = "Try Again?";
+        }
+
+         
+    }
+
+    public void RetryLevel()
+    {
+        if (!timerEnded)
+        {
+            return;
+        }
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

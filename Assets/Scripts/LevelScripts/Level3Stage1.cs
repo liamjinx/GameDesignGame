@@ -6,6 +6,7 @@ public class Level3Stage1 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private GameObject ghost1;
     private GameObject ghost2;
+    private static bool hasShownStartExplanation;
 
     [SerializeField] private GameObject noteButton;
     [SerializeField] private GameObject ghostCount;
@@ -29,17 +30,22 @@ public class Level3Stage1 : MonoBehaviour
 
     void Start()
     {
-        ShowTimerExplanation();
+        if (!hasShownStartExplanation)
+        {
+            ShowTimerExplanation();
+            hasShownStartExplanation = true;
+        }
+        else
+        {
+            HideTimerExplanation();
+        }
     }
 
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(3, LoadSceneMode.Single);
     }
-    public void ReloadLevel()
-    {
-        SceneManager.LoadScene(3, LoadSceneMode.Single);
-    }
+    
 
     public void ShowTimerExplanation()
     {

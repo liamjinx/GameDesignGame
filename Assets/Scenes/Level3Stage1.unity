@@ -4270,7 +4270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimerManager
   timerText: {fileID: 133295343}
-  startSeconds: 120
+  timerExplanationText: {fileID: 1040355431}
+  startSeconds: 5
+  level3Stage1: {fileID: 1710691328}
 --- !u!114 &1710691328
 MonoBehaviour:
   m_ObjectHideFlags: 0
