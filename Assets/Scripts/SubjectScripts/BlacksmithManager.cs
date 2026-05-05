@@ -9,6 +9,7 @@ public class BlacksmithManager : MonoBehaviour
         int currentPos = transform.GetSiblingIndex();
         int max = transform.parent.childCount - 1;
         int beforePos; int afterPos; int distance = 0;
+        string spaceD = "space";
         if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
         else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
@@ -28,8 +29,9 @@ public class BlacksmithManager : MonoBehaviour
             else { --beforePos; }
             if (afterPos == max) { afterPos = 0; }
             else { ++afterPos; }
+            spaceD = "spaces";
         }
-        dialogue = "I am " + distance + " spaces away from a lying subject";
+        dialogue = "I am " + distance + " " + spaceD + " away from a lying subject";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
 
