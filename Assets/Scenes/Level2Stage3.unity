@@ -1451,12 +1451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character_record
   overlayPanel: {fileID: 780632345}
-  overlayText: {fileID: 474082465}
-  characters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &780632348
 MonoBehaviour:
   m_ObjectHideFlags: 0

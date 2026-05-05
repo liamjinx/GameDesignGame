@@ -38,7 +38,6 @@ public class CharacterManager : MonoBehaviour
         {
             selectedCharacter.GetComponent<SpriteRenderer>().color = Color.red;
         }
-        Debug.Log(ghostNumber.name);
     }
 
 }
