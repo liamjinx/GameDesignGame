@@ -18,13 +18,13 @@ public class NunManager : MonoBehaviour
         accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         if (gameObject.tag != "Untagged") { SpeakLies(); }
         else { SpeakTruth(); Debug.Log(gameObject.tag); }
-        dialogue = accused1.name + " and " + accused2.name + " could be ghosts";
-        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
         while ((accused2.tag == "Ghost" && gameObject.tag != "Untagged") || accused2Number == accused1Number || accused2 == gameObject)
         {
             accused2Number = Random.Range(0, max);
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         }
+        dialogue = accused1.name + " and " + accused2.name + " could be ghosts";
+        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
     
     public void OnMouseUpAsButton()
@@ -33,7 +33,7 @@ public class NunManager : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        while (accused1.tag == "Untagged")
+        while (accused1.tag != "Ghost")
         {
             accused1Number = Random.Range(0, max);
             accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
@@ -41,7 +41,6 @@ public class NunManager : MonoBehaviour
     }
     public void SpeakLies()
     {
-        Debug.Log(gameObject.tag);
         while (accused1.tag == "Ghost")
         {
             accused1Number = Random.Range(0, max);

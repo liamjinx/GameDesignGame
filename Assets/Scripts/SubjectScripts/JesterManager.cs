@@ -4,27 +4,38 @@ public class JesterManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
+    private int max;
+    private int accusedNumber;
+    private GameObject accused;
     void Start()
     {
-        int max = transform.parent.childCount - 1;
-        int accusedNumber = Random.Range(0, max);
-        GameObject accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        while (accused.CompareTag(gameObject.tag))
-        {
-            accusedNumber = Random.Range(0, max);
-            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        } 
+        max = transform.parent.childCount - 1;
+        accusedNumber = Random.Range(0, max);
+        accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
+        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        else { SpeakTruth(); Debug.Log(gameObject.tag); }
         dialogue = "Either I am the ghost or " + accused.name + " is the ghost";
-        Speak();
+        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
-    
+
     public void OnMouseUpAsButton()
     {
         gameObject.GetComponent<CharacterDialogue>().Petrify();
     }
-
-    public void Speak()
+    public void SpeakTruth()
     {
-        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
+        while (accused.tag != "Ghost")
+        {
+            accusedNumber = Random.Range(0, max);
+            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
+        }
+    }
+    public void SpeakLies()
+    {
+        while (accused.tag == "Ghost")
+        {
+            accusedNumber = Random.Range(0, max);
+            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
+        }
     }
 }
