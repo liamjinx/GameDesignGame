@@ -14,7 +14,7 @@ public class ManservantManager : MonoBehaviour
             accusedNumber = Random.Range(0, max);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
         }
-        dialogue = accused.name + " is telling the truth";
+        dialogue = accused.name + " is a subject";
         Speak();
     }
     public void OnMouseUpAsButton()

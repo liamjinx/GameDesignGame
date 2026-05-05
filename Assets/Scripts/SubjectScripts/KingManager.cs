@@ -16,13 +16,13 @@ public class KingManager : MonoBehaviour
         string after = transform.parent.GetChild(afterPos).gameObject.tag;
         if (gameObject.tag == "Ghost")
         {
-            if (before != "Ghost" && after != "Ghost") { dialogue = "I am not next to at any safe characters"; }
-            else { dialogue = "I am next to at least one safe character"; }
+            if (before != "Ghost" && after != "Ghost") { dialogue = "I am not next to at any subjects"; }
+            else { dialogue = "I am next to at least one subject"; }
         }
         else
         {
-            if (before != "Ghost" || after != "Ghost") { dialogue = "I am next to at least one safe character"; }
-            else { dialogue = "I am not next to at any safe characters"; }
+            if (before != "Ghost" || after != "Ghost") { dialogue = "I am next to at least one subject"; }
+            else { dialogue = "I am not next to at any subjects"; }
         }
         Speak();
     }

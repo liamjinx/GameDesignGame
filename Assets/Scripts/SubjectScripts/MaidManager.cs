@@ -15,7 +15,7 @@ public class MaidManager : MonoBehaviour
             accusedNumber = Random.Range(0, max);
             accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
         }
-        dialogue = accused.name + " is lying";
+        dialogue = accused.name + " is a ghost";
         Speak();
     }
     
