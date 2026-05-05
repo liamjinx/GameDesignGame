@@ -3884,6 +3884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Queen
       objectReference: {fileID: 0}
+    - target: {fileID: 1657075833103104306, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1658930867074964309, guid: 7b1e0dcd23e44444f835317c48590263, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1

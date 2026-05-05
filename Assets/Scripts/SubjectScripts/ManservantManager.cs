@@ -13,7 +13,7 @@ public class ManservantManager : MonoBehaviour
         accusedNumber = Random.Range(0, max);
         accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
         if (gameObject.tag != "Untagged") { SpeakLies(); }
-        else { SpeakTruth(); Debug.Log(gameObject.tag); }
+        else { SpeakTruth(); }
         dialogue = accused.name + " is a subject";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }

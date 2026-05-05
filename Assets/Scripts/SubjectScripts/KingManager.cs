@@ -14,7 +14,7 @@ public class KingManager : MonoBehaviour
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         string before = transform.parent.GetChild(beforePos).gameObject.tag;
         string after = transform.parent.GetChild(afterPos).gameObject.tag;
-        if (gameObject.tag == "Ghost")
+        if (gameObject.tag != "Untagged")
         {
             if (before != "Ghost" && after != "Ghost") { dialogue = "I am not next to at any subjects"; }
             else { dialogue = "I am next to at least one subject"; }

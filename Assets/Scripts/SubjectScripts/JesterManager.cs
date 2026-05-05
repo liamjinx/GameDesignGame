@@ -13,7 +13,7 @@ public class JesterManager : MonoBehaviour
         accusedNumber = Random.Range(0, max);
         accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
         if (gameObject.tag != "Untagged") { SpeakLies(); }
-        else { SpeakTruth(); Debug.Log(gameObject.tag); }
+        else { SpeakTruth(); }
         dialogue = "Either I am the ghost or " + accused.name + " is the ghost";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
