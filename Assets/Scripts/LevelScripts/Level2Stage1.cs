@@ -40,7 +40,7 @@ public class Level2Stage1 : MonoBehaviour
     {
         int affected = Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
-        while (affectedSubject.tag == "Ghost")
+        while (affectedSubject.tag != "Untagged")
         {
             affected = Random.Range(0, max);
             affectedSubject = transform.GetChild(affected).gameObject;
