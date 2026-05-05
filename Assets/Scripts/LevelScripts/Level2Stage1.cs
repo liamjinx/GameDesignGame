@@ -1,16 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+
 
 public class Level2Stage1 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private GameObject ghost1;
     private GameObject ghost2;
-    public GameObject[] characters;
-    public GameObject[] subjects;
-    public GameObject[] ghosts;
-    public GameObject[] honest;
-    public GameObject[] lying;
+    public List<GameObject> subjects = new List<GameObject>();
+    public List<GameObject> ghosts = new List<GameObject>();
+    public List<GameObject> honest = new List<GameObject>();
+    public List<GameObject> lying = new List<GameObject>();
     void Awake()
     {
         int max = transform.childCount - 1;
@@ -24,11 +25,13 @@ public class Level2Stage1 : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        for (int i = 0; i < max; ++i)
+        for (int i = 0; i <= max; ++i)
         {
-            Debug.Log(transform.GetChild(i));
-            string tag = transform.GetChild(i).tag; ;
-            if (tag == "Untagged") { }
+            GameObject character = transform.GetChild(i).gameObject;
+            if (character.tag == "Ghost") { ghosts.Add(character); }
+            else { subjects.Add(character); }
+            if (character.tag == "Untagged") { honest.Add(character); }
+            else { lying.Add(character); }
         }
     }
 
