@@ -18,7 +18,7 @@ public class NunManager : MonoBehaviour
         accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         if (gameObject.tag != "Untagged") { SpeakLies(); }
         else { SpeakTruth(); }
-        while ((accused2.tag == "Ghost" && gameObject.tag != "Untagged") || accused2Number == accused1Number || accused2 == gameObject)
+        while ((accused2.tag == "Ghost" && gameObject.tag != "Untagged") || accused2Number == accused1Number)
         {
             accused2Number = Random.Range(0, max);
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
