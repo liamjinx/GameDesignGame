@@ -15,7 +15,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 66
+    y: 67
     width: 1512
     height: 916
   m_ShowMode: 4
@@ -1115,9 +1115,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 413.26123, y: 581.6591, z: -5.976801}
+    m_Target: {x: 264.90164, y: 500.4709, z: -4.3980093}
     speed: 2
-    m_Value: {x: 413.26123, y: 581.6591, z: -5.976801}
+    m_Value: {x: 264.90164, y: 500.4709, z: -4.3980093}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1168,9 +1168,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 709.48346
+    m_Target: 489.47488
     speed: 2
-    m_Value: 709.48346
+    m_Value: 489.47488
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1257,7 +1257,7 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 09000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 08000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
@@ -1418,7 +1418,8 @@ MonoBehaviour:
       m_Data: 43042
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 44260
+    - m_Data: 44890
+    - m_Data: 44892
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1452,7 +1453,8 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 44260
+    - m_Data: 44890
+    - m_Data: 44892
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

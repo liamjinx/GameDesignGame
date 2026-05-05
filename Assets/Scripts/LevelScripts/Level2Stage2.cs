@@ -21,12 +21,27 @@ public class Level2Stage2 : MonoBehaviour
         ghost2.tag = "Ghost";
     }
 
+    public void PlayAgain()
+    {
+        CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
+
+        if (cd != null && cd.IsGameOver())
+        {
+            cd.ResetLives();
+            SceneManager.LoadScene(5); // back to stage 1
+        }
+        else
+        {
+            SceneManager.LoadScene(6); // retry stage 2
+        }
+    }
+    
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(3, LoadSceneMode.Single);
+        SceneManager.LoadScene(7, LoadSceneMode.Single);
     }
     public void ReloadLevel()
     {
-        SceneManager.LoadScene(2, LoadSceneMode.Single);
+        SceneManager.LoadScene(6, LoadSceneMode.Single);
     }
 }
