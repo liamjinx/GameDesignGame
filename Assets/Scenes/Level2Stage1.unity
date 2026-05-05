@@ -3604,6 +3604,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d644f231a9a2546911dad0e7894249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Level1Stage1
+  subjects: []
+  ghosts: []
+  honest: []
+  lying: []
 --- !u!1 &1731352862
 GameObject:
   m_ObjectHideFlags: 0
@@ -4821,6 +4825,10 @@ PrefabInstance:
     - target: {fileID: 5733802941755400500, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
       propertyPath: m_Name
       value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733802941755400500, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8636569078514583640, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
       propertyPath: m_Color.a

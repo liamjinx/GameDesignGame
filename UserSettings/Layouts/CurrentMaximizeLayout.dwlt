@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 868
+  controlID: 227
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 823
+  controlID: 258
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -227,11 +227,6 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -4766
-      - m_Data: -4208
-      - m_Data: -3652
-      - m_Data: -2858
-      - m_Data: -2438
       - m_Data: -1382
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -334,7 +329,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -344,7 +339,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\UTS 2026\Semester 1\Game Design Methodology\GameDesignGame
   m_LockTracker:
@@ -353,9 +348,9 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 44014
+    - m_Data: 44016
     m_LastClickedID:
-      m_Data: 44014
+      m_Data: 44016
     m_ExpandedIDs:
     - m_Data: 0
     - m_Data: 43910
@@ -422,10 +417,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: 44058
+    m_SelectedInstanceIDs: []
     m_LastClickedEntityId:
-      m_Data: 44058
+      m_Data: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_Data: 43508
@@ -485,7 +479,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 869
+  controlID: 304
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -1333,7 +1327,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectEntityId:
-    m_Data: 44058
+    m_Data: 0
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0

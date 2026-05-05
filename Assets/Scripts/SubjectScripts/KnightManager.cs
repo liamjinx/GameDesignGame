@@ -18,12 +18,7 @@ public class KnightManager : MonoBehaviour
         accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         if (gameObject.tag != "Untagged") { SpeakLies(); }
         else { SpeakTruth(); }
-        while (accused2Number == accused1Number || accused2.tag == "Ghost")
-        {
-            accused2Number = Random.Range(0, max);
-            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        }
-        dialogue = "If " + accused1.name + " is not a ghost, then the " + accused2.name + " is a ghost";
+        dialogue = accused2.name + " is a ghost if and only if " + accused1.name + " is a subject";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
 
@@ -33,16 +28,16 @@ public class KnightManager : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        if (accused1.tag == "Ghost") { return; }
+        if (accused1.tag == "Ghost") { SpeakLies() ; return; }
         while (accused2.tag != "Ghost")
         {
-            accused1Number = Random.Range(0, max);
-            accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
+            accused2Number = Random.Range(0, max);
+            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         }
     }
     public void SpeakLies()
     {
-        while (accused2.tag == "Ghost")
+        while (accused2.tag == "Ghost" || accused2Number == accused1Number)
         {
             accused2Number = Random.Range(0, max);
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
