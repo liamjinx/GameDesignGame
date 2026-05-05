@@ -26,8 +26,15 @@ public class Level1Stage3 : MonoBehaviour
         ghost2.tag = "Ghost";
     }
 
+    private bool isLoading = false;
     public void PlayAgain()
     {
+        if (isLoading) return; // prevents double click
+
+        isLoading = true;
+
+        Debug.Log("PlayAgain clicked");
+        
         CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())

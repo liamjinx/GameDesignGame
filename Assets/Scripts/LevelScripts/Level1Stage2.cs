@@ -14,9 +14,15 @@ public class Level1Stage2 : MonoBehaviour
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost1.tag = "Ghost";
     }
-
+    private bool isLoading = false;
     public void PlayAgain()
     {
+        if (isLoading) return; // prevents double click
+
+        isLoading = true;
+
+        Debug.Log("PlayAgain clicked");
+        
         CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())
