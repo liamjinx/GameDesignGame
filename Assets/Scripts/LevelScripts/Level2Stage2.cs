@@ -35,6 +35,7 @@ public class Level2Stage2 : MonoBehaviour
     }
     private void ActivateNuckelavee()
     {
+        ghost1.name = "Nuckelavee";
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
@@ -49,7 +50,6 @@ public class Level2Stage2 : MonoBehaviour
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
     }
-    
     private bool isLoading = false;
     public void PlayAgain()
     {
@@ -74,10 +74,10 @@ public class Level2Stage2 : MonoBehaviour
     
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(7, LoadSceneMode.Single);
+        SceneManager.LoadScene(7, LoadSceneMode.Single); //load stage 3
     }
-    public void ReloadLevel()
+    public void LoadMenu()
     {
-        SceneManager.LoadScene(6, LoadSceneMode.Single);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }

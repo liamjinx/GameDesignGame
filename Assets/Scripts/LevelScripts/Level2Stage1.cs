@@ -36,6 +36,7 @@ public class Level2Stage1 : MonoBehaviour
     }
     private void ActivateWraith()
     {
+        ghost1.name = "Wraith";
         int affected = Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
         while (affectedSubject.tag != "Untagged")
@@ -45,7 +46,6 @@ public class Level2Stage1 : MonoBehaviour
         }
         affectedSubject.tag = "Lying";
     }
-
     private bool isLoading = false;
     public void PlayAgain()
     {
@@ -70,10 +70,10 @@ public class Level2Stage1 : MonoBehaviour
     
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(6, LoadSceneMode.Single);
+        SceneManager.LoadScene(6, LoadSceneMode.Single); //load stage 2
     }
-    public void ReloadLevel()
+    public void LoadMenu()
     {
-        SceneManager.LoadScene(5, LoadSceneMode.Single);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }
