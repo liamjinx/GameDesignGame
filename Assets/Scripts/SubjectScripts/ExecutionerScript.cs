@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class KnightManager : MonoBehaviour
+public class ExecutionerScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
@@ -18,7 +18,7 @@ public class KnightManager : MonoBehaviour
         accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
         if (gameObject.tag != "Untagged") { SpeakLies(); }
         else { SpeakTruth(); }
-        dialogue = accused2.name + " is a ghost if and only if " + accused1.name + " is a subject";
+        dialogue = accused2.name + " is a subject if and only if " + accused1.name + " is a subject";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
 
@@ -28,8 +28,8 @@ public class KnightManager : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        if (accused1.tag == "Ghost") { SpeakLies() ; return; }
-        while (accused2.tag != "Ghost")
+        if (accused1.tag == "Ghost") { SpeakLies(); return; }
+        while (accused2.tag == "Ghost")
         {
             accused2Number = Random.Range(0, max);
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
@@ -37,7 +37,7 @@ public class KnightManager : MonoBehaviour
     }
     public void SpeakLies()
     {
-        while (accused2.tag == "Ghost" || accused2Number == accused1Number)
+        while (accused2.tag != "Ghost" || accused2Number == accused1Number)
         {
             accused2Number = Random.Range(0, max);
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;

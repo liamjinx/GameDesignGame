@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class KingManager : MonoBehaviour
+public class AlchemistManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string dialogue;
@@ -16,22 +16,19 @@ public class KingManager : MonoBehaviour
         string after = transform.parent.GetChild(afterPos).gameObject.tag;
         if (gameObject.tag != "Untagged")
         {
-            if (before != "Ghost" && after != "Ghost") { dialogue = "I am not next to at any subjects"; }
-            else { dialogue = "I am next to at least one subject"; }
+            if (before == "Ghost" || after == "Ghost") { dialogue = "I am next to at least one lying subject"; }
+            else { dialogue = "I am next to no lying subjects"; }
         }
         else
         {
-            if (before != "Ghost" || after != "Ghost") { dialogue = "I am next to at least one subject"; }
-            else { dialogue = "I am not next to at any subjects"; }
+            if (before == "Lying" || after == "Lying") { dialogue = "I am next to at least one lying subject"; }
+            else { dialogue = "I am next to no lying subjects"; }
         }
-        Speak();
+        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
+
     public void OnMouseUpAsButton()
     {
         gameObject.GetComponent<CharacterDialogue>().Petrify();
-    }
-    public void Speak()
-    {
-        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
 }

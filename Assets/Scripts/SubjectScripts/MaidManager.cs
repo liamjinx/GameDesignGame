@@ -2,29 +2,40 @@ using UnityEngine;
 
 public class MaidManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start is called once before the first execution of Update after the MonoBehaviour is created    
     private string dialogue;
-    
+    private int max;
+    private int accusedNumber;
+    private GameObject accused;
     void Start()
     {
-        int max = transform.parent.childCount - 1;
-        int accusedNumber = Random.Range(0, max);
-        GameObject accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        while (accused.CompareTag(gameObject.tag))
-        {
-            accusedNumber = Random.Range(0, max);
-            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        }
-        dialogue = accused.name + " is lying";
-        Speak();
+        max = transform.parent.childCount - 1;
+        accusedNumber = Random.Range(0, max);
+        accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
+        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        else { SpeakTruth(); }
+        dialogue = accused.name + " is a ghost";
+        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
-    
+
     public void OnMouseUpAsButton()
     {
         gameObject.GetComponent<CharacterDialogue>().Petrify();
     }
-    public void Speak()
+    public void SpeakTruth()
     {
-        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
+        while (accused.tag != "Ghost")
+        {
+            accusedNumber = Random.Range(0, max);
+            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
+        }
+    }
+    public void SpeakLies()
+    {
+        while (accused.tag == "Ghost")
+        {
+            accusedNumber = Random.Range(0, max);
+            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
+        }
     }
 }

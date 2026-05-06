@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,6 +13,10 @@ public class CharacterManager : MonoBehaviour
     InputAction susAction;
     public int ghostCount = 0;
     [SerializeField] private TextMeshProUGUI ghostNumber;
+    public List<GameObject> subjects = new List<GameObject>();
+    public List<GameObject> ghosts = new List<GameObject>();
+    public List<GameObject> honest = new List<GameObject>();
+    public List<GameObject> lying = new List<GameObject>();
     private void Start()
     {
         safeAction = InputSystem.actions.FindAction("Safe");
@@ -38,7 +43,6 @@ public class CharacterManager : MonoBehaviour
         {
             selectedCharacter.GetComponent<SpriteRenderer>().color = Color.red;
         }
-        Debug.Log(ghostNumber.name);
     }
 
 }
