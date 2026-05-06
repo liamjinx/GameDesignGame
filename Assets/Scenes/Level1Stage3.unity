@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1710691326}
+      - m_Target: {fileID: 1710691327}
         m_TargetAssemblyTypeName: Level1Stage3, Assembly-CSharp
         m_MethodName: LoadNextLevel
         m_Mode: 1
@@ -1563,7 +1563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3858000976393032114, guid: 45919525e7326f745a6e6282628848d5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 3858000976393032114, guid: 45919525e7326f745a6e6282628848d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1694,7 +1694,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1710691326}
+      - m_Target: {fileID: 1710691327}
         m_TargetAssemblyTypeName: Level1Stage3, Assembly-CSharp
         m_MethodName: PlayAgain
         m_Mode: 1
@@ -3907,7 +3907,7 @@ GameObject:
   - component: {fileID: 1710691323}
   - component: {fileID: 1710691324}
   - component: {fileID: 1710691325}
-  - component: {fileID: 1710691326}
+  - component: {fileID: 1710691327}
   m_Layer: 0
   m_Name: CharacterManager
   m_TagString: Untagged
@@ -3930,10 +3930,10 @@ Transform:
   m_Children:
   - {fileID: 407783445}
   - {fileID: 792367449}
+  - {fileID: 1602738142}
   - {fileID: 857581241}
   - {fileID: 6779731327222467124}
   - {fileID: 1461080390}
-  - {fileID: 1602738142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1710691324
@@ -3966,7 +3966,11 @@ MonoBehaviour:
   selectedCharacter: {fileID: 0}
   ghostCount: 0
   ghostNumber: {fileID: 1137262929}
---- !u!114 &1710691326
+  subjects: []
+  ghosts: []
+  honest: []
+  lying: []
+--- !u!114 &1710691327
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3975,7 +3979,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1710691322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff19770f45de44209a1d51488a15b56, type: 3}
+  m_Script: {fileID: 11500000, guid: f98c3a68be9b44b429c12fb118723fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Level1Stage3
 --- !u!1 &1731352862
@@ -4777,6 +4781,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1710691323}
     m_Modifications:
+    - target: {fileID: 1920134125009198220, guid: a49753e4c91a03947872527dbb399c41, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1942920050185137563, guid: a49753e4c91a03947872527dbb399c41, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4965,6 +4973,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3646716469330393915, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7409741206489112084, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44fbaa02-0a15-4d34-a1c7-fabb5dfe4d99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDesignGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDesignGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Stage1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Stage1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Stage2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Stage2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Stage3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Stage3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterDialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterDialogue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage3.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +38,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Zahlia-22/04",
+    "git-widget-placeholder": "Zahlia__Level3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,6 +114,7 @@
       <workItem from="1777033801786" duration="24000" />
       <workItem from="1777202099174" duration="2069000" />
       <workItem from="1777771485192" duration="877000" />
+      <workItem from="1778078951304" duration="1953000" />
     </task>
     <servers />
   </component>
