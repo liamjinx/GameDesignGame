@@ -1,0 +1,639 @@
+fileFormatVersion: 2
+guid: bc70548e1905b45ef84ed4cf81dc3fe1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4909510935557505270
+    second: Jester_GhostReveal-Sheet_0
+  - first:
+      213: 3091771752106803251
+    second: Jester_GhostReveal-Sheet_1
+  - first:
+      213: 8194373798621274465
+    second: Jester_GhostReveal-Sheet_2
+  - first:
+      213: 8057138590979999447
+    second: Jester_GhostReveal-Sheet_3
+  - first:
+      213: 3160721810803278145
+    second: Jester_GhostReveal-Sheet_4
+  - first:
+      213: -3328919239154953623
+    second: Jester_GhostReveal-Sheet_5
+  - first:
+      213: -7781730351692348223
+    second: Jester_GhostReveal-Sheet_6
+  - first:
+      213: 6952782693348385925
+    second: Jester_GhostReveal-Sheet_7
+  - first:
+      213: 8380365861441557979
+    second: Jester_GhostReveal-Sheet_8
+  - first:
+      213: 5468626193211695557
+    second: Jester_GhostReveal-Sheet_9
+  - first:
+      213: -1506605917690932662
+    second: Jester_GhostReveal-Sheet_10
+  - first:
+      213: -2735102843028475466
+    second: Jester_GhostReveal-Sheet_11
+  - first:
+      213: 5736263037281460516
+    second: Jester_GhostReveal-Sheet_12
+  - first:
+      213: 7505514599946430688
+    second: Jester_GhostReveal-Sheet_13
+  - first:
+      213: -6356691632819462835
+    second: Jester_GhostReveal-Sheet_14
+  - first:
+      213: -2673206785216891799
+    second: Jester_GhostReveal-Sheet_15
+  - first:
+      213: 4855432114469042437
+    second: Jester_GhostReveal-Sheet_16
+  - first:
+      213: -8172501930467366632
+    second: Jester_GhostReveal-Sheet_17
+  - first:
+      213: -4195111412461500700
+    second: Jester_GhostReveal-Sheet_18
+  - first:
+      213: 4866145336815735960
+    second: Jester_GhostReveal-Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ff239d0d9eddbb0800000000000000
+      internalID: -4909510935557505270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2700
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330c9e2170e28ea20800000000000000
+      internalID: 3091771752106803251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2700
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161e69fdd8348b170800000000000000
+      internalID: 8194373798621274465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2700
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d644752cd4b0df60800000000000000
+      internalID: 8057138590979999447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2700
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14142ce9db32ddb20800000000000000
+      internalID: 3160721810803278145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9629430e69d4dc1d0800000000000000
+      internalID: -3328919239154953623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1800
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c48089797db10490800000000000000
+      internalID: -7781730351692348223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1800
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584a38da50f3d7060800000000000000
+      internalID: 6952782693348385925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1800
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5d803995a0d4470800000000000000
+      internalID: 8380365861441557979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1800
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1a7c77c8674eb40800000000000000
+      internalID: 5468626193211695557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42d78376e5771be0800000000000000
+      internalID: -1506605917690932662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 900
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b170299476fa0ad0800000000000000
+      internalID: -2735102843028475466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 900
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4216d5327dc4b9f40800000000000000
+      internalID: 5736263037281460516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 900
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8a05243c1f82860800000000000000
+      internalID: 7505514599946430688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 900
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d191f93ae78c7a0800000000000000
+      internalID: -6356691632819462835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964bbf3979cd6ead0800000000000000
+      internalID: -2673206785216891799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50973fd68c5f16340800000000000000
+      internalID: 4855432114469042437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8196c444bc0759e80800000000000000
+      internalID: -8172501930467366632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e68b03a568f7c5c0800000000000000
+      internalID: -4195111412461500700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_GhostReveal-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 900
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8945352e665088340800000000000000
+      internalID: 4866145336815735960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2a6f6a9d24f7444c58d6747353d469d4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":4.0},"gridSpriteSize":{"x":640.0,"y":900.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Jester_GhostReveal-Sheet_0: -4909510935557505270
+      Jester_GhostReveal-Sheet_1: 3091771752106803251
+      Jester_GhostReveal-Sheet_10: -1506605917690932662
+      Jester_GhostReveal-Sheet_11: -2735102843028475466
+      Jester_GhostReveal-Sheet_12: 5736263037281460516
+      Jester_GhostReveal-Sheet_13: 7505514599946430688
+      Jester_GhostReveal-Sheet_14: -6356691632819462835
+      Jester_GhostReveal-Sheet_15: -2673206785216891799
+      Jester_GhostReveal-Sheet_16: 4855432114469042437
+      Jester_GhostReveal-Sheet_17: -8172501930467366632
+      Jester_GhostReveal-Sheet_18: -4195111412461500700
+      Jester_GhostReveal-Sheet_19: 4866145336815735960
+      Jester_GhostReveal-Sheet_2: 8194373798621274465
+      Jester_GhostReveal-Sheet_3: 8057138590979999447
+      Jester_GhostReveal-Sheet_4: 3160721810803278145
+      Jester_GhostReveal-Sheet_5: -3328919239154953623
+      Jester_GhostReveal-Sheet_6: -7781730351692348223
+      Jester_GhostReveal-Sheet_7: 6952782693348385925
+      Jester_GhostReveal-Sheet_8: 8380365861441557979
+      Jester_GhostReveal-Sheet_9: 5468626193211695557
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 6bf5306f9f8044b278cfd1881ec1f0bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9095469572091473449
+    second: Jester_Petrified-Sheet_0
+  - first:
+      213: 5415725067621402578
+    second: Jester_Petrified-Sheet_1
+  - first:
+      213: -7242787389559407061
+    second: Jester_Petrified-Sheet_2
+  - first:
+      213: 7706994449975424007
+    second: Jester_Petrified-Sheet_3
+  - first:
+      213: -3945476674375253288
+    second: Jester_Petrified-Sheet_4
+  - first:
+      213: -917469086467296678
+    second: Jester_Petrified-Sheet_5
+  - first:
+      213: 1301428867317372284
+    second: Jester_Petrified-Sheet_6
+  - first:
+      213: 828656259396660967
+    second: Jester_Petrified-Sheet_7
+  - first:
+      213: -8569192666596842143
+    second: Jester_Petrified-Sheet_8
+  - first:
+      213: 2265984401835581315
+    second: Jester_Petrified-Sheet_9
+  - first:
+      213: -2366187863013095504
+    second: Jester_Petrified-Sheet_10
+  - first:
+      213: 7961584770522208410
+    second: Jester_Petrified-Sheet_11
+  - first:
+      213: -8165713792905267243
+    second: Jester_Petrified-Sheet_12
+  - first:
+      213: -9125142470785553660
+    second: Jester_Petrified-Sheet_13
+  - first:
+      213: 7607803572438940154
+    second: Jester_Petrified-Sheet_14
+  - first:
+      213: -2844480411963936193
+    second: Jester_Petrified-Sheet_15
+  - first:
+      213: 716294593436086135
+    second: Jester_Petrified-Sheet_16
+  - first:
+      213: -4138665525894033523
+    second: Jester_Petrified-Sheet_17
+  - first:
+      213: -4666594648322449097
+    second: Jester_Petrified-Sheet_18
+  - first:
+      213: -7913922913120371525
+    second: Jester_Petrified-Sheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ee2edc269993e70800000000000000
+      internalID: 9095469572091473449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d780c85145882b40800000000000000
+      internalID: 5415725067621402578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ef1ad3e337c7b90800000000000000
+      internalID: -7242787389559407061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70431bc6e9eb4fa60800000000000000
+      internalID: 7706994449975424007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2800
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d206426ed9de39c0800000000000000
+      internalID: -3945476674375253288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52f6b01abe7443f0800000000000000
+      internalID: -917469086467296678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7514e8d8aa9f0210800000000000000
+      internalID: 1301428867317372284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eeed3e3a7aff7b00800000000000000
+      internalID: 828656259396660967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165ec97dbac141980800000000000000
+      internalID: -8569192666596842143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2100
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f5cf9cec4627f10800000000000000
+      internalID: 2265984401835581315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b78349dcac992fd0800000000000000
+      internalID: -2366187863013095504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98d220aa2b3d7e60800000000000000
+      internalID: 7961584770522208410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7bf54b19e8dae80800000000000000
+      internalID: -8165713792905267243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b2ff7154bfc5180800000000000000
+      internalID: -9125142470785553660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1400
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9bb209a09549960800000000000000
+      internalID: 7607803572438940154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f323552d2206688d0800000000000000
+      internalID: -2844480411963936193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f6a4c332ac0f900800000000000000
+      internalID: 716294593436086135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f4eecb1a18096c0800000000000000
+      internalID: -4138665525894033523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731600c54ecec3fb0800000000000000
+      internalID: -4666594648322449097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 700
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcb2af4a091c2290800000000000000
+      internalID: -7913922913120371525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf2c5c58c8db466eb4b683873bc3ad2
+      internalID: 588460833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a6f6501cf8b4981a7879d2390aad6a
+      internalID: 1777033822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0597238c97774cf9993c55699238a42
+      internalID: -1073880438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90815c02b60c0446cb14efccb0286b47
+      internalID: -1453971079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jester_Petrified-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987080a22d920444f97d2dc5cc80d3c3
+      internalID: -419332392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e1713489bc7a24a329c9fb061e286128
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":640.0,"y":700.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Jester_Petrified-Sheet_0: 9095469572091473449
+      Jester_Petrified-Sheet_1: 5415725067621402578
+      Jester_Petrified-Sheet_10: -2366187863013095504
+      Jester_Petrified-Sheet_11: 7961584770522208410
+      Jester_Petrified-Sheet_12: -8165713792905267243
+      Jester_Petrified-Sheet_13: -9125142470785553660
+      Jester_Petrified-Sheet_14: 7607803572438940154
+      Jester_Petrified-Sheet_15: -2844480411963936193
+      Jester_Petrified-Sheet_16: 716294593436086135
+      Jester_Petrified-Sheet_17: -4138665525894033523
+      Jester_Petrified-Sheet_18: -4666594648322449097
+      Jester_Petrified-Sheet_19: -7913922913120371525
+      Jester_Petrified-Sheet_2: -7242787389559407061
+      Jester_Petrified-Sheet_20: 588460833
+      Jester_Petrified-Sheet_21: 1777033822
+      Jester_Petrified-Sheet_22: -1073880438
+      Jester_Petrified-Sheet_23: -1453971079
+      Jester_Petrified-Sheet_24: -419332392
+      Jester_Petrified-Sheet_3: 7706994449975424007
+      Jester_Petrified-Sheet_4: -3945476674375253288
+      Jester_Petrified-Sheet_5: -917469086467296678
+      Jester_Petrified-Sheet_6: 1301428867317372284
+      Jester_Petrified-Sheet_7: 828656259396660967
+      Jester_Petrified-Sheet_8: -8569192666596842143
+      Jester_Petrified-Sheet_9: 2265984401835581315
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
