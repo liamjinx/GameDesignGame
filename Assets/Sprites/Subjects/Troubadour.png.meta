@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b39ff0dbba58748abb361840e525f916
+guid: 35ecdf22489a747d897a8383c46563c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8397927802790465952
-    second: banshee_0
+      213: -4145382667649995897
+    second: Troubadour_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: banshee_0
+      name: Troubadour_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 640
-        height: 800
+        height: 640
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06e2c415821947b80800000000000000
-      internalID: -8397927802790465952
+      spriteID: 78b29ac4d64a876c0800000000000000
+      internalID: -4145382667649995897
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4724b655aa6974dd4b9076936ebdc009
+    spriteID: 3a3d7604584bf4fe5a15d3cafdc5bb55
     internalID: 0
     vertices: []
     indices: 
@@ -135,9 +135,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":800.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      banshee_0: -8397927802790465952
+      Troubadour_0: -4145382667649995897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
