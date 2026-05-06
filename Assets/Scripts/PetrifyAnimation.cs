@@ -13,12 +13,12 @@ public class PetrifyAnimation : MonoBehaviour
 
         if (gameObject.tag == "Ghost")
         {
-            animator.SetTrigger("PetrifyGhost");
+            //animator.SetTrigger("PetrifyGhost");
         }
         
         else
         {
-            animator.SetTrigger("PetrifySubject");
+            //animator.SetTrigger("PetrifySubject");
         }
     }
 }

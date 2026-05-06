@@ -37,7 +37,7 @@ public class ExecutionerScript : MonoBehaviour
     }
     public void SpeakLies()
     {
-        while (accused2.tag != "Ghost" || accused2Number == accused1Number)
+        while (accused2.tag != "Ghost" || accused2.name == accused1.name)
         {
             accused2Number = Random.Range(0, max);
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;

@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
 
-public class Level2Stage3 : MonoBehaviour
+public class Level2Stage4 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private GameObject ghost1;
@@ -23,7 +22,7 @@ public class Level2Stage3 : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        ActivateWraith();
+        ActivateNuckelavee();
         ActivatePhantom();
         for (int i = 0; i <= max; ++i)
         {
@@ -50,16 +49,21 @@ public class Level2Stage3 : MonoBehaviour
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
     }
-    private void ActivateWraith()
+    private void ActivateNuckelavee()
     {
-        int affected = Random.Range(0, max);
-        GameObject affectedSubject = transform.GetChild(affected).gameObject;
-        while (affectedSubject.tag != "Untagged")
+        int currentPos = ghost2.transform.GetSiblingIndex();
+        int beforePos; int afterPos;
+        if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
+        else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
+        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
+        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
         {
-            affected = Random.Range(0, max);
-            affectedSubject = transform.GetChild(affected).gameObject;
+            transform.GetChild(beforePos).gameObject.tag = "Lying";
         }
-        affectedSubject.tag = "Lying";
+        if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
+        {
+            transform.GetChild(afterPos).gameObject.tag = "Lying";
+        }
     }
     private bool isLoading = false;
     public void PlayAgain()
@@ -69,7 +73,7 @@ public class Level2Stage3 : MonoBehaviour
         isLoading = true;
 
         Debug.Log("PlayAgain clicked");
-        
+
         CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())
@@ -79,13 +83,13 @@ public class Level2Stage3 : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(7); // retry stage 3
+            SceneManager.LoadScene(8); // retry stage 4
         }
     }
-    
+
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(8, LoadSceneMode.Single); //load stage 4
+        SceneManager.LoadScene(9, LoadSceneMode.Single); //load level 4
     }
     public void LoadMenu()
     {
