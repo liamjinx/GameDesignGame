@@ -35,7 +35,6 @@ public class Level2Stage2 : MonoBehaviour
     }
     private void ActivateNuckelavee()
     {
-        ghost1.name = "Nuckelavee";
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
@@ -59,7 +58,7 @@ public class Level2Stage2 : MonoBehaviour
 
         Debug.Log("PlayAgain clicked");
         
-        CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())
         {

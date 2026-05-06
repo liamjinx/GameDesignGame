@@ -36,7 +36,6 @@ public class Level2Stage3 : MonoBehaviour
     }
     private void ActivatePhantom()
     {
-        ghost1.name = "Phantom";
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
@@ -53,7 +52,6 @@ public class Level2Stage3 : MonoBehaviour
     }
     private void ActivateWraith()
     {
-        ghost2.name = "Wraith";
         int affected = Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
         while (affectedSubject.tag != "Untagged")
@@ -72,7 +70,7 @@ public class Level2Stage3 : MonoBehaviour
 
         Debug.Log("PlayAgain clicked");
         
-        CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())
         {

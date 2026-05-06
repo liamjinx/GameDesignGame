@@ -18,7 +18,7 @@ public class TroubadourManager : MonoBehaviour
         else { SpeakTruth(); }
         accused2Number = Random.Range(0, max);
         accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        while ((accused2.tag == "Lying" && gameObject.tag != "Untagged") || accused2Number == accused1Number)
+        while ((accused2.tag == "Lying" && gameObject.tag != "Untagged") || (accused2.tag == "Ghost" && gameObject.tag == "Untagged") || accused2.name == accused1.name)
         {
             accused2Number = Random.Range(0, max);
             accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;

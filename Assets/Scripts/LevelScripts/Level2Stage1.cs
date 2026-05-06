@@ -36,7 +36,6 @@ public class Level2Stage1 : MonoBehaviour
     }
     private void ActivateWraith()
     {
-        ghost1.name = "Wraith";
         int affected = Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
         while (affectedSubject.tag != "Untagged")
@@ -55,7 +54,7 @@ public class Level2Stage1 : MonoBehaviour
 
         Debug.Log("PlayAgain clicked");
         
-        CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())
         {

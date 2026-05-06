@@ -35,7 +35,6 @@ public class Level2Stage4 : MonoBehaviour
     }
     private void ActivatePhantom()
     {
-        ghost1.name = "Phantom";
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
@@ -52,7 +51,6 @@ public class Level2Stage4 : MonoBehaviour
     }
     private void ActivateNuckelavee()
     {
-        ghost2.name = "Nuckelavee";
         int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
