@@ -1768,8 +1768,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1710691326}
-        m_TargetAssemblyTypeName: Level1Stage3, Assembly-CSharp
-        m_MethodName: ReloadLevel
+        m_TargetAssemblyTypeName: Level2Stage3, Assembly-CSharp
+        m_MethodName: PlayAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

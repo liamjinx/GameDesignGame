@@ -58,8 +58,8 @@ public class Level2Stage2 : MonoBehaviour
         isLoading = true;
 
         Debug.Log("PlayAgain clicked");
-        
-        CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
+
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())
         {

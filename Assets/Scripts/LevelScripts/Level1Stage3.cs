@@ -1,22 +1,27 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System.Collections.Generic;
 
 public class Level1Stage3 : MonoBehaviour
 {
     private GameObject ghost1;
     private GameObject ghost2;
 
+    private CharacterManager characterManager;
+    private int max;
+
     void Awake()
     {
-        int max = transform.childCount;
+        characterManager = GetComponent<CharacterManager>();
 
-        int ghostnumber1 = Random.Range(0, max);
-        int ghostnumber2 = Random.Range(0, max);
+        max = transform.childCount - 1;
+
+        int ghostnumber1 = Random.Range(0, max + 1);
+        int ghostnumber2 = Random.Range(0, max + 1);
 
         while (ghostnumber1 == ghostnumber2)
         {
-            ghostnumber2 = Random.Range(0, max);
+            ghostnumber2 = Random.Range(0, max + 1);
         }
 
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
@@ -24,18 +29,34 @@ public class Level1Stage3 : MonoBehaviour
 
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
+
+        for (int i = 0; i <= max; ++i)
+        {
+            GameObject character = transform.GetChild(i).gameObject;
+
+            if (character.tag == "Ghost")
+            {
+                characterManager.ghosts.Add(character);
+            }
+            else
+            {
+                characterManager.subjects.Add(character);
+            }
+
+            if (character.tag == "Untagged")
+            {
+                characterManager.honest.Add(character);
+            }
+            else if (character.tag == "Lying")
+            {
+                characterManager.lying.Add(character);
+            }
+        }
     }
 
-    private bool isLoading = false;
     public void PlayAgain()
     {
-        if (isLoading) return; // prevents double click
-
-        isLoading = true;
-
-        Debug.Log("PlayAgain clicked");
-        
-        CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())
         {
@@ -47,7 +68,7 @@ public class Level1Stage3 : MonoBehaviour
             SceneManager.LoadScene(4); // retry stage 3
         }
     }
-    
+
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(5, LoadSceneMode.Single);
