@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level3Stage1 : MonoBehaviour
+public class Level3Stage3 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private GameObject ghost1;
     private GameObject ghost2;
+    private GameObject ghost3;
+
     private static bool hasShownStartExplanation;
 
     [SerializeField] private GameObject noteButton;
@@ -14,26 +16,28 @@ public class Level3Stage1 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
 
-
     private CharacterManager characterManager;
     private int max;
-
     void Awake()
     {
-       characterManager = GetComponent<CharacterManager>();
+        characterManager = GetComponent<CharacterManager>();
         max = transform.childCount - 1;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
-        while (ghostnumber1 == ghostnumber2)
+        int ghostnumber3 = Random.Range(0, max);
+        while (ghostnumber1 == ghostnumber2 || ghostnumber1 == ghostnumber3 || ghostnumber2 == ghostnumber3)
         {
             ghostnumber2 = Random.Range(0, max);
+            ghostnumber3 = Random.Range(0, max);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
+        ghost3 = transform.GetChild(ghostnumber3).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
+        ghost3.tag = "Ghost";
+        ActivatePhantom();
         ActivateWraith();
-        ActivateNuckelavee();
         for (int i = 0; i <= max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
@@ -41,6 +45,23 @@ public class Level3Stage1 : MonoBehaviour
             else { characterManager.subjects.Add(character); }
             if (character.tag == "Untagged") { characterManager.honest.Add(character); }
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
+        }
+    }
+
+    private void ActivatePhantom()
+    {
+        int currentPos = ghost1.transform.GetSiblingIndex();
+        int beforePos; int afterPos;
+        if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
+        else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
+        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
+        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
+        {
+            transform.GetChild(beforePos).gameObject.tag = "Lying";
+        }
+        else if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
+        {
+            transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
     }
 
@@ -54,23 +75,6 @@ public class Level3Stage1 : MonoBehaviour
             affectedSubject = transform.GetChild(affected).gameObject;
         }
         affectedSubject.tag = "Lying";
-    }
-
-    private void ActivateNuckelavee()
-    {
-        int currentPos = ghost1.transform.GetSiblingIndex();
-        int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
-        else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
-        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
-        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
-        {
-            transform.GetChild(beforePos).gameObject.tag = "Lying";
-        }
-        if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
-        {
-            transform.GetChild(afterPos).gameObject.tag = "Lying";
-        }
     }
 
     private bool isLoading = false;
@@ -91,7 +95,7 @@ public class Level3Stage1 : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(9); // retry stage 1
+            SceneManager.LoadScene(11); // retry stage 3
         }
     }
 
@@ -99,22 +103,15 @@ public class Level3Stage1 : MonoBehaviour
     {
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
+
     void Start()
     {
-        if (!hasShownStartExplanation)
-        {
-            ShowTimerExplanation();
-            hasShownStartExplanation = true;
-        }
-        else
-        {
             HideTimerExplanation();
-        }
     }
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(10, LoadSceneMode.Single);
+        SceneManager.LoadScene(12, LoadSceneMode.Single); //load stage 4
     }
     
 
