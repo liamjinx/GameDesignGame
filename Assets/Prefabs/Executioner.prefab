@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 3381701725510358000}
   - component: {fileID: 5838186693392112914}
   - component: {fileID: 5117075994088377282}
+  - component: {fileID: -4287147738183433909}
   m_Layer: 0
   m_Name: Executioner
   m_TagString: Untagged
@@ -622,8 +623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogueText: {fileID: 990067806323181618}
-  NoLife: {fileID: 0}
-  FullLife: {fileID: 0}
   lastSpokenLine: 
   characterName: 
 --- !u!114 &5838186693392112914
@@ -651,6 +650,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665056306162a8443b32f5dffa725bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExecutionerScript
+--- !u!95 &-4287147738183433909
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5832935796805010262}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ffe5f163f2a24b0fb5f6a3085acd199, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5876678319254538730
 GameObject:
   m_ObjectHideFlags: 0

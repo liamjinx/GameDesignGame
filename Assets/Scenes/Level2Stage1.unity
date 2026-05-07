@@ -1488,6 +1488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chef
       objectReference: {fileID: 0}
+    - target: {fileID: 1862001461531275931, guid: ab3eadfd4ec232944af5705b3d91c2ba, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 678548889}
     - target: {fileID: 3889364775616699445, guid: ab3eadfd4ec232944af5705b3d91c2ba, type: 3}
       propertyPath: m_SizeDelta.x
       value: 350
@@ -1592,6 +1596,11 @@ PrefabInstance:
 --- !u!224 &678548888 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8179216083011695164, guid: ab3eadfd4ec232944af5705b3d91c2ba, type: 3}
+  m_PrefabInstance: {fileID: 678548887}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &678548889 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -2879142092921795156, guid: ab3eadfd4ec232944af5705b3d91c2ba, type: 3}
   m_PrefabInstance: {fileID: 678548887}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &685983666
@@ -2108,6 +2117,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 7629679109412213249, guid: e0dbf2a01f79d154297c98dc4295bc6b, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 953895298}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2116,6 +2129,11 @@ PrefabInstance:
 --- !u!224 &953895297 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3859894871458590781, guid: e0dbf2a01f79d154297c98dc4295bc6b, type: 3}
+  m_PrefabInstance: {fileID: 953895296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &953895298 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -5399196379351716840, guid: e0dbf2a01f79d154297c98dc4295bc6b, type: 3}
   m_PrefabInstance: {fileID: 953895296}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &996331150
@@ -5402,7 +5420,7 @@ PrefabInstance:
     - target: {fileID: 1799243995365594566, guid: df9c2bb7e7cc1924ebcc153a686de901, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6021845260164975306}
     - target: {fileID: 3215172848438398842, guid: df9c2bb7e7cc1924ebcc153a686de901, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5529,9 +5547,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7161289013648758722, guid: df9c2bb7e7cc1924ebcc153a686de901, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6021845260164975307}
-    - targetCorrespondingSourceObject: {fileID: 7161289013648758722, guid: df9c2bb7e7cc1924ebcc153a686de901, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6021845260164975306}
   m_SourcePrefab: {fileID: 100100000, guid: df9c2bb7e7cc1924ebcc153a686de901, type: 3}
 --- !u!1 &6021845260164975305 stripped
@@ -5561,19 +5576,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6021845260164975307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6021845260164975305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dd6b369390aa4a99b34ff7d722b5587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PetrifyAnimation
-  animator: {fileID: 6021845260164975306}
 --- !u!224 &6779731327222467124 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7409741206489112084, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
@@ -5610,7 +5612,7 @@ PrefabInstance:
     - target: {fileID: 3646716469330393915, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7882449859541346611}
     - target: {fileID: 7409741206489112084, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5701,9 +5703,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8075414529482060867, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7882449859541346612}
-    - targetCorrespondingSourceObject: {fileID: 8075414529482060867, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7882449859541346611}
   m_SourcePrefab: {fileID: 100100000, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
 --- !u!1 &7882449859541346610 stripped
@@ -5733,19 +5732,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7882449859541346612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7882449859541346610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dd6b369390aa4a99b34ff7d722b5587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PetrifyAnimation
-  animator: {fileID: 7882449859541346611}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
