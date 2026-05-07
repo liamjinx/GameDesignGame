@@ -5608,7 +5608,7 @@ MonoBehaviour:
   timerTitleText: {fileID: 1433384974}
   timerExplanationText: {fileID: 1040355431}
   timerRetryText: {fileID: 1286619916}
-  startSeconds: 5
+  startSeconds: 120
   level3Stage1: {fileID: 1710691328}
   PopUpAudio: {fileID: 50581884}
 --- !u!114 &1710691328
