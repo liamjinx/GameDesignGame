@@ -4451,8 +4451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character_record
   overlayPanel: {fileID: 1877101580}
-  charactermanager: {fileID: 0}
-  petrifyButton: {fileID: 0}
+  charactermanager: {fileID: 1710691322}
+  petrifyButton: {fileID: 312728392}
   dialoguept1: {fileID: 0}
   dialoguept2: {fileID: 0}
   characterpt1: {fileID: 0}
