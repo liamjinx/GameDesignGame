@@ -13,20 +13,26 @@ public class Level3Stage1 : MonoBehaviour
     [SerializeField] private GameObject petrifyButton;
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
+    [SerializeField] private AudioSource PopUpAudio;
 
 
     private CharacterManager characterManager;
     private int max;
+    private int childCount;
+    private int lastIndex;
+    
 
     void Awake()
     {
        characterManager = GetComponent<CharacterManager>();
+        childCount = transform.childCount;
+        lastIndex = childCount - 1;
         max = transform.childCount;
-        int ghostnumber1 = Random.Range(0, max);
-        int ghostnumber2 = Random.Range(0, max);
+        int ghostnumber1 = Random.Range(0, childCount);
+        int ghostnumber2 = Random.Range(0, childCount);
         while (ghostnumber1 == ghostnumber2)
         {
-            ghostnumber2 = Random.Range(0, max);
+            ghostnumber2 = Random.Range(0, childCount);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
@@ -34,7 +40,7 @@ public class Level3Stage1 : MonoBehaviour
         ghost2.tag = "Ghost";
         ActivateWraith();
         ActivateNuckelavee();
-        for (int i = 0; i <= max; ++i)
+        for (int i = 0; i < childCount; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
             if (character.tag == "Ghost") { characterManager.ghosts.Add(character); }
@@ -46,11 +52,11 @@ public class Level3Stage1 : MonoBehaviour
 
      private void ActivateWraith()
     {
-        int affected = Random.Range(0, max);
+        int affected = Random.Range(0, childCount);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
         while (affectedSubject.tag != "Untagged")
         {
-            affected = Random.Range(0, max);
+            affected = Random.Range(0, childCount);
             affectedSubject = transform.GetChild(affected).gameObject;
         }
         affectedSubject.tag = "Lying";
@@ -60,8 +66,8 @@ public class Level3Stage1 : MonoBehaviour
     {
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
-        else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
+        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
+        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
         {
@@ -131,6 +137,7 @@ public class Level3Stage1 : MonoBehaviour
         petrifyButton.SetActive(false);
         timer.SetActive(false);
         timerExplaination.SetActive(true);
+        PopUpAudio.Play();
     }
     public void HideTimerExplanation()
     {
