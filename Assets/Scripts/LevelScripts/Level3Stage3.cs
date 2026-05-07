@@ -21,7 +21,7 @@ public class Level3Stage3 : MonoBehaviour
     void Awake()
     {
         characterManager = GetComponent<CharacterManager>();
-        max = transform.childCount - 1;
+        max = transform.childCount;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         int ghostnumber3 = Random.Range(0, max);
@@ -101,6 +101,12 @@ public class Level3Stage3 : MonoBehaviour
 
     public void LoadMenu()
     {
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+
+        if (cd != null)
+        {
+            cd.ResetLives();
+        }
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 

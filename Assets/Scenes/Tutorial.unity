@@ -1805,6 +1805,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character_record
   overlayPanel: {fileID: 538692536}
+  charactermanager: {fileID: 0}
+  petrifyButton: {fileID: 0}
+  dialoguept1: {fileID: 0}
+  dialoguept2: {fileID: 0}
+  characterpt1: {fileID: 0}
+  characterpt2: {fileID: 0}
 --- !u!114 &538692538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2160,7 +2166,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 681630320}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1710691326}
+        m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &681630320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3706,7 +3724,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1350006141}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1710691326}
+        m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1350006141
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class Level2Stage2 : MonoBehaviour
     void Awake()
     {
         characterManager = GetComponent<CharacterManager>();
-        max = transform.childCount - 1;
+        max = transform.childCount;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         while (ghostnumber1 == ghostnumber2)
@@ -70,6 +70,12 @@ public class Level2Stage2 : MonoBehaviour
     
     public void LoadNextLevel()
     {
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+
+        if (cd != null)
+        {
+            cd.ResetLives();
+        }
         SceneManager.LoadScene(7, LoadSceneMode.Single); //load stage 3
     }
     public void LoadMenu()

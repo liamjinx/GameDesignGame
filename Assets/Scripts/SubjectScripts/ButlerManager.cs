@@ -17,12 +17,16 @@ public class ButlerManager : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        accused1Number = Random.Range(0, characterManager.lying.Count - 1);
+        accused1Number = Random.Range(0, characterManager.lying.Count);
         accused1 = characterManager.lying[accused1Number];
     }
     public void SpeakLies()
     {
-        accused1Number = Random.Range(0, characterManager.ghosts.Count - 1);
+        accused1Number = Random.Range(0, characterManager.ghosts.Count);
         accused1 = characterManager.ghosts[accused1Number];
     }
+    public void OnMouseUpAsButton()
+    {
+        gameObject.GetComponent<CharacterDialogue>().Petrify();
+    }   
 }

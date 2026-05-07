@@ -6,14 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="44fbaa02-0a15-4d34-a1c7-fabb5dfe4d99" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDesignGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDesignGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Stage1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Stage1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Stage2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Stage2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1Stage3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1Stage3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterDialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterDialogue.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level1Stage3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level2Stage1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level2Stage1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level2Stage2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level2Stage2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level2Stage3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level2Stage3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level2Stage4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level2Stage4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level3Stage1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level3Stage1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level3Stage2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level3Stage2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level3Stage3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level3Stage3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level3Stage4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/Level3Stage4.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../GameDesignGame copy/Assets/Scripts/LevelScripts/Level1Stage3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SubjectScripts/JesterManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimerManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -41,7 +46,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Zahlia__Level3",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,6 +120,7 @@
       <workItem from="1777202099174" duration="2069000" />
       <workItem from="1777771485192" duration="877000" />
       <workItem from="1778078951304" duration="1953000" />
+      <workItem from="1778157620426" duration="974000" />
     </task>
     <servers />
   </component>

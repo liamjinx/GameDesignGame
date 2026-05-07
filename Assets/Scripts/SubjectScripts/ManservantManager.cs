@@ -9,7 +9,7 @@ public class ManservantManager : MonoBehaviour
     private GameObject accused;
     void Start()
     {
-        max = transform.parent.childCount - 1;
+        max = transform.parent.childCount;
         accusedNumber = Random.Range(0, max);
         accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
         if (gameObject.tag != "Untagged") { SpeakLies(); }
