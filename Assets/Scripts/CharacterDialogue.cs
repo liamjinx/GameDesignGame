@@ -55,8 +55,10 @@ public class CharacterDialogue : MonoBehaviour
 
     public void Petrify()
     {
+        Debug.Log("test1");
         if (petrifyManager.isActive)
         {
+            Debug.Log("test2");
             if (gameObject.tag == "Ghost")
             {
                 mainText.text = "Congratulations!\n You found a ghost!";
