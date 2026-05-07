@@ -12,6 +12,7 @@ public class TimerManager : MonoBehaviour
 
     [SerializeField] private float startSeconds = 120f;
     [SerializeField] private Level3Stage1 level3Stage1;
+    [SerializeField] private AudioSource PopUpAudio;
     private float remainingSeconds;
     private bool countdownStarted;
     private bool timerEnded;
@@ -63,6 +64,7 @@ public class TimerManager : MonoBehaviour
 
         if (timerExplanationText != null)
         {
+            PopUpAudio.Play();
             timerTitleText.text = "Game Over";
             timerExplanationText.text = "Time's up! The ghosts have taken over the castle!";
             timerRetryText.text = "Try Again?";
