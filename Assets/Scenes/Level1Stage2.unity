@@ -3933,7 +3933,8 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6910469837511776604, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4075,6 +4076,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character_record
   overlayPanel: {fileID: 1877101580}
+  charactermanager: {fileID: 0}
+  petrifyButton: {fileID: 0}
+  dialoguept1: {fileID: 0}
+  dialoguept2: {fileID: 0}
+  characterpt1: {fileID: 0}
+  characterpt2: {fileID: 0}
 --- !u!114 &1877101583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4762,6 +4769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 5733802941755400500, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7300380708952974427, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
       propertyPath: animator
       value: 
@@ -4782,7 +4793,8 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7300380708952974427, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -4954,7 +4966,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Priest
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3646716469330393915, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

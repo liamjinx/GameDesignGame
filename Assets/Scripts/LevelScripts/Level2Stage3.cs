@@ -12,7 +12,7 @@ public class Level2Stage3 : MonoBehaviour
     void Awake()
     {
         characterManager = GetComponent<CharacterManager>();
-        max = transform.childCount - 1;
+        max = transform.childCount;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         while (ghostnumber1 == ghostnumber2)

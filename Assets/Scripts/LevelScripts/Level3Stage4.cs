@@ -21,7 +21,7 @@ public class Level3Stage4 : MonoBehaviour
     void Awake()
     {
         characterManager = GetComponent<CharacterManager>();
-        max = transform.childCount - 1;
+        max = transform.childCount;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         int ghostnumber3 = Random.Range(0, max);

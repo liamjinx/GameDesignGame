@@ -15,7 +15,7 @@ public class DoctorManager : MonoBehaviour
     void Start()
     {
         characterManager = transform.parent.GetComponent<CharacterManager>();
-        accused1Number = Random.Range(0, characterManager.honest.Count-1);
+        accused1Number = Random.Range(0, characterManager.honest.Count);
         accused1 = characterManager.honest[accused1Number];
         if (gameObject.tag != "Untagged") { SpeakLies(); }
         else { SpeakTruth(); }
@@ -28,16 +28,16 @@ public class DoctorManager : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        accused2Number = Random.Range(0, characterManager.lying.Count - 1);
+        accused2Number = Random.Range(0, characterManager.lying.Count);
         accused2 = characterManager.lying[accused2Number];
-        accused3Number = Random.Range(0, characterManager.ghosts.Count - 1);
+        accused3Number = Random.Range(0, characterManager.ghosts.Count);
         accused3 = characterManager.ghosts[accused3Number];
     }
     public void SpeakLies()
     {
-        accused2Number = Random.Range(0, characterManager.ghosts.Count - 1);
+        accused2Number = Random.Range(0, characterManager.ghosts.Count);
         accused2 = characterManager.ghosts[accused2Number];
-        accused3Number = Random.Range(0, characterManager.lying.Count - 1);
+        accused3Number = Random.Range(0, characterManager.lying.Count);
         accused3 = characterManager.lying[accused3Number];
     }
 }

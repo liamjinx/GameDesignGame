@@ -13,7 +13,7 @@ public class PriestManager : MonoBehaviour
     private GameObject accused3;
     void Start()
     {
-        max = transform.parent.childCount - 1;
+        max = transform.parent.childCount;
         accused1Number = Random.Range(0, max);
         accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
         accused2Number = Random.Range(0, max);

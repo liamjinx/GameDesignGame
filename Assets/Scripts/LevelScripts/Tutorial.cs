@@ -7,7 +7,7 @@ public class Tutorial : MonoBehaviour
     private GameObject ghost1;
     void Awake()
     {
-        int max = transform.childCount - 1;
+        int max = transform.childCount;
         int ghostnumber1 = Random.Range(0, max);        
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost1.tag = "Ghost";
