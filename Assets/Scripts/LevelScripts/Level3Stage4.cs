@@ -119,6 +119,12 @@ public class Level3Stage4 : MonoBehaviour
 
     public void LoadMenu()
     {
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+
+        if (cd != null)
+        {
+            cd.ResetLives();
+        }
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
