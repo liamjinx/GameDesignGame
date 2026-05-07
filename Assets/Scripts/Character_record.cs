@@ -11,12 +11,14 @@ public class Character_record : MonoBehaviour
     [SerializeField] private GameObject dialoguept2;
     [SerializeField] private GameObject characterpt1;
     [SerializeField] private GameObject characterpt2;
+    [SerializeField] private AudioSource clickAudio;
     //public TextMeshProUGUI overlayText; 
     //public CharacterDialogue[] characters;
     //public Sprite characterSprite;
 
     public void ToggleOverlay()
     {
+        clickAudio.Play();
         overlayPanel.SetActive(!overlayPanel.activeSelf);
         
         if (charactermanager.GetComponent<PetrifyManager>().isActive)
