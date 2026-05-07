@@ -21,8 +21,6 @@ public class CharacterDialogue : MonoBehaviour
     private Image Life2;
     private Image Life3;
     
-    private static bool gameOver = false;
-    private static bool shouldResetToStage1 = false;
     private bool isTutorial = false;
 
     public string lastSpokenLine = "";
