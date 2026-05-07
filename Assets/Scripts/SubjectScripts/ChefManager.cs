@@ -25,4 +25,8 @@ public class ChefManager : MonoBehaviour
         accused1Number = Random.Range(0, characterManager.lying.Count - 1);
         accused1 = characterManager.lying[accused1Number];
     }
+    public void OnMouseUpAsButton()
+    {
+        gameObject.GetComponent<CharacterDialogue>().Petrify();
+    }
 }
