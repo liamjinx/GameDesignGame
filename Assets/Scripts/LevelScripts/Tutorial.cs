@@ -14,10 +14,14 @@ public class Tutorial : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(5, LoadSceneMode.Single);
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
     public void ReloadLevel()
     {
         SceneManager.LoadScene(1, LoadSceneMode.Single);
+    }
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }
