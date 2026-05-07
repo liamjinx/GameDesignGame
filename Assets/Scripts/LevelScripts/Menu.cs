@@ -20,6 +20,6 @@ public class Menu : MonoBehaviour
 
     public void LoadLevel3()
     {
-        SceneManager.LoadScene(8,LoadSceneMode.Single);
+        SceneManager.LoadScene(9,LoadSceneMode.Single);
     }
 }
