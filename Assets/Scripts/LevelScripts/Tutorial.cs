@@ -14,7 +14,7 @@ public class Tutorial : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(2, LoadSceneMode.Single);
+        SceneManager.LoadScene(5, LoadSceneMode.Single);
     }
     public void ReloadLevel()
     {
