@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class CharacterDialogue : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private AudioSource FoundGhost;
+    [SerializeField] private AudioSource NotGhost;
     TextMeshProUGUI mainText;
 
     private PetrifyManager petrifyManager;
@@ -61,6 +63,7 @@ public class CharacterDialogue : MonoBehaviour
             Debug.Log("test2");
             if (gameObject.tag == "Ghost")
             {
+                FoundGhost.Play();
                 mainText.text = "Congratulations!\n You found a ghost!";
 
                 var anim = GetComponentInParent<PetrifyAnimation>();
@@ -77,6 +80,7 @@ public class CharacterDialogue : MonoBehaviour
             }
             else
             {
+                NotGhost.Play();
                 mainText.text = "Oh no!\n You petrified a subject!";
 
                 var anim = GetComponentInParent<PetrifyAnimation>();
