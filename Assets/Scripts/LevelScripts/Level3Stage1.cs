@@ -18,21 +18,19 @@ public class Level3Stage1 : MonoBehaviour
 
     private CharacterManager characterManager;
     private int max;
-    private int childCount;
     private int lastIndex;
     
 
     void Awake()
     {
        characterManager = GetComponent<CharacterManager>();
-        childCount = transform.childCount;
-        lastIndex = childCount - 1;
         max = transform.childCount;
-        int ghostnumber1 = Random.Range(0, childCount);
-        int ghostnumber2 = Random.Range(0, childCount);
+        lastIndex = max - 1;
+        int ghostnumber1 = Random.Range(0, max);
+        int ghostnumber2 = Random.Range(0, max);
         while (ghostnumber1 == ghostnumber2)
         {
-            ghostnumber2 = Random.Range(0, childCount);
+            ghostnumber2 = Random.Range(0, max);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
@@ -40,7 +38,7 @@ public class Level3Stage1 : MonoBehaviour
         ghost2.tag = "Ghost";
         ActivateWraith();
         ActivateNuckelavee();
-        for (int i = 0; i < childCount; ++i)
+        for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
             if (character.tag == "Ghost") { characterManager.ghosts.Add(character); }
@@ -52,11 +50,11 @@ public class Level3Stage1 : MonoBehaviour
 
      private void ActivateWraith()
     {
-        int affected = Random.Range(0, childCount);
+        int affected = Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
         while (affectedSubject.tag != "Untagged")
         {
-            affected = Random.Range(0, childCount);
+            affected = Random.Range(0, max);
             affectedSubject = transform.GetChild(affected).gameObject;
         }
         affectedSubject.tag = "Lying";
