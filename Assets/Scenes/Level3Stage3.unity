@@ -5264,21 +5264,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "King: States if they are next to at least one safe character. Could be
-    one ghost and one subject, or two subjects\r\n\nQueen: States if they are next
-    to at least one ghost. Could be one ghost and one subject, or two subjects\r\n\nJester:
-    Either the Jester or another subject is the ghost. If the chosen subject isn't
-    the ghost, then the Jester is lying\r\n\nMaid: States a character is a ghost.
-    Will always select subjects if lying, or ghosts if telling the truth\r\n\nManservant:
-    States a character is a subject. Will always select ghosts if lying, or subjects
-    if telling the truth\r\n\nBard: States how far away they are from the closest
-    ghost. If lying, states how far away they are from the closest subject\r\n\nPriest:
-    Only one of three characters is a ghost. If lying, none of them are \r\n\nNun:
-    States two potential subjects the ghost could be. One or both of the subjects
-    could be ghosts. If lying, neither will be ghosts\r\n\nExecutioner: the second
-    character is a subject if and only if the first is a subject. If lying, the second
-    character is a ghost\r\n\nKnight: the second character is a ghost if and only
-    if the first is a subject. If lying, the second character is a subject"
+  m_text: 'King: States if they are next to at least one safe character. Could be
+    one ghost and one subject, or two subjects
+
+
+    Queen: States if they are next
+    to at least one ghost. Could be one ghost and one subject, or two subjects
+
+
+    Maid:
+    States a character is a ghost. Will always select subjects if lying, or ghosts
+    if telling the truth
+
+
+    Bard: States how far away they are from the closest
+    ghost. If lying, states how far away they are from the closest subject
+
+
+    Executioner:
+    the second character is a subject if and only if the first is a subject. If lying,
+    the second character is a ghost'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
   m_sharedMaterial: {fileID: -699112959996641730, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
@@ -6044,46 +6049,33 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Butler: States a character is lying. Will always select ghosts if lying,
-    or ghosts if telling the truth
+  m_text: 'Doctor: States an honest subject, lying subject and a ghost. If lying,
+    will call a ghost a lying subject and a lying subject a ghost
 
 
-    Doctor: States an honest subject, lying
-    subject and a ghost. If lying, will call a ghost a lying subject and a lying
-    subject a ghost
+    Blacksmith:
+    States how far away they are from the closest lying subject. If lying, states
+    how far away they are from the closest ghost
 
 
-    Blacksmith: States how far away they are from the closest
-    lying subject. If lying, states how far away they are from the closest ghost
+    Alchemist: States if they
+    are next to at least one lying subject. Could be one ghost and one subject, or
+    two subjects
 
 
-    Alchemist:
-    States if they are next to at least one lying subject. Could be one ghost and
-    one subject, or two subjects
+    Chef: States a character is telling the truth. Will always
+    select lying subjects if lying, or honest subjects if telling the truth
 
 
-    Chef: States a character is telling the truth.
-    Will always select lying subjects if lying, or honest subjects if telling the
-    truth
+    ALL
+    GHOSTS: Disguises as a random subject and gives false information
 
 
-    Troubadour: States two potential subjects that could be lying. One
-    or both of the subjects could be lying. If lying, will choose one more more ghosts,
-    and will never pick lying subjects
+    Wraith:
+    A random subject lies
 
 
-    ALL GHOSTS: Disguises as a random subject
-    and gives false information
-
-
-    Wraith: A random subject lies
-
-
-    Phantom:
-    A subject next to me lies
-
-
-    Nuckelavee: Subjects next to me lie'
+    Phantom: A subject next to me lies'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
   m_sharedMaterial: {fileID: -699112959996641730, guid: 241c6acceca8b844baad6cbcf60cefc7, type: 2}
