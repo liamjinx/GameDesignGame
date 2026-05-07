@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 334695162257593335}
   - component: {fileID: 5012373274226600532}
   - component: {fileID: 568230442691084787}
+  - component: {fileID: -1546443386863057916}
   m_Layer: 0
   m_Name: Alchemist
   m_TagString: Untagged
@@ -451,8 +452,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogueText: {fileID: 1591682917423221001}
-  NoLife: {fileID: 0}
-  FullLife: {fileID: 0}
   lastSpokenLine: 
   characterName: 
 --- !u!114 &5012373274226600532
@@ -480,6 +479,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8907e283de213e148a8d0bd07f13089b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlchemistManager
+--- !u!95 &-1546443386863057916
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786385676939337994}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3b234a73c57549419077a8430cd378d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8546775933132427131
 GameObject:
   m_ObjectHideFlags: 0

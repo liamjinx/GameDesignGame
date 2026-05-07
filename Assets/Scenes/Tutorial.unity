@@ -4745,6 +4745,10 @@ MonoBehaviour:
   selectedCharacter: {fileID: 0}
   ghostCount: 0
   ghostNumber: {fileID: 0}
+  subjects: []
+  ghosts: []
+  honest: []
+  lying: []
 --- !u!114 &1710691326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6313,7 +6317,12 @@ PrefabInstance:
       propertyPath: m_VertexColorAlwaysGammaSpace
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6910469837511776604, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3964851878477084057}
+    m_RemovedComponents:
+    - {fileID: 8653434918265091667, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7063550261732623447, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
     m_AddedGameObjects:
@@ -6322,6 +6331,11 @@ PrefabInstance:
       addedObject: {fileID: 47894529}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+--- !u!95 &3964851878477084057 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8771223872464376492, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+  m_PrefabInstance: {fileID: 3964851878477084056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

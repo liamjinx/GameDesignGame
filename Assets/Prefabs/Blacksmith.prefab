@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3826577069450890595}
   - component: {fileID: 7629679109412213249}
   - component: {fileID: 764805922363448138}
+  - component: {fileID: -5399196379351716840}
   m_Layer: 0
   m_Name: Blacksmith
   m_TagString: Untagged
@@ -169,8 +170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogueText: {fileID: 6618207703849793387}
-  NoLife: {fileID: 0}
-  FullLife: {fileID: 0}
   lastSpokenLine: 
   characterName: 
 --- !u!114 &7629679109412213249
@@ -198,6 +197,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17708553f33c2bf4ea4c85c839f2d85e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlacksmithManager
+--- !u!95 &-5399196379351716840
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507538557100562778}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b64b0875c2a324a48b9b18d569e96032, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2191525251369115274
 GameObject:
   m_ObjectHideFlags: 0
