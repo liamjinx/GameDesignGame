@@ -6,7 +6,6 @@ public class Level2Stage2 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private GameObject ghost1;
-    private GameObject ghost2;
     private CharacterManager characterManager;
     private int max;
     void Awake()
@@ -20,9 +19,7 @@ public class Level2Stage2 : MonoBehaviour
             ghostnumber2 = Random.Range(0, max);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
-        ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
-        ghost2.tag = "Ghost";
         ActivateNuckelavee();
         for (int i = 0; i <= max; ++i)
         {
