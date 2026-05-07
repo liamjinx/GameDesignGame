@@ -45,4 +45,9 @@ public class Level1Stage1 : MonoBehaviour
     {
         SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
+    }
 }
