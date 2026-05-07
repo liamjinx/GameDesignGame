@@ -9,6 +9,11 @@ public class Level2Stage1 : MonoBehaviour
     private GameObject ghost1;
     private GameObject ghost2;
     private CharacterManager characterManager;
+    private static bool hasShownExplanation;
+    [SerializeField] private GameObject noteButton;
+    [SerializeField] private GameObject ghostCount;
+    [SerializeField] private GameObject petrifyButton;
+    [SerializeField] private GameObject explanation;
     private int max;
     void Awake()
     {
@@ -74,5 +79,20 @@ public class Level2Stage1 : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene(0, LoadSceneMode.Single);
+    }
+    void Start()
+    {
+        if (!hasShownExplanation)
+        {
+            ToggleExplanation();
+            hasShownExplanation = true;
+        }
+    }
+    public void ToggleExplanation()
+    {
+        noteButton.SetActive(!noteButton.activeSelf);
+        ghostCount.SetActive(!ghostCount.activeSelf);
+        petrifyButton.SetActive(!petrifyButton.activeSelf);
+        explanation.SetActive(!explanation.activeSelf);
     }
 }
