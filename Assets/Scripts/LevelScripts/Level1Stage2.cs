@@ -23,7 +23,7 @@ public class Level1Stage2 : MonoBehaviour
 
         Debug.Log("PlayAgain clicked");
         
-        CharacterDialogue cd = FindObjectOfType<CharacterDialogue>();
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
 
         if (cd != null && cd.IsGameOver())
         {
@@ -48,6 +48,12 @@ public class Level1Stage2 : MonoBehaviour
     
     public void LoadMenu()
     {
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+
+        if (cd != null)
+        {
+            cd.ResetLives();
+        }
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }

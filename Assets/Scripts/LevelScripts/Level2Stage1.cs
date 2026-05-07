@@ -75,6 +75,12 @@ public class Level2Stage1 : MonoBehaviour
     }
     public void LoadMenu()
     {
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+
+        if (cd != null)
+        {
+            cd.ResetLives();
+        }
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
     void Start()

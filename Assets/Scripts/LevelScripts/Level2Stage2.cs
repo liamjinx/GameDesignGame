@@ -70,6 +70,12 @@ public class Level2Stage2 : MonoBehaviour
     
     public void LoadNextLevel()
     {
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+
+        if (cd != null)
+        {
+            cd.ResetLives();
+        }
         SceneManager.LoadScene(7, LoadSceneMode.Single); //load stage 3
     }
     public void LoadMenu()
