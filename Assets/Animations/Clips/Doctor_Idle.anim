@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Alchemist_Idle
+  m_Name: Doctor_Idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -3809233051643409127, guid: 4d730a972e2d14581a8fe161b4269799, type: 3}
+      value: {fileID: -204661359, guid: ab1717f59dbc34fda80e59760f3c7049, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -3809233051643409127, guid: 4d730a972e2d14581a8fe161b4269799, type: 3}
+    - {fileID: -204661359, guid: ab1717f59dbc34fda80e59760f3c7049, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
