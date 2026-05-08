@@ -16,10 +16,13 @@ public class Level3Stage2 : MonoBehaviour
 
     private CharacterManager characterManager;
     private int max;
+
+    private int lastIndex;
     void Awake()
     {
         characterManager = GetComponent<CharacterManager>();
         max = transform.childCount;
+        lastIndex = max - 1;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         while (ghostnumber1 == ghostnumber2)
@@ -30,9 +33,9 @@ public class Level3Stage2 : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        ActivateNuckelavee();
         ActivatePhantom();
-        for (int i = 0; i <= max; ++i)
+        ActivateNuckelavee();
+        for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
             if (character.tag == "Ghost") { characterManager.ghosts.Add(character); }
@@ -58,12 +61,12 @@ public class Level3Stage2 : MonoBehaviour
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
     }
-    private void ActivateNuckelavee()
+     private void ActivateNuckelavee()
     {
-        int currentPos = ghost2.transform.GetSiblingIndex();
+        int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
-        else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
+        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
+        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
         {
