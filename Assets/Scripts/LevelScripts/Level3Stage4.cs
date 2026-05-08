@@ -14,7 +14,7 @@ public class Level3Stage4 : MonoBehaviour
     [SerializeField] private GameObject ghostCount;
     [SerializeField] private GameObject petrifyButton;
     [SerializeField] private GameObject timer;
-    [SerializeField] private GameObject timerExplaination;
+    //[SerializeField] private GameObject timerExplaination;
 
     private CharacterManager characterManager;
     private int max;
@@ -142,7 +142,7 @@ public class Level3Stage4 : MonoBehaviour
         ghostCount.SetActive(false);
         petrifyButton.SetActive(false);
         timer.SetActive(false);
-        timerExplaination.SetActive(true);
+        //timerExplaination.SetActive(true);
     }
     public void HideTimerExplanation()
     {
@@ -150,6 +150,6 @@ public class Level3Stage4 : MonoBehaviour
         ghostCount.SetActive(true);
         petrifyButton.SetActive(true);
         timer.SetActive(true);
-        timerExplaination.SetActive(false);
+        //timerExplaination.SetActive(false);
     }
 }
