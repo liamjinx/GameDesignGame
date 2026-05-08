@@ -37,6 +37,7 @@ public class Character_record : MonoBehaviour
     }
     public void ChangeDescription()
     {
+        clickAudio.Play();
         dialoguept1.SetActive(!dialoguept1.activeSelf);
         dialoguept2.SetActive(!dialoguept2.activeSelf);
         characterpt1.SetActive(!characterpt1.activeSelf);
