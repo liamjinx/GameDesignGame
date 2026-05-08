@@ -8,6 +8,8 @@ public class TutorialUIManager : MonoBehaviour
     [SerializeField] private GameObject instructionsButton;
     [SerializeField] private GameObject petrifyButton;
     [SerializeField] private GameObject instructions;
+    [SerializeField] private AudioSource PopUpAudio;
+    [SerializeField] private AudioSource ClickAudio;
     void Start()
     {
         ShowInstructions();
@@ -24,6 +26,7 @@ public class TutorialUIManager : MonoBehaviour
         instructionsButton.SetActive(!instructionsButton.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
         instructions.SetActive(!instructions.activeSelf);
+        PopUpAudio.Play();
     }
     public void HideInstructions()
     {
@@ -31,5 +34,6 @@ public class TutorialUIManager : MonoBehaviour
         instructionsButton.SetActive(!instructionsButton.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
         instructions.SetActive(!instructions.activeSelf);
+        ClickAudio.Play();
     }
 }
