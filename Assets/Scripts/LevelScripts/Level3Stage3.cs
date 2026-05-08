@@ -17,11 +17,15 @@ public class Level3Stage3 : MonoBehaviour
     [SerializeField] private GameObject timerExplaination;
 
     private CharacterManager characterManager;
+
     private int max;
+
+    private int lastIndex;
     void Awake()
     {
         characterManager = GetComponent<CharacterManager>();
         max = transform.childCount;
+        lastIndex = max - 1;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         int ghostnumber3 = Random.Range(0, max);
@@ -38,7 +42,7 @@ public class Level3Stage3 : MonoBehaviour
         ghost3.tag = "Ghost";
         ActivatePhantom();
         ActivateWraith();
-        for (int i = 0; i <= max; ++i)
+        for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
             if (character.tag == "Ghost") { characterManager.ghosts.Add(character); }

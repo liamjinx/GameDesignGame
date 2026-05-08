@@ -12,13 +12,21 @@ public class Character_record : MonoBehaviour
     [SerializeField] private GameObject characterpt1;
     [SerializeField] private GameObject characterpt2;
     [SerializeField] private AudioSource clickAudio;
+    [SerializeField] private AudioSource PopUpAudio;
     //public TextMeshProUGUI overlayText; 
     //public CharacterDialogue[] characters;
     //public Sprite characterSprite;
 
     public void ToggleOverlay()
     {
-        clickAudio.Play();
+        if (overlayPanel.activeSelf)
+        {
+            clickAudio.Play();
+        }
+        else
+        {
+            PopUpAudio.Play();
+        }
         overlayPanel.SetActive(!overlayPanel.activeSelf);
         
         if (charactermanager.GetComponent<PetrifyManager>().isActive)
@@ -29,6 +37,7 @@ public class Character_record : MonoBehaviour
     }
     public void ChangeDescription()
     {
+        clickAudio.Play();
         dialoguept1.SetActive(!dialoguept1.activeSelf);
         dialoguept2.SetActive(!dialoguept2.activeSelf);
         characterpt1.SetActive(!characterpt1.activeSelf);
