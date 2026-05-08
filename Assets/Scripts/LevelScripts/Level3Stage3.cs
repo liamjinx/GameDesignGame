@@ -54,6 +54,7 @@ public class Level3Stage3 : MonoBehaviour
 
     private void ActivatePhantom()
     {
+        ghost1.layer = LayerMask.NameToLayer("Phantom");
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }

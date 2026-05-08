@@ -237,7 +237,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 227439739, guid: 01a56ba90d24a4376b13d2abea0e1a79, type: 3}
+  m_Sprite: {fileID: -2950854452939852620, guid: 6bdbb53629def405a9f7883b22786922, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -285,7 +285,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.4, y: 6.4}
+    oldSize: {x: 6.4, y: 8}
     newSize: {x: 6.4, y: 6.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -306,6 +306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogueText: {fileID: 1167158269070879879}
+  FoundGhost: {fileID: 0}
+  NotGhost: {fileID: 0}
   lastSpokenLine: 
   characterName: 
 --- !u!114 &7520752827177747178
