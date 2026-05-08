@@ -4893,7 +4893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimerManager
   timerText: {fileID: 321426121}
-  timerTitleText: {fileID: 0}
+  timerTitleText: {fileID: 321426121}
   timerExplanationText: {fileID: 0}
   timerRetryText: {fileID: 0}
   startSeconds: 120
@@ -4915,7 +4915,6 @@ MonoBehaviour:
   ghostCount: {fileID: 62593149}
   petrifyButton: {fileID: 312728390}
   timer: {fileID: 1345582941}
-  timerExplaination: {fileID: 321426119}
 --- !u!1 &1731352862
 GameObject:
   m_ObjectHideFlags: 0
