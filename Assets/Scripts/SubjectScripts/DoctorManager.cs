@@ -16,7 +16,6 @@ public class DoctorManager : MonoBehaviour
     {
         characterManager = transform.parent.GetComponent<CharacterManager>();
         accused1Number = Random.Range(0, characterManager.honest.Count);
-        Debug.Log(accused1Number + " | " + characterManager.honest.Count);
         accused1 = characterManager.honest[accused1Number];
         if (gameObject.tag != "Untagged") { SpeakLies(); }
         else { SpeakTruth(); }
