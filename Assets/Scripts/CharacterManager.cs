@@ -25,6 +25,7 @@ public class CharacterManager : MonoBehaviour
         susAction = InputSystem.actions.FindAction("Sus");
         lyingAction = InputSystem.actions.FindAction("Lying");
         ghostCount = GameObject.FindGameObjectsWithTag("Ghost").Length;
+        Debug.Log(ghostCount);
     }
     private void Update()
     {

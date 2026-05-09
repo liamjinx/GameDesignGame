@@ -11,6 +11,7 @@ TagManager:
   - BeatStage
   - ClickAudio
   - Petrify
+  - FoundGhostAudio
   layers:
   - Default
   - TransparentFX

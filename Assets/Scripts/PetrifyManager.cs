@@ -8,10 +8,10 @@ public class PetrifyManager : MonoBehaviour
     [SerializeField] private AudioSource petrifyAudio;
     [SerializeField] private AudioSource mainAudio;
     public bool isActive = false;
-    [SerializeField] private Button petrifyButton;
+    private GameObject petrifyButton;
     void Start()
     {
-        
+        petrifyButton = GameObject.FindGameObjectWithTag("Petrify");
     }
     public void ButtonSelect()
     {
