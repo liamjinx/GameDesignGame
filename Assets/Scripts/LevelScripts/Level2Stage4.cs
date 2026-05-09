@@ -24,7 +24,7 @@ public class Level2Stage4 : MonoBehaviour
         ghost2.tag = "Ghost";
         ActivateNuckelavee();
         ActivatePhantom();
-        for (int i = 0; i <= max; ++i)
+        for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
             if (character.tag == "Ghost") { characterManager.ghosts.Add(character); }
@@ -37,8 +37,8 @@ public class Level2Stage4 : MonoBehaviour
     {
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
-        else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
+        if (currentPos == 0) { beforePos = max - 1; afterPos = currentPos + 1; }
+        else if (currentPos == max - 1) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
         {
@@ -53,8 +53,8 @@ public class Level2Stage4 : MonoBehaviour
     {
         int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
-        else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
+        if (currentPos == 0) { beforePos = max - 1; afterPos = currentPos + 1; }
+        else if (currentPos == max - 1) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
         {

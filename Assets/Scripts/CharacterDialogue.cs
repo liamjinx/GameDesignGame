@@ -76,6 +76,11 @@ public class CharacterDialogue : MonoBehaviour
                 {
                     UICanvas.enabled = false;
                     beatStage.enabled = true;
+                    if (petrifyManager.isActive)
+                    {
+                        petrifyManager.isActive = false;
+                        GameObject.FindGameObjectWithTag("Petrify").GetComponent<Image>().color = Color.white;
+                    }
                 }
             }
             else
@@ -88,7 +93,11 @@ public class CharacterDialogue : MonoBehaviour
                     anim.playPetrifyAnimation();
 
                 LoseLife();
-
+                if (petrifyManager.isActive)
+                {
+                    petrifyManager.isActive = false;
+                    GameObject.FindGameObjectWithTag("Petrify").GetComponent<Image>().color = Color.white;
+                }
                 if (UICanvas != null)
                     UICanvas.enabled = false;
 

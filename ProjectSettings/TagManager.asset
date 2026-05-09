@@ -9,6 +9,8 @@ TagManager:
   - UICanvas
   - LostStage
   - BeatStage
+  - ClickAudio
+  - Petrify
   layers:
   - Default
   - TransparentFX

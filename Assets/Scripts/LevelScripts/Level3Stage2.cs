@@ -50,8 +50,8 @@ public class Level3Stage2 : MonoBehaviour
         ghost1.layer = LayerMask.NameToLayer("Phantom");
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = max; afterPos = currentPos + 1; }
-        else if (currentPos == max) { beforePos = currentPos - 1; afterPos = 0; }
+        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
+        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
         {

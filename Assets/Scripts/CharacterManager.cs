@@ -11,6 +11,7 @@ public class CharacterManager : MonoBehaviour
     InputAction safeAction;
     InputAction neutralAction;
     InputAction susAction;
+    InputAction lyingAction;
     public int ghostCount = 0;
     [SerializeField] private TextMeshProUGUI ghostNumber;
     public List<GameObject> subjects = new List<GameObject>();
@@ -22,6 +23,7 @@ public class CharacterManager : MonoBehaviour
         safeAction = InputSystem.actions.FindAction("Safe");
         neutralAction = InputSystem.actions.FindAction("Neutral");
         susAction = InputSystem.actions.FindAction("Sus");
+        lyingAction = InputSystem.actions.FindAction("Lying");
         ghostCount = GameObject.FindGameObjectsWithTag("Ghost").Length;
     }
     private void Update()
@@ -42,6 +44,10 @@ public class CharacterManager : MonoBehaviour
         if (susAction.WasPressedThisFrame())
         {
             selectedCharacter.GetComponent<SpriteRenderer>().color = Color.red;
+        }
+        if (lyingAction.WasPressedThisFrame())
+        {
+            selectedCharacter.GetComponent<SpriteRenderer>().color = Color.yellow;
         }
     }
 
