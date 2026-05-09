@@ -574,7 +574,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8725634657759278805}
+      - m_Target: {fileID: 2252707102340332701}
         m_TargetAssemblyTypeName: Character_record, Assembly-CSharp
         m_MethodName: ChangeDescription
         m_Mode: 1
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8725634657759278805}
+      - m_Target: {fileID: 2252707102340332701}
         m_TargetAssemblyTypeName: Character_record, Assembly-CSharp
         m_MethodName: ToggleOverlay
         m_Mode: 1
@@ -730,7 +730,6 @@ GameObject:
   - component: {fileID: 625081112204959482}
   - component: {fileID: 3709482254767741648}
   - component: {fileID: 7896422267575867121}
-  - component: {fileID: 8725634657759278805}
   m_Layer: 5
   m_Name: CharacterRecord
   m_TagString: Untagged
@@ -801,27 +800,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8725634657759278805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6371304111096550638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c46edede27fa4377aced949776c66cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character_record
-  overlayPanel: {fileID: 6371304111096550638}
-  charactermanager: {fileID: 0}
-  petrifyButton: {fileID: 8207746739354213126}
-  dialoguept1: {fileID: 2122283977938353373}
-  dialoguept2: {fileID: 321053737242813839}
-  characterpt1: {fileID: 2258647163598556953}
-  characterpt2: {fileID: 7694395183250467822}
-  clickAudio: {fileID: 0}
-  PopUpAudio: {fileID: 0}
 --- !u!1 &6732876516176596085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,7 +1332,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8725634657759278805}
+      - m_Target: {fileID: 2252707102340332701}
         m_TargetAssemblyTypeName: Character_record, Assembly-CSharp
         m_MethodName: ChangeDescription
         m_Mode: 1
@@ -1378,6 +1356,7 @@ GameObject:
   - component: {fileID: 5899071788335323545}
   - component: {fileID: 7178253644178797337}
   - component: {fileID: 8411507438717288428}
+  - component: {fileID: 2252707102340332701}
   m_Layer: 5
   m_Name: UICanvasF
   m_TagString: UICanvas
@@ -1456,7 +1435,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8411507438717288428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,6 +1453,27 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2252707102340332701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7769288277864665315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c46edede27fa4377aced949776c66cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character_record
+  overlayPanel: {fileID: 6371304111096550638}
+  charactermanager: {fileID: 0}
+  petrifyButton: {fileID: 8207746739354213126}
+  dialoguept1: {fileID: 2122283977938353373}
+  dialoguept2: {fileID: 321053737242813839}
+  characterpt1: {fileID: 2258647163598556953}
+  characterpt2: {fileID: 7694395183250467822}
+  clickAudio: {fileID: 0}
+  popUpAudio: {fileID: 0}
 --- !u!1001 &431542773121381236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1947,7 +1947,11 @@ PrefabInstance:
     - target: {fileID: 5777693329428162394, guid: 6f622658a8b0eec46b9433c9dafb4ecc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8725634657759278805}
+      objectReference: {fileID: 2252707102340332701}
+    - target: {fileID: 5777693329428162394, guid: 6f622658a8b0eec46b9433c9dafb4ecc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleOverlay
+      objectReference: {fileID: 0}
     - target: {fileID: 6904508008588614647, guid: 6f622658a8b0eec46b9433c9dafb4ecc, type: 3}
       propertyPath: m_Name
       value: NotesButton

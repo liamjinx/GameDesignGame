@@ -12,6 +12,10 @@ TagManager:
   - ClickAudio
   - Petrify
   - FoundGhostAudio
+  - MainThemeAudio
+  - NotGhostAudio
+  - PetrifyAudio
+  - PopUpAudio
   layers:
   - Default
   - TransparentFX

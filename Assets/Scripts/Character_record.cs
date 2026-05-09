@@ -12,11 +12,16 @@ public class Character_record : MonoBehaviour
     [SerializeField] private GameObject characterpt1;
     [SerializeField] private GameObject characterpt2;
     [SerializeField] private AudioSource clickAudio;
-    [SerializeField] private AudioSource PopUpAudio;
+    [SerializeField] private AudioSource popUpAudio;
     //public TextMeshProUGUI overlayText; 
     //public CharacterDialogue[] characters;
     //public Sprite characterSprite;
-
+    public void Start()
+    {
+        clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
+        charactermanager = FindAnyObjectByType<PetrifyManager>().gameObject;
+    }
     public void ToggleOverlay()
     {
         if (overlayPanel.activeSelf)
@@ -25,7 +30,7 @@ public class Character_record : MonoBehaviour
         }
         else
         {
-            PopUpAudio.Play();
+            popUpAudio.Play();
         }
         overlayPanel.SetActive(!overlayPanel.activeSelf);
         

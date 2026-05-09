@@ -13,6 +13,7 @@ public class Level2Stage1 : MonoBehaviour
     [SerializeField] private GameObject ghostCount;
     [SerializeField] private GameObject petrifyButton;
     [SerializeField] private GameObject explanation;
+    [SerializeField] private GameObject menuReturn;
     private int max;
     void Awake()
     {
@@ -97,5 +98,6 @@ public class Level2Stage1 : MonoBehaviour
         ghostCount.SetActive(!ghostCount.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
         explanation.SetActive(!explanation.activeSelf);
+        menuReturn.SetActive(!menuReturn.activeSelf);
     }
 }

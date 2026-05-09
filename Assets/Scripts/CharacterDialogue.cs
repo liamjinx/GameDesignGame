@@ -36,12 +36,8 @@ public class CharacterDialogue : MonoBehaviour
         UICanvas = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<Canvas>();
         lostStage = GameObject.FindGameObjectWithTag("LostStage").GetComponent<Canvas>();
         beatStage = GameObject.FindGameObjectWithTag("BeatStage").GetComponent<Canvas>();
-        if(SceneManager.GetActiveScene().buildIndex == 12)
-        {
-            beatStage = Instantiate(lostStage);
-            beatStage.GetComponentInChildren<TextMeshProUGUI>().text = "Congratulations!\n You successfully found all the ghosts!\n Thank you for playing!";
-        }
-
+        FoundGhost = GameObject.FindGameObjectWithTag("FoundGhostAudio").GetComponent<AudioSource>();
+        NotGhost = GameObject.FindGameObjectWithTag("NotGhostAudio").GetComponent<AudioSource>();
         mainText = UICanvas.GetComponentInChildren<TextMeshProUGUI>();
 
         // 🔥 ALWAYS reassign hearts

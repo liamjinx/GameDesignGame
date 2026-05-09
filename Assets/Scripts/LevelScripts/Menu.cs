@@ -4,11 +4,11 @@ using System.Collections;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private AudioSource ClickAudio;
+    private AudioSource clickAudio;
     private void Start()
     {
 
-        ClickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
+        clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
     }
     public void LoadTutorial()
     {
@@ -36,8 +36,8 @@ public class Menu : MonoBehaviour
 
     private IEnumerator PlayClickThenLoad(int sceneIndex)
     {
-        ClickAudio.Play();
-        yield return new WaitForSeconds(ClickAudio.clip.length);
+        clickAudio.Play();
+        yield return new WaitForSeconds(clickAudio.clip.length);
         SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
     public void LoadMenu()
