@@ -1357,6 +1357,7 @@ GameObject:
   - component: {fileID: 7178253644178797337}
   - component: {fileID: 8411507438717288428}
   - component: {fileID: 2252707102340332701}
+  - component: {fileID: 7243269298648133368}
   m_Layer: 5
   m_Name: UICanvasF
   m_TagString: UICanvas
@@ -1435,7 +1436,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8411507438717288428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,6 +1475,22 @@ MonoBehaviour:
   characterpt2: {fileID: 7694395183250467822}
   clickAudio: {fileID: 0}
   popUpAudio: {fileID: 0}
+--- !u!114 &7243269298648133368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7769288277864665315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdfe5991f7592324ea562c81b86349fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PetrifyManager
+  clickAudio: {fileID: 0}
+  petrifyAudio: {fileID: 0}
+  mainAudio: {fileID: 0}
+  isActive: 0
 --- !u!1001 &431542773121381236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1977,6 +1994,26 @@ PrefabInstance:
     - target: {fileID: 521016794216560219, guid: 0af40c4bada8d114891295965e898bbe, type: 3}
       propertyPath: m_Name
       value: Petrify
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337401365224148422, guid: 0af40c4bada8d114891295965e898bbe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337401365224148422, guid: 0af40c4bada8d114891295965e898bbe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7243269298648133368}
+    - target: {fileID: 2337401365224148422, guid: 0af40c4bada8d114891295965e898bbe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337401365224148422, guid: 0af40c4bada8d114891295965e898bbe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PetrifyManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337401365224148422, guid: 0af40c4bada8d114891295965e898bbe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4867395461568197261, guid: 0af40c4bada8d114891295965e898bbe, type: 3}
       propertyPath: m_fontSize

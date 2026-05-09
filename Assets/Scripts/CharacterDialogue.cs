@@ -30,7 +30,7 @@ public class CharacterDialogue : MonoBehaviour
 
     public void Start()
     {
-        petrifyManager = GetComponentInParent<PetrifyManager>();
+        petrifyManager = FindAnyObjectByType<PetrifyManager>();
         ghostCount = GetComponentInParent<CharacterManager>();
 
         UICanvas = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<Canvas>();

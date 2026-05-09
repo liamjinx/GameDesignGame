@@ -13,7 +13,8 @@ public class Level3Stage1 : MonoBehaviour
     [SerializeField] private GameObject petrifyButton;
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
-    [SerializeField] private AudioSource PopUpAudio;
+    [SerializeField] private GameObject menuReturn;
+    [SerializeField] private AudioSource popUpAudio;
 
 
     private CharacterManager characterManager;
@@ -45,6 +46,7 @@ public class Level3Stage1 : MonoBehaviour
             if (character.tag == "Untagged") { characterManager.honest.Add(character); }
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
         }
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
     }
 
      private void ActivateWraith()
@@ -112,12 +114,8 @@ public class Level3Stage1 : MonoBehaviour
     {
         if (!hasShownStartExplanation)
         {
-            ShowTimerExplanation();
+            ToggleExplanation();
             hasShownStartExplanation = true;
-        }
-        else
-        {
-            HideTimerExplanation();
         }
     }
 
@@ -125,23 +123,14 @@ public class Level3Stage1 : MonoBehaviour
     {
         SceneManager.LoadScene(10, LoadSceneMode.Single);
     }
-    
-
-    public void ShowTimerExplanation()
+    public void ToggleExplanation()
     {
-        noteButton.SetActive(false);
-        ghostCount.SetActive(false);
-        petrifyButton.SetActive(false);
-        timer.SetActive(false);
-        timerExplaination.SetActive(true);
-        PopUpAudio.Play();
-    }
-    public void HideTimerExplanation()
-    {
-        noteButton.SetActive(true);
-        ghostCount.SetActive(true);
-        petrifyButton.SetActive(true);
-        timer.SetActive(true);
-        timerExplaination.SetActive(false);
+        noteButton.SetActive(!noteButton.activeSelf);
+        ghostCount.SetActive(!ghostCount.activeSelf);
+        petrifyButton.SetActive(!petrifyButton.activeSelf);
+        timer.SetActive(!timer.activeSelf);
+        timerExplaination.SetActive(!timer.activeSelf);
+        menuReturn.SetActive(!menuReturn.activeSelf);
+        popUpAudio.Play();
     }
 }

@@ -12,13 +12,14 @@ public class TimerManager : MonoBehaviour
 
     [SerializeField] private float startSeconds = 120f;
     [SerializeField] private Level3Stage1 level3Stage1;
-    [SerializeField] private AudioSource PopUpAudio;
+    [SerializeField] private AudioSource popUpAudio;
     private float remainingSeconds;
     private bool countdownStarted;
     private bool timerEnded;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
         remainingSeconds = startSeconds;
     }
 
@@ -59,12 +60,12 @@ public class TimerManager : MonoBehaviour
 
         if (level3Stage1 != null)
         {
-            level3Stage1.ShowTimerExplanation();
+            level3Stage1.ToggleExplanation();
         }
 
         if (timerExplanationText != null)
         {
-            PopUpAudio.Play();
+            popUpAudio.Play();
             timerTitleText.text = "Game Over";
             timerExplanationText.text = "Time's up! The ghosts have taken over the castle!";
             timerRetryText.text = "Try Again?";

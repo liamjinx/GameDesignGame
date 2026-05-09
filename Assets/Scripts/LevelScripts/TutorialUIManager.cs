@@ -7,11 +7,15 @@ public class TutorialUIManager : MonoBehaviour
     [SerializeField] private GameObject noteButton;
     [SerializeField] private GameObject instructionsButton;
     [SerializeField] private GameObject petrifyButton;
+    [SerializeField] private GameObject ghostCount;
     [SerializeField] private GameObject instructions;
-    [SerializeField] private AudioSource PopUpAudio;
-    [SerializeField] private AudioSource ClickAudio;
+    [SerializeField] private GameObject menuReturn;
+    [SerializeField] private AudioSource popUpAudio;
+    [SerializeField] private AudioSource clickAudio;
     void Start()
     {
+        clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
         ShowInstructions();
     }
 
@@ -26,7 +30,9 @@ public class TutorialUIManager : MonoBehaviour
         instructionsButton.SetActive(!instructionsButton.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
         instructions.SetActive(!instructions.activeSelf);
-        PopUpAudio.Play();
+        ghostCount.SetActive(!ghostCount.activeSelf);
+        menuReturn.SetActive(!menuReturn.activeSelf);
+        popUpAudio.Play();
     }
     public void HideInstructions()
     {
@@ -34,6 +40,8 @@ public class TutorialUIManager : MonoBehaviour
         instructionsButton.SetActive(!instructionsButton.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
         instructions.SetActive(!instructions.activeSelf);
-        ClickAudio.Play();
+        ghostCount.SetActive(!ghostCount.activeSelf);
+        menuReturn.SetActive(!menuReturn.activeSelf);
+        clickAudio.Play();
     }
 }

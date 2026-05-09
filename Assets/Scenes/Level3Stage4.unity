@@ -416,11 +416,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3858000976393032114, guid: 45919525e7326f745a6e6282628848d5, type: 3}
   m_PrefabInstance: {fileID: 6263541580277090183}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &466071199 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 9061939293745375646, guid: 5dedd92badcffb9418c5300b7a56b6ab, type: 3}
-  m_PrefabInstance: {fileID: 2960445823524289378}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &482755964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -429,6 +424,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7178253644178797337, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7561390279371012977, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -513,10 +512,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvasF
       objectReference: {fileID: 0}
-    - target: {fileID: 8207746739354213126, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1710691324}
     - target: {fileID: 8725634657759278805, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: PopUpAudio
       value: 
@@ -533,7 +528,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7561390279371012977, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
-      insertIndex: -1
+      insertIndex: 5
       addedObject: {fileID: 962373028}
     - targetCorrespondingSourceObject: {fileID: 7561390279371012977, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       insertIndex: -1
@@ -1059,11 +1054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!82 &989989483 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5387737938803465072, guid: b5fea08cda45f4c47a614b66a90627a6, type: 3}
-  m_PrefabInstance: {fileID: 3293409892450695950}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1019748155 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 9065585960514498154, guid: 0071d3939cbe1494c86ab5487d377b70, type: 3}
@@ -1227,7 +1217,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1710691323}
-  - component: {fileID: 1710691324}
   - component: {fileID: 1710691325}
   - component: {fileID: 1710691327}
   - component: {fileID: 1710691328}
@@ -1263,22 +1252,6 @@ Transform:
   - {fileID: 3858000976321801288}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1710691324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710691322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdfe5991f7592324ea562c81b86349fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PetrifyManager
-  clickAudio: {fileID: 365720073}
-  petrifyAudio: {fileID: 466071199}
-  mainAudio: {fileID: 989989483}
-  isActive: 0
 --- !u!114 &1710691325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,7 +1290,7 @@ MonoBehaviour:
   timerRetryText: {fileID: 17441849128765878}
   startSeconds: 120
   level3Stage1: {fileID: 0}
-  PopUpAudio: {fileID: 369983271}
+  popUpAudio: {fileID: 0}
 --- !u!114 &1710691328
 MonoBehaviour:
   m_ObjectHideFlags: 0
