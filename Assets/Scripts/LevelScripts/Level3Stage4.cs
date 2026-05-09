@@ -8,14 +8,6 @@ public class Level3Stage4 : MonoBehaviour
     private GameObject ghost2;
     private GameObject ghost3;
 
-    private static bool hasShownStartExplanation;
-
-    [SerializeField] private GameObject noteButton;
-    [SerializeField] private GameObject ghostCount;
-    [SerializeField] private GameObject petrifyButton;
-    [SerializeField] private GameObject timer;
-    //[SerializeField] private GameObject timerExplaination;
-
     private CharacterManager characterManager;
     private int max;
     private int lastIndex;
@@ -129,28 +121,5 @@ public class Level3Stage4 : MonoBehaviour
             cd.ResetLives();
         }
         SceneManager.LoadScene(0, LoadSceneMode.Single);
-    }
-
-    void Start()
-    {
-            HideTimerExplanation();
-    }
-    
-
-    public void ShowTimerExplanation()
-    {
-        noteButton.SetActive(false);
-        ghostCount.SetActive(false);
-        petrifyButton.SetActive(false);
-        timer.SetActive(false);
-        //timerExplaination.SetActive(true);
-    }
-    public void HideTimerExplanation()
-    {
-        noteButton.SetActive(true);
-        ghostCount.SetActive(true);
-        petrifyButton.SetActive(true);
-        timer.SetActive(true);
-        //timerExplaination.SetActive(false);
     }
 }
