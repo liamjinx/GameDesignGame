@@ -5322,7 +5322,7 @@ MonoBehaviour:
   timerRetryText: {fileID: 1286619916}
   startSeconds: 120
   level3Stage1: {fileID: 0}
-  PopUpAudio: {fileID: 0}
+  PopUpAudio: {fileID: 1837837860}
 --- !u!114 &1710691328
 MonoBehaviour:
   m_ObjectHideFlags: 0
