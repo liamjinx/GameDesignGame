@@ -49,4 +49,12 @@ public class Menu : MonoBehaviour
         int sceneNo = SceneManager.GetActiveScene().buildIndex + 1;
         StartCoroutine(PlayClickThenLoad(sceneNo));
     }
+    public void ReplayLevel()
+    {
+
+    }
+    public void ReplayGame()
+    {
+        StartCoroutine(PlayClickThenLoad(2));
+    }
 }
