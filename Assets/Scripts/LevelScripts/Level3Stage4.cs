@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -45,7 +46,7 @@ public class Level3Stage4 : MonoBehaviour
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
         }
         GameObject tempStage = GameObject.FindGameObjectWithTag("LostStage");
-        Debug.Log(tempStage);
+        DestroyImmediate(GameObject.FindGameObjectWithTag("BeatStage"));
         GameObject beatCanvas = Instantiate(tempStage);
         beatCanvas.tag = "BeatStage";
         beatCanvas.GetComponentInChildren<TextMeshProUGUI>().text = "Congratulations!\n You successfully found all the ghosts!\n Thank you for playing!";
@@ -54,6 +55,13 @@ public class Level3Stage4 : MonoBehaviour
         Button tempButton = beatCanvas.GetComponentInChildren<Button>();
         tempButton.GetComponentInChildren<TextMeshProUGUI>().text = "Replay Game";
         tempButton.onClick.AddListener(tempMenu.ReplayGame);
+        GameObject temp1Stage = GameObject.FindGameObjectWithTag("BeatStage");
+        Debug.Log(temp1Stage.gameObject);
+    }
+    private void Start()
+    {
+        GameObject tempStage = GameObject.FindGameObjectWithTag("BeatStage");
+        Debug.Log(tempStage.gameObject);
     }
 
     private void ActivatePhantom()

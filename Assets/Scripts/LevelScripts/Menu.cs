@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class Menu : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class Menu : MonoBehaviour
 
     public void LoadLevel3()
     {
-        StartCoroutine(PlayClickThenLoad(9));
+        StartCoroutine(PlayClickThenLoad(12));
         //SceneManager.LoadScene(9,LoadSceneMode.Single);
     }
 
@@ -48,6 +49,7 @@ public class Menu : MonoBehaviour
     {
         int nextSceneNo = SceneManager.GetActiveScene().buildIndex + 1;
         StartCoroutine(PlayClickThenLoad(nextSceneNo));
+        gameObject.GetComponent<Canvas>().enabled = false;
     }
     public void PlayAgain()
     {
@@ -65,6 +67,7 @@ public class Menu : MonoBehaviour
         {
             SceneManager.LoadScene(sceneNo); // retry current stage
         }
+        gameObject.GetComponent<Canvas>().enabled = false;
     }
     public void ReplayGame()
     {
