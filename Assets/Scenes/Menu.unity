@@ -621,6 +621,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 161918255}
     m_Modifications:
+    - target: {fileID: 5387737938803465072, guid: b5fea08cda45f4c47a614b66a90627a6, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6317721840204517626, guid: b5fea08cda45f4c47a614b66a90627a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1499,7 +1503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcfeb3946de24ac4a5fe8b406b11f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Menu
-  ClickAudio: {fileID: 0}
 --- !u!4 &1176220489
 Transform:
   m_ObjectHideFlags: 0

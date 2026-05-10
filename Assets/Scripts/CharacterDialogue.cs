@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class CharacterDialogue : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private AudioSource FoundGhost;
-    [SerializeField] private AudioSource NotGhost;
+    //[SerializeField] private AudioSource FoundGhost;
+    //[SerializeField] private AudioSource NotGhost;
+    private AudioSource FoundGhost;
+    private AudioSource NotGhost;
     TextMeshProUGUI mainText;
 
     private PetrifyManager petrifyManager;

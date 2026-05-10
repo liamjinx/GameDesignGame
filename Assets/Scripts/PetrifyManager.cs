@@ -4,9 +4,9 @@ using System.Collections;
 
 public class PetrifyManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource clickAudio;
-    [SerializeField] private AudioSource petrifyAudio;
-    [SerializeField] private AudioSource mainAudio;
+    private AudioSource clickAudio;
+    private AudioSource petrifyAudio;
+    private AudioSource mainAudio;
     public bool isActive = false;
     private GameObject petrifyButton;
     void Start()
