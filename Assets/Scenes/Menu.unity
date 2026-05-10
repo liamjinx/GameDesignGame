@@ -446,6 +446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FoundGhostAudio
       objectReference: {fileID: 0}
+    - target: {fileID: 7507808377788325949, guid: 0071d3939cbe1494c86ab5487d377b70, type: 3}
+      propertyPath: m_TagString
+      value: FoundGhostAudio
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

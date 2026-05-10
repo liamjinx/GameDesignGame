@@ -13,6 +13,8 @@ public class Level2Stage1 : MonoBehaviour
     [SerializeField] private GameObject ghostCount;
     [SerializeField] private GameObject petrifyButton;
     [SerializeField] private GameObject explanation;
+    [SerializeField] private GameObject menuReturn;
+    [SerializeField] private AudioSource popUpAudio;
     private int max;
     void Awake()
     {
@@ -35,6 +37,7 @@ public class Level2Stage1 : MonoBehaviour
             if (character.tag == "Untagged") { characterManager.honest.Add(character); }
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
         }
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
     }
     private void ActivateWraith()
     {
@@ -97,5 +100,7 @@ public class Level2Stage1 : MonoBehaviour
         ghostCount.SetActive(!ghostCount.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
         explanation.SetActive(!explanation.activeSelf);
+        menuReturn.SetActive(!menuReturn.activeSelf);
+        popUpAudio.Play();
     }
 }

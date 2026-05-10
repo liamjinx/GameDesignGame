@@ -30,13 +30,14 @@ public class CharacterDialogue : MonoBehaviour
 
     public void Start()
     {
-        petrifyManager = GetComponentInParent<PetrifyManager>();
+        petrifyManager = FindAnyObjectByType<PetrifyManager>();
         ghostCount = GetComponentInParent<CharacterManager>();
 
         UICanvas = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<Canvas>();
         lostStage = GameObject.FindGameObjectWithTag("LostStage").GetComponent<Canvas>();
         beatStage = GameObject.FindGameObjectWithTag("BeatStage").GetComponent<Canvas>();
-
+        FoundGhost = GameObject.FindGameObjectWithTag("FoundGhostAudio").GetComponent<AudioSource>();
+        NotGhost = GameObject.FindGameObjectWithTag("NotGhostAudio").GetComponent<AudioSource>();
         mainText = UICanvas.GetComponentInChildren<TextMeshProUGUI>();
 
         // 🔥 ALWAYS reassign hearts
