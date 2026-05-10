@@ -38,7 +38,13 @@ public class PetrifyManager : MonoBehaviour
 
     private IEnumerator FadeToPetrify()
     {
+        if (clickAudio == null || petrifyAudio == null || mainAudio == null)
+        {
+            yield break;
+        }
+
         clickAudio.Play();
+        Debug.Log("PetrifyManager fade start, main volume=" + mainAudio.volume);
 
         petrifyAudio.volume = 0; 
         petrifyAudio.Play();
@@ -59,9 +65,15 @@ public class PetrifyManager : MonoBehaviour
         
     }
 
-    private IEnumerator FadeToNormal()
+    public IEnumerator FadeToNormal()
     {
+        if (clickAudio == null || petrifyAudio == null || mainAudio == null)
+        {
+            yield break;
+        }
+
         clickAudio.Play();
+        Debug.Log("PetrifyManager fade start, main volume=" + mainAudio.volume);
 
         mainAudio.volume = 0; 
         mainAudio.Play();

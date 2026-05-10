@@ -60,7 +60,7 @@ public class CharacterDialogue : MonoBehaviour
 
     public void Petrify()
     {
-        Debug.Log("test1");
+        Debug.Log("petrifymanager id =" + petrifyManager.GetInstanceID());
         if (petrifyManager.isActive)
         {
             Debug.Log("test2");

@@ -41,6 +41,7 @@ public class Level3Stage2 : MonoBehaviour
     private void ActivatePhantom()
     {
         ghost1.layer = LayerMask.NameToLayer("Phantom");
+
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
@@ -57,7 +58,9 @@ public class Level3Stage2 : MonoBehaviour
     }
      private void ActivateNuckelavee()
     {
-        int currentPos = ghost1.transform.GetSiblingIndex();
+        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
+
+        int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
         else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }

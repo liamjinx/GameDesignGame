@@ -64,6 +64,8 @@ public class Level3Stage3 : MonoBehaviour
 
      private void ActivateWraith()
     {
+        ghost2.layer = LayerMask.NameToLayer("Wraith");
+
         int affected = Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
         while (affectedSubject.tag != "Untagged")

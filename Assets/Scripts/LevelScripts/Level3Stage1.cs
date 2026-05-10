@@ -51,6 +51,8 @@ public class Level3Stage1 : MonoBehaviour
 
      private void ActivateWraith()
     {
+        ghost1.layer = LayerMask.NameToLayer("Wraith");
+
         int affected = Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
         while (affectedSubject.tag != "Untagged")
@@ -63,7 +65,9 @@ public class Level3Stage1 : MonoBehaviour
 
     private void ActivateNuckelavee()
     {
-        int currentPos = ghost1.transform.GetSiblingIndex();
+        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
+
+        int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
         else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }

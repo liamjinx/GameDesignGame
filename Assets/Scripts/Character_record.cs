@@ -5,14 +5,15 @@ using TMPro;
 public class Character_record : MonoBehaviour
 {
     public GameObject overlayPanel;
-    [SerializeField] private GameObject charactermanager;
+    private GameObject petrifyManager;
     [SerializeField] private Button petrifyButton;
     [SerializeField] private GameObject dialoguept1;
     [SerializeField] private GameObject dialoguept2;
     [SerializeField] private GameObject characterpt1;
     [SerializeField] private GameObject characterpt2;
-    [SerializeField] private AudioSource clickAudio;
-    [SerializeField] private AudioSource popUpAudio;
+    private AudioSource clickAudio;
+    private AudioSource popUpAudio;
+    //private AudioSource mainAudio;
     //public TextMeshProUGUI overlayText; 
     //public CharacterDialogue[] characters;
     //public Sprite characterSprite;
@@ -20,7 +21,8 @@ public class Character_record : MonoBehaviour
     {
         clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
         popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
-        charactermanager = FindAnyObjectByType<PetrifyManager>().gameObject;
+        //mainAudio = GameObject.FindGameObjectWithTag("MainThemeAudio").GetComponent<AudioSource>();
+        petrifyManager = FindAnyObjectByType<PetrifyManager>().gameObject;
     }
     public void ToggleOverlay()
     {
@@ -34,9 +36,12 @@ public class Character_record : MonoBehaviour
         }
         overlayPanel.SetActive(!overlayPanel.activeSelf);
         
-        if (charactermanager.GetComponent<PetrifyManager>().isActive)
+        if (petrifyManager.GetComponent<PetrifyManager>().isActive)
         {
-            charactermanager.GetComponent<PetrifyManager>().isActive = false;
+            petrifyManager.GetComponent<PetrifyManager>().StartCoroutine(
+            petrifyManager.GetComponent<PetrifyManager>().FadeToNormal());
+
+            petrifyManager.GetComponent<PetrifyManager>().isActive = false;
             petrifyButton.GetComponent<Image>().color = Color.white;
         }
     }
