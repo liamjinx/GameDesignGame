@@ -540,6 +540,26 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7561390279371012977, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
   m_PrefabInstance: {fileID: 482755964}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &482755966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6245610907576869019, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+  m_PrefabInstance: {fileID: 482755964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &482755967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7647785054284478361, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+  m_PrefabInstance: {fileID: 482755964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &482755968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7941475774610410638, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+  m_PrefabInstance: {fileID: 482755964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &482755969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5597206179123112173, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+  m_PrefabInstance: {fileID: 482755964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +971,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &962373030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962739125080708883, guid: 196e3f8d5382abc4f900a6735ca831bf, type: 3}
+  m_PrefabInstance: {fileID: 962373027}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1019748155 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 9065585960514498154, guid: 0071d3939cbe1494c86ab5487d377b70, type: 3}
@@ -1047,9 +1072,21 @@ MonoBehaviour:
   timerTitleText: {fileID: 17441849128765877}
   timerExplanationText: {fileID: 17441849128765876}
   timerRetryText: {fileID: 17441849128765878}
-  startSeconds: 120
-  level3Stage1: {fileID: 0}
-  popUpAudio: {fileID: 0}
+  onTimerEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1710691328}
+        m_TargetAssemblyTypeName: Level3Stage4, Assembly-CSharp
+        m_MethodName: ToggleExplanation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1710691328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,6 +1099,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e647f54b4aef34d51b454ec23dc6ae6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Level3Stage4
+  noteButton: {fileID: 482755968}
+  ghostCount: {fileID: 482755967}
+  petrifyButton: {fileID: 482755966}
+  timer: {fileID: 962373030}
+  timerExplaination: {fileID: 17441849128765879}
+  menuReturn: {fileID: 482755969}
 --- !u!224 &1716364581 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4108485608080004390, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
@@ -1849,6 +1892,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 482755965}
     m_Modifications:
+    - target: {fileID: 232425208671847266, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+      propertyPath: m_text
+      value: Game Over
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654144064168446860, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+      propertyPath: m_text
+      value: Time's up! The ghosts have taken over the castle!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654144064168446860, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3728130731485695930, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_Name
       value: TimerExplanation
@@ -1856,6 +1911,10 @@ PrefabInstance:
     - target: {fileID: 3728130731485695930, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3763047484828654136, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+      propertyPath: m_text
+      value: Play Again?
       objectReference: {fileID: 0}
     - target: {fileID: 4108485608080004390, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_Pivot.x
@@ -1938,12 +1997,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1710691328}
     - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayAgain
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Level3Stage4, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1983,6 +2054,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &17441849128765879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3728130731485695930, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+  m_PrefabInstance: {fileID: 17441849128765875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &712631524289348239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1994,6 +2070,10 @@ PrefabInstance:
     - target: {fileID: 1432506012122863451, guid: d19604cc1c9e8224baa5c5cc1ab151b6, type: 3}
       propertyPath: m_Name
       value: PopupAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432506012122863451, guid: d19604cc1c9e8224baa5c5cc1ab151b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4643523628066109912, guid: d19604cc1c9e8224baa5c5cc1ab151b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2091,6 +2171,10 @@ PrefabInstance:
     - target: {fileID: 7507808377788325949, guid: 0071d3939cbe1494c86ab5487d377b70, type: 3}
       propertyPath: m_Name
       value: FoundGhostAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507808377788325949, guid: 0071d3939cbe1494c86ab5487d377b70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2377,6 +2461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PetrifyAudio
       objectReference: {fileID: 0}
+    - target: {fileID: 6991435307069256459, guid: 5dedd92badcffb9418c5300b7a56b6ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2434,6 +2522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainThemeAudio
       objectReference: {fileID: 0}
+    - target: {fileID: 6610539779971265993, guid: b5fea08cda45f4c47a614b66a90627a6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2490,6 +2582,10 @@ PrefabInstance:
     - target: {fileID: 5239068734619284319, guid: 7ef38325816fdd04596120377bd80027, type: 3}
       propertyPath: m_Name
       value: ClickAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239068734619284319, guid: 7ef38325816fdd04596120377bd80027, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3617,6 +3713,10 @@ PrefabInstance:
     - target: {fileID: 8369966776193067006, guid: 5f5988c0caa26d6449ab43c588929d7c, type: 3}
       propertyPath: m_Name
       value: NotGhostAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369966776193067006, guid: 5f5988c0caa26d6449ab43c588929d7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

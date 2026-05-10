@@ -7,6 +7,15 @@ public class Level3Stage2 : MonoBehaviour
     private GameObject ghost1;
     private GameObject ghost2;
 
+    private static bool hasShownStartExplanation;
+
+    [SerializeField] private GameObject noteButton;
+    [SerializeField] private GameObject ghostCount;
+    [SerializeField] private GameObject petrifyButton;
+    [SerializeField] private GameObject timer;
+    [SerializeField] private GameObject timerExplaination;
+    [SerializeField] private GameObject menuReturn;
+    private AudioSource popUpAudio;
     private CharacterManager characterManager;
     private int max;
 
@@ -36,11 +45,13 @@ public class Level3Stage2 : MonoBehaviour
             if (character.tag == "Untagged") { characterManager.honest.Add(character); }
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
         }
+        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
     }
 
     private void ActivatePhantom()
     {
         ghost1.layer = LayerMask.NameToLayer("Phantom");
+
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
@@ -57,7 +68,9 @@ public class Level3Stage2 : MonoBehaviour
     }
      private void ActivateNuckelavee()
     {
-        int currentPos = ghost1.transform.GetSiblingIndex();
+        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
+
+        int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
         else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
@@ -108,6 +121,17 @@ public class Level3Stage2 : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(11, LoadSceneMode.Single); //load stage 3
+    }
+
+    public void ToggleExplanation()
+    {
+        noteButton.SetActive(!noteButton.activeSelf);
+        ghostCount.SetActive(!ghostCount.activeSelf);
+        petrifyButton.SetActive(!petrifyButton.activeSelf);
+        timer.SetActive(!timer.activeSelf);
+        timerExplaination.SetActive(!timerExplaination.activeSelf);
+        menuReturn.SetActive(!menuReturn.activeSelf);
+        popUpAudio.Play();
     }
     
 }

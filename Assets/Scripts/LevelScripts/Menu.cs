@@ -6,6 +6,11 @@ using Unity.VisualScripting;
 public class Menu : MonoBehaviour
 {
     private AudioSource clickAudio;
+    [SerializeField] private GameObject Levels;
+    [SerializeField] private GameObject Level1Stages;
+    [SerializeField] private GameObject Level2Stages;
+    [SerializeField] private GameObject Level3Stages;
+
     private void Start()
     {
 
@@ -19,20 +24,115 @@ public class Menu : MonoBehaviour
 
     public void LoadLevel1()
     {
-        StartCoroutine(PlayClickThenLoad(2));
+        clickAudio.Play();
+        Level1Stages.SetActive(true);
+        Levels.SetActive(false);
+        //StartCoroutine(PlayClickThenLoad(2));
         //SceneManager.LoadScene(2,LoadSceneMode.Single);
     }
 
     public void LoadLevel2()
     {
-        StartCoroutine(PlayClickThenLoad(5));
+        clickAudio.Play();
+        Level2Stages.SetActive(true);
+        Levels.SetActive(false);
+        //StartCoroutine(PlayClickThenLoad(5));
         //SceneManager.LoadScene(5,LoadSceneMode.Single);
     }
 
     public void LoadLevel3()
     {
-        StartCoroutine(PlayClickThenLoad(12));
+        clickAudio.Play();
+        Level3Stages.SetActive(true);
+        Levels.SetActive(false);
+        //StartCoroutine(PlayClickThenLoad(9));
         //SceneManager.LoadScene(9,LoadSceneMode.Single);
+    }
+    public void Back()
+    {
+        clickAudio.Play();
+        Levels.SetActive(true);
+        Level1Stages.SetActive(false);
+        Level2Stages.SetActive(false);
+        Level3Stages.SetActive(false);
+    }
+
+
+
+
+
+     public void LoadLevel1Stage1()
+    {
+        StartCoroutine(PlayClickThenLoad(2));
+        //SceneManager.LoadScene(2,LoadSceneMode.Single);
+    }
+
+    public void LoadLevel1Stage2()
+    {
+        StartCoroutine(PlayClickThenLoad(3));
+        //SceneManager.LoadScene(3,LoadSceneMode.Single);
+    }
+
+    public void LoadLevel1Stage3()
+    {
+        StartCoroutine(PlayClickThenLoad(4));
+        //SceneManager.LoadScene(4,LoadSceneMode.Single);
+    }
+
+
+
+
+
+
+      public void LoadLevel2Stage1()
+    {
+        StartCoroutine(PlayClickThenLoad(5));
+        //SceneManager.LoadScene(5,LoadSceneMode.Single);
+    }
+
+    public void LoadLevel2Stage2()
+    {
+        StartCoroutine(PlayClickThenLoad(6));
+        //SceneManager.LoadScene(6,LoadSceneMode.Single);
+    }
+
+    public void LoadLevel2Stage3()
+    {
+        StartCoroutine(PlayClickThenLoad(7));
+        //SceneManager.LoadScene(7,LoadSceneMode.Single);
+    }
+        public void LoadLevel2Stage4()
+    {
+        StartCoroutine(PlayClickThenLoad(8));
+        //SceneManager.LoadScene(8,LoadSceneMode.Single);
+    }
+
+
+
+
+
+      public void LoadLevel3Stage1()
+    {
+        StartCoroutine(PlayClickThenLoad(9));
+        //SceneManager.LoadScene(9,LoadSceneMode.Single);
+    }
+
+    public void LoadLevel3Stage2()
+    {
+        StartCoroutine(PlayClickThenLoad(10));
+        //SceneManager.LoadScene(10,LoadSceneMode.Single);
+    }
+
+    public void LoadLevel3Stage3()
+    {
+        StartCoroutine(PlayClickThenLoad(11));
+        //SceneManager.LoadScene(11,LoadSceneMode.Single);
+    }
+
+        public void LoadLevel3Stage4()
+    {
+        StartCoroutine(PlayClickThenLoad(12));
+        //SceneManager.LoadScene(12,LoadSceneMode.Single);
     }
 
     private IEnumerator PlayClickThenLoad(int sceneIndex)

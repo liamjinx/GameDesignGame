@@ -32,6 +32,8 @@ public class Level2Stage2 : MonoBehaviour
     }
     private void ActivateNuckelavee()
     {
+        ghost1.layer = LayerMask.NameToLayer("Nuckelavee");
+
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = max - 1; afterPos = currentPos + 1; }
