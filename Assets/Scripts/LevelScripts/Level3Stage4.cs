@@ -146,7 +146,7 @@ public class Level3Stage4 : MonoBehaviour
         ghostCount.SetActive(!ghostCount.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
         timer.SetActive(!timer.activeSelf);
-        timerExplaination.SetActive(!timer.activeSelf);
+        timerExplaination.SetActive(!timerExplaination.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
         popUpAudio.Play();
     }

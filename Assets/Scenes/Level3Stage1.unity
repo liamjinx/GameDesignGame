@@ -1249,7 +1249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleExplanation
+      value: HideExplanation
       objectReference: {fileID: 0}
     - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2673,13 +2673,12 @@ MonoBehaviour:
   timerTitleText: {fileID: 642719495}
   timerExplanationText: {fileID: 642719494}
   timerRetryText: {fileID: 642719493}
-  startSeconds: 120
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1710691328}
         m_TargetAssemblyTypeName: Level3Stage1, Assembly-CSharp
-        m_MethodName: ToggleExplanation
+        m_MethodName: ShowExplanation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

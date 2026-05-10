@@ -12,7 +12,7 @@ public class TimerManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerExplanationText;
     [SerializeField] private TextMeshProUGUI timerRetryText;
 
-    [SerializeField] private float startSeconds = 120f;
+    private float startSeconds = 5f;
     [SerializeField] private UnityEvent onTimerEnd;
     private AudioSource popUpAudio;
     private float remainingSeconds;
@@ -27,17 +27,12 @@ public class TimerManager : MonoBehaviour
 
     void Awake()
     {
-        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timerText == null || !timerText.gameObject.activeInHierarchy)
-        {
-            Debug.Log("remainingSeconds=" + remainingSeconds);
-            return;
-        }
 
         if (!countdownStarted)
         {
