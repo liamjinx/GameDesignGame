@@ -874,6 +874,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &1302183726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3728130731485695930, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
+  m_PrefabInstance: {fileID: 1302183721}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1477583802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1052,6 +1057,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &1512860200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8962739125080708883, guid: 196e3f8d5382abc4f900a6735ca831bf, type: 3}
+  m_PrefabInstance: {fileID: 1512860197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1640403560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1242,6 +1252,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &1640403563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6245610907576869019, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+  m_PrefabInstance: {fileID: 1640403560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1640403564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7647785054284478361, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+  m_PrefabInstance: {fileID: 1640403560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1640403565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7941475774610410638, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+  m_PrefabInstance: {fileID: 1640403560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1640403566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5597206179123112173, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+  m_PrefabInstance: {fileID: 1640403560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1710691322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,8 +1352,21 @@ MonoBehaviour:
   timerExplanationText: {fileID: 1302183724}
   timerRetryText: {fileID: 1302183723}
   startSeconds: 120
-  level3Stage1: {fileID: 0}
-  popUpAudio: {fileID: 0}
+  onTimerEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1710691328}
+        m_TargetAssemblyTypeName: Level3Stage3, Assembly-CSharp
+        m_MethodName: ToggleExplanation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1710691328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1336,6 +1379,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad48a648c5f547a6b2cabe792b005b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Level3Stage3
+  noteButton: {fileID: 1640403565}
+  ghostCount: {fileID: 1640403564}
+  petrifyButton: {fileID: 1640403563}
+  timer: {fileID: 1512860200}
+  timerExplaination: {fileID: 1302183726}
+  menuReturn: {fileID: 1640403566}
 --- !u!224 &1887726399 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3215172848438398842, guid: df9c2bb7e7cc1924ebcc153a686de901, type: 3}

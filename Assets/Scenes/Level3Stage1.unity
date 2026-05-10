@@ -2674,8 +2674,21 @@ MonoBehaviour:
   timerExplanationText: {fileID: 642719494}
   timerRetryText: {fileID: 642719493}
   startSeconds: 120
-  level3Stage1: {fileID: 1710691328}
-  popUpAudio: {fileID: 0}
+  onTimerEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1710691328}
+        m_TargetAssemblyTypeName: Level3Stage1, Assembly-CSharp
+        m_MethodName: ToggleExplanation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1710691328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2694,7 +2707,6 @@ MonoBehaviour:
   timer: {fileID: 1565115210}
   timerExplaination: {fileID: 642719492}
   menuReturn: {fileID: 1168941945}
-  popUpAudio: {fileID: 0}
 --- !u!1 &1731352862
 GameObject:
   m_ObjectHideFlags: 0

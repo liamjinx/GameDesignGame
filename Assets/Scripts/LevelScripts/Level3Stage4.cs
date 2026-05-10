@@ -8,6 +8,16 @@ public class Level3Stage4 : MonoBehaviour
     private GameObject ghost2;
     private GameObject ghost3;
 
+    private static bool hasShownStartExplanation;
+
+    [SerializeField] private GameObject noteButton;
+    [SerializeField] private GameObject ghostCount;
+    [SerializeField] private GameObject petrifyButton;
+    [SerializeField] private GameObject timer;
+    [SerializeField] private GameObject timerExplaination;
+    [SerializeField] private GameObject menuReturn;
+    private AudioSource popUpAudio;
+
     private CharacterManager characterManager;
     private int max;
     private int lastIndex;
@@ -41,6 +51,8 @@ public class Level3Stage4 : MonoBehaviour
             if (character.tag == "Untagged") { characterManager.honest.Add(character); }
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
         }
+    
+        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
     }
 
     private void ActivatePhantom()
@@ -126,5 +138,16 @@ public class Level3Stage4 : MonoBehaviour
             cd.ResetLives();
         }
         SceneManager.LoadScene(0, LoadSceneMode.Single);
+    }
+
+     public void ToggleExplanation()
+    {
+        noteButton.SetActive(!noteButton.activeSelf);
+        ghostCount.SetActive(!ghostCount.activeSelf);
+        petrifyButton.SetActive(!petrifyButton.activeSelf);
+        timer.SetActive(!timer.activeSelf);
+        timerExplaination.SetActive(!timer.activeSelf);
+        menuReturn.SetActive(!menuReturn.activeSelf);
+        popUpAudio.Play();
     }
 }

@@ -14,7 +14,7 @@ public class Level3Stage1 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
     [SerializeField] private GameObject menuReturn;
-    [SerializeField] private AudioSource popUpAudio;
+    private AudioSource popUpAudio;
 
 
     private CharacterManager characterManager;
@@ -133,7 +133,7 @@ public class Level3Stage1 : MonoBehaviour
         ghostCount.SetActive(!ghostCount.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
         timer.SetActive(!timer.activeSelf);
-        timerExplaination.SetActive(!timer.activeSelf);
+        timerExplaination.SetActive(!timerExplaination.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
         popUpAudio.Play();
     }

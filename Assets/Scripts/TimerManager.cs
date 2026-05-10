@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 using TMPro;
+
 
 public class TimerManager : MonoBehaviour
 {
@@ -11,16 +13,21 @@ public class TimerManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerRetryText;
 
     [SerializeField] private float startSeconds = 120f;
-    [SerializeField] private Level3Stage1 level3Stage1;
-    [SerializeField] private AudioSource popUpAudio;
+    [SerializeField] private UnityEvent onTimerEnd;
+    private AudioSource popUpAudio;
     private float remainingSeconds;
     private bool countdownStarted;
     private bool timerEnded;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
+        //popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
         remainingSeconds = startSeconds;
+    }
+
+    void Awake()
+    {
+        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +35,7 @@ public class TimerManager : MonoBehaviour
     {
         if (timerText == null || !timerText.gameObject.activeInHierarchy)
         {
+            Debug.Log("remainingSeconds=" + remainingSeconds);
             return;
         }
 
@@ -58,10 +66,7 @@ public class TimerManager : MonoBehaviour
     {
         timerEnded = true;
 
-        if (level3Stage1 != null)
-        {
-            level3Stage1.ToggleExplanation();
-        }
+        onTimerEnd?.Invoke();
 
         if (timerExplanationText != null)
         {
@@ -83,4 +88,5 @@ public class TimerManager : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 }
