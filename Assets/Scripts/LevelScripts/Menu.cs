@@ -46,6 +46,7 @@ public class Menu : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-
+        int sceneNo = SceneManager.GetActiveScene().buildIndex + 1;
+        StartCoroutine(PlayClickThenLoad(sceneNo));
     }
 }
