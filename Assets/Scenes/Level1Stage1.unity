@@ -1314,6 +1314,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 340
       objectReference: {fileID: 0}
+    - target: {fileID: 7520752827177747178, guid: d7ab07afb0535da46bf9d453195190e9, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1620906185}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7517603262392325336, guid: d7ab07afb0535da46bf9d453195190e9, type: 3}
@@ -2528,6 +2532,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375096385}
   m_CullTransparentMesh: 1
+--- !u!95 &1620906185 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -1447188430179823837, guid: d7ab07afb0535da46bf9d453195190e9, type: 3}
+  m_PrefabInstance: {fileID: 756686223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1638665215 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1832076173046490962, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
@@ -2584,9 +2593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfe5991f7592324ea562c81b86349fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PetrifyManager
-  clickAudio: {fileID: 0}
-  petrifyAudio: {fileID: 0}
-  mainAudio: {fileID: 0}
   isActive: 0
 --- !u!114 &1710691325
 MonoBehaviour:
