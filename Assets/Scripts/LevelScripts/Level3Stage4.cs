@@ -54,6 +54,7 @@ public class Level3Stage4 : MonoBehaviour
         Debug.Log(tempMenu.gameObject);
         Button tempButton = beatCanvas.GetComponentInChildren<Button>();
         tempButton.GetComponentInChildren<TextMeshProUGUI>().text = "Replay Game";
+        tempButton.onClick.RemoveListener(tempMenu.PlayAgain);
         tempButton.onClick.AddListener(tempMenu.ReplayGame);
         GameObject temp1Stage = GameObject.FindGameObjectWithTag("BeatStage");
         Debug.Log(temp1Stage.gameObject);
