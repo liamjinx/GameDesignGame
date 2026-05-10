@@ -46,6 +46,8 @@ public class AudioManager : MonoBehaviour
 
     void sceneloaded(Scene scene, LoadSceneMode mode)
     {
+        StopAllCoroutines();
+
         var petrifyObject = GameObject.FindGameObjectWithTag("PetrifyAudio");
         petrifyAudio = petrifyObject != null ? petrifyObject.GetComponent<AudioSource>() : null;
 
@@ -59,9 +61,9 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        if (scene.name == "Menu")
+        if (scene.buildIndex == 0)
         {
-            MainThemeAudio.Stop();
+            StopMainThemeAudio();
             return;
         }
 
@@ -71,6 +73,11 @@ public class AudioManager : MonoBehaviour
     IEnumerator StartMainThemeAfterLoad()
     {
         yield return null;
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            yield break;
+        }
 
         var petrifyManager = FindAnyObjectByType<PetrifyManager>();
         if (petrifyManager != null)
@@ -92,5 +99,29 @@ public class AudioManager : MonoBehaviour
         MainThemeAudio.mute = false;
         MainThemeAudio.volume = 1f;
         MainThemeAudio.Play();
+    }
+
+    void StopMainThemeAudio()
+    {
+        if (MainThemeAudio != null)
+        {
+            MainThemeAudio.Stop();
+        }
+
+        var taggedMainThemes = GameObject.FindGameObjectsWithTag("MainThemeAudio");
+        foreach (var mainThemeObject in taggedMainThemes)
+        {
+            var audioSources = mainThemeObject.GetComponentsInChildren<AudioSource>(true);
+            foreach (var audioSource in audioSources)
+            {
+                audioSource.Stop();
+            }
+        }
+
+        var childSources = GetComponentsInChildren<AudioSource>(true);
+        foreach (var audioSource in childSources)
+        {
+            audioSource.Stop();
+        }
     }
 }
