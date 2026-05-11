@@ -14,6 +14,7 @@ public class Level3Stage1 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
     [SerializeField] private GameObject menuReturn;
+    [SerializeField] private TimerManager timerManager;
     private AudioSource popUpAudio;
     private AudioSource clickAudio;
 
@@ -123,6 +124,8 @@ public class Level3Stage1 : MonoBehaviour
         {
             ShowExplanation();
             hasShownStartExplanation = true;
+        } else {
+            HideExplanation();
         }
     }
 
@@ -150,6 +153,10 @@ public class Level3Stage1 : MonoBehaviour
         timerExplaination.SetActive(false);
         menuReturn.SetActive(true);
         clickAudio.Play();
+        if (timerManager != null)
+        {
+            timerManager.StartTimer();
+        }
     }
 
         public void ToggleExplanation()
@@ -160,6 +167,6 @@ public class Level3Stage1 : MonoBehaviour
        // timer.SetActive(!timer.activeSelf);
         timerExplaination.SetActive(!timerExplaination.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
-        popUpAudio.Play();
+        clickAudio.Play();
     }
 }

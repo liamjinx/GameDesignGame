@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Level3Stage2 : MonoBehaviour
 {
@@ -15,21 +16,25 @@ public class Level3Stage2 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
     [SerializeField] private GameObject menuReturn;
+    [SerializeField] private TimerManager timerManager;
     private AudioSource popUpAudio;
+    private AudioSource clickAudio;
+
     private CharacterManager characterManager;
     private int max;
 
     private int lastIndex;
     void Awake()
     {
+
         characterManager = GetComponent<CharacterManager>();
         max = transform.childCount;
         lastIndex = max - 1;
-        int ghostnumber1 = Random.Range(0, max);
-        int ghostnumber2 = Random.Range(0, max);
+        int ghostnumber1 = UnityEngine.Random.Range(0, max);
+        int ghostnumber2 = UnityEngine.Random.Range(0, max);
         while (ghostnumber1 == ghostnumber2)
         {
-            ghostnumber2 = Random.Range(0, max);
+            ghostnumber2 = UnityEngine.Random.Range(0, max);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
@@ -45,7 +50,9 @@ public class Level3Stage2 : MonoBehaviour
             if (character.tag == "Untagged") { characterManager.honest.Add(character); }
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
         }
-        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
+        clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
+
     }
 
     private void ActivatePhantom()
@@ -82,6 +89,14 @@ public class Level3Stage2 : MonoBehaviour
         if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
         {
             transform.GetChild(afterPos).gameObject.tag = "Lying";
+        }
+    }
+
+    void Start()
+    {
+        if (timerManager != null)
+        {
+            timerManager.StartTimer();
         }
     }
 
@@ -128,10 +143,43 @@ public class Level3Stage2 : MonoBehaviour
         noteButton.SetActive(!noteButton.activeSelf);
         ghostCount.SetActive(!ghostCount.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
-        timer.SetActive(!timer.activeSelf);
+        //timer.SetActive(!timer.activeSelf);
         timerExplaination.SetActive(!timerExplaination.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
         popUpAudio.Play();
     }
+
+    public void ShowExplanation()
+    {
+        noteButton.SetActive(false);
+        ghostCount.SetActive(false);
+        petrifyButton.SetActive(false);
+        timer.SetActive(false);
+        timerExplaination.SetActive(true);
+        menuReturn.SetActive(false);
+        popUpAudio.Play();
+    }
+
+    public void HideExplanation()
+    {
+        noteButton.SetActive(true);
+        ghostCount.SetActive(true);
+        petrifyButton.SetActive(true);
+        timer.SetActive(true);
+        timerExplaination.SetActive(false);
+        menuReturn.SetActive(true);
+        clickAudio.Play();
+        //if (timerManager != null)
+       // {
+       //     timerManager.StartTimer();
+      //  }
+    }
+
+    void OnDisable()
+{
+    Debug.Log("Level3Stage2 disabled at runtime");
+    Debug.Log(Environment.StackTrace);
+
+}
     
 }

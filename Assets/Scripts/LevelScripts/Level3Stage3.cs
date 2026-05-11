@@ -16,6 +16,8 @@ public class Level3Stage3 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
     [SerializeField] private GameObject menuReturn;
+    [SerializeField] private TimerManager timerManager;
+
     private AudioSource popUpAudio;
     private CharacterManager characterManager;
 
@@ -51,7 +53,7 @@ public class Level3Stage3 : MonoBehaviour
             if (character.tag == "Untagged") { characterManager.honest.Add(character); }
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
         }
-        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
     }
 
     private void ActivatePhantom()
@@ -85,7 +87,13 @@ public class Level3Stage3 : MonoBehaviour
         }
         affectedSubject.tag = "Lying";
     }
-
+    void Start()
+    {
+        if (timerManager != null)
+        {
+            timerManager.StartTimer();
+        }
+    }
     private bool isLoading = false;
     public void PlayAgain()
     {

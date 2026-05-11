@@ -20,6 +20,8 @@ public class Level3Stage4 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
     [SerializeField] private GameObject menuReturn;
+    [SerializeField] private TimerManager timerManager;
+
     private AudioSource popUpAudio;
 
     private CharacterManager characterManager;
@@ -74,7 +76,12 @@ public class Level3Stage4 : MonoBehaviour
         GameObject tempStage = GameObject.FindGameObjectWithTag("BeatStage");
         Debug.Log(tempStage.gameObject);
     
-        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
+
+        if (timerManager != null)
+        {
+            timerManager.StartTimer();
+        }
     }
 
     private void ActivatePhantom()

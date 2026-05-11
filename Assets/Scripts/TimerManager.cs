@@ -18,11 +18,13 @@ public class TimerManager : MonoBehaviour
     private float remainingSeconds;
     private bool countdownStarted;
     private bool timerEnded;
+    private bool timerRunning;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
         remainingSeconds = startSeconds;
+        timerRunning = false;
     }
 
     void Awake()
@@ -33,6 +35,12 @@ public class TimerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (!timerRunning)
+        {
+            timerText.text = remainingSeconds.ToString("F0") + " Seconds";
+            return;
+        }
 
         if (!countdownStarted)
         {
@@ -82,6 +90,14 @@ public class TimerManager : MonoBehaviour
         }
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void StartTimer()
+    {
+        remainingSeconds = startSeconds;
+        timerEnded = false;
+        countdownStarted = false;
+        timerRunning = true;
     }
 
 }
