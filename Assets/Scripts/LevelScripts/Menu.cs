@@ -110,7 +110,7 @@ public class Menu : MonoBehaviour
         StartCoroutine(PlayClickThenLoad(7));
         //SceneManager.LoadScene(7,LoadSceneMode.Single);
     }
-        public void LoadLevel2Stage4()
+    public void LoadLevel2Stage4()
     {
         StartCoroutine(PlayClickThenLoad(8));
         //SceneManager.LoadScene(8,LoadSceneMode.Single);
@@ -120,7 +120,7 @@ public class Menu : MonoBehaviour
 
 
 
-      public void LoadLevel3Stage1()
+    public void LoadLevel3Stage1()
     {
         StartCoroutine(PlayClickThenLoad(9));
         //SceneManager.LoadScene(9,LoadSceneMode.Single);
@@ -138,7 +138,7 @@ public class Menu : MonoBehaviour
         //SceneManager.LoadScene(11,LoadSceneMode.Single);
     }
 
-        public void LoadLevel3Stage4()
+    public void LoadLevel3Stage4()
     {
         StartCoroutine(PlayClickThenLoad(12));
         //SceneManager.LoadScene(12,LoadSceneMode.Single);
