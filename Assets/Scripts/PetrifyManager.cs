@@ -59,8 +59,8 @@ public class PetrifyManager : MonoBehaviour
             elapsed += Time.deltaTime;
             float time = elapsed / duration;
 
-            mainAudio.volume = 1f - time; 
-            petrifyAudio.volume = time;
+            mainAudio.volume = Mathf.Lerp(0.5f, 0f, time);
+            petrifyAudio.volume = Mathf.Lerp(0f, 0.5f, time);
 
             yield return null;
         }
@@ -89,8 +89,8 @@ public class PetrifyManager : MonoBehaviour
             elapsed += Time.deltaTime;
             float time = elapsed / duration;
 
-            petrifyAudio.volume = 1f - time; 
-            mainAudio.volume = time;
+            petrifyAudio.volume = Mathf.Lerp(0.5f, 0f, time);
+            mainAudio.volume = Mathf.Lerp(0f, 0.5f, time);
 
             yield return null;
         }
