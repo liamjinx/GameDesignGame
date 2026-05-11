@@ -2029,6 +2029,10 @@ PrefabInstance:
         Phantom:
         A subject next to me lies'
       objectReference: {fileID: 0}
+    - target: {fileID: 2122283977938353373, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7178253644178797337, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1

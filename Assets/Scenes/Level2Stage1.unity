@@ -249,6 +249,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 321053737242813839, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
       value: 'King: States if they are next to at least one safe character. Could
@@ -301,6 +305,10 @@ PrefabInstance:
     - target: {fileID: 1782723121172210822, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4289911022
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122283977938353373, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6397827453617121186, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_Type
