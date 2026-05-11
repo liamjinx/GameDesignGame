@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class Menu : MonoBehaviour
 {
@@ -146,6 +147,30 @@ public class Menu : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-
+        int nextSceneNo = SceneManager.GetActiveScene().buildIndex + 1;
+        StartCoroutine(PlayClickThenLoad(nextSceneNo));
+        gameObject.GetComponent<Canvas>().enabled = false;
+    }
+    public void PlayAgain()
+    {
+        int sceneNo = SceneManager.GetActiveScene().buildIndex;
+        int levelStart = 2;
+        if (sceneNo >= 9) { levelStart = 9; }
+        else if (sceneNo >= 5) { levelStart = 5; }
+            CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+        if (cd != null && cd.IsGameOver())
+        {
+            cd.ResetLives();
+            SceneManager.LoadScene(levelStart); // back to stage 1
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneNo); // retry current stage
+        }
+        gameObject.GetComponent<Canvas>().enabled = false;
+    }
+    public void ReplayGame()
+    {
+        StartCoroutine(PlayClickThenLoad(2));
     }
 }

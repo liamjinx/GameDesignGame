@@ -38,6 +38,7 @@ public class CharacterDialogue : MonoBehaviour
         UICanvas = GameObject.FindGameObjectWithTag("UICanvas").GetComponent<Canvas>();
         lostStage = GameObject.FindGameObjectWithTag("LostStage").GetComponent<Canvas>();
         beatStage = GameObject.FindGameObjectWithTag("BeatStage").GetComponent<Canvas>();
+        Debug.Log(beatStage.gameObject);
         FoundGhost = GameObject.FindGameObjectWithTag("FoundGhostAudio").GetComponent<AudioSource>();
         NotGhost = GameObject.FindGameObjectWithTag("NotGhostAudio").GetComponent<AudioSource>();
         mainText = UICanvas.GetComponentInChildren<TextMeshProUGUI>();
@@ -63,7 +64,6 @@ public class CharacterDialogue : MonoBehaviour
         Debug.Log("petrifymanager id =" + petrifyManager.GetInstanceID());
         if (petrifyManager.isActive)
         {
-            Debug.Log("test2");
             if (gameObject.tag == "Ghost")
             {
                 FoundGhost.Play();
