@@ -74,7 +74,7 @@ public class Level3Stage4 : MonoBehaviour
         GameObject tempStage = GameObject.FindGameObjectWithTag("BeatStage");
         Debug.Log(tempStage.gameObject);
     
-        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
     }
 
     private void ActivatePhantom()
