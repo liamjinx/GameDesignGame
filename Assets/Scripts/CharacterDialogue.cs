@@ -61,7 +61,7 @@ public class CharacterDialogue : MonoBehaviour
 
     public void Petrify()
     {
-        Debug.Log("petrifymanager id =" + petrifyManager.GetInstanceID());
+        //Debug.Log("petrifymanager id =" + petrifyManager.GetInstanceID());
         if (petrifyManager.isActive)
         {
             if (gameObject.tag == "Ghost")

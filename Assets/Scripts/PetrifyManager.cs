@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class PetrifyManager : MonoBehaviour
 {
@@ -43,8 +44,9 @@ public class PetrifyManager : MonoBehaviour
             yield break;
         }
 
+        Debug.Log("ClickAudio played from: " + System.Environment.StackTrace);
         clickAudio.Play();
-        Debug.Log("PetrifyManager fade start, main volume=" + mainAudio.volume);
+       // Debug.Log("PetrifyManager fade start, main volume=" + mainAudio.volume);
 
         petrifyAudio.volume = 0; 
         petrifyAudio.Play();
@@ -71,9 +73,10 @@ public class PetrifyManager : MonoBehaviour
         {
             yield break;
         }
+       // Debug.Log("ClickAudio played from: " + Environment.StackTrace);
 
-        clickAudio.Play();
-        Debug.Log("PetrifyManager fade start, main volume=" + mainAudio.volume);
+        //clickAudio.Play();
+      //  Debug.Log("PetrifyManager fade start, main volume=" + mainAudio.volume);
 
         mainAudio.volume = 0; 
         mainAudio.Play();

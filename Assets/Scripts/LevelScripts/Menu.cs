@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using Unity.VisualScripting;
+using System;
 
 public class Menu : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class Menu : MonoBehaviour
 
     public void LoadLevel1()
     {
+                Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
         Level1Stages.SetActive(true);
         Levels.SetActive(false);
@@ -33,6 +36,8 @@ public class Menu : MonoBehaviour
 
     public void LoadLevel2()
     {
+                Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
         Level2Stages.SetActive(true);
         Levels.SetActive(false);
@@ -42,6 +47,8 @@ public class Menu : MonoBehaviour
 
     public void LoadLevel3()
     {
+                Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
         Level3Stages.SetActive(true);
         Levels.SetActive(false);
@@ -50,6 +57,8 @@ public class Menu : MonoBehaviour
     }
     public void Back()
     {
+                Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
         Levels.SetActive(true);
         Level1Stages.SetActive(false);
@@ -137,6 +146,8 @@ public class Menu : MonoBehaviour
 
     private IEnumerator PlayClickThenLoad(int sceneIndex)
     {
+        Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
         yield return new WaitForSeconds(clickAudio.clip.length);
         SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);

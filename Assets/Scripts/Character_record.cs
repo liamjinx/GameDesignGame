@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class Character_record : MonoBehaviour
 {
@@ -28,7 +29,9 @@ public class Character_record : MonoBehaviour
     {
         if (overlayPanel.activeSelf)
         {
-            clickAudio.Play();
+        Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
+           clickAudio.Play();
         }
         else
         {
@@ -47,6 +50,8 @@ public class Character_record : MonoBehaviour
     }
     public void ChangeDescription()
     {
+        Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
         dialoguept1.SetActive(!dialoguept1.activeSelf);
         dialoguept2.SetActive(!dialoguept2.activeSelf);

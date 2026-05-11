@@ -12,7 +12,7 @@ public class TimerManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerExplanationText;
     [SerializeField] private TextMeshProUGUI timerRetryText;
 
-    private float startSeconds = 5f;
+    private float startSeconds = 120f;
     [SerializeField] private UnityEvent onTimerEnd;
     private AudioSource popUpAudio;
     private float remainingSeconds;

@@ -152,6 +152,8 @@ public class Level3Stage1 : MonoBehaviour
         timer.SetActive(true);
         timerExplaination.SetActive(false);
         menuReturn.SetActive(true);
+               // Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
         if (timerManager != null)
         {
@@ -167,6 +169,8 @@ public class Level3Stage1 : MonoBehaviour
        // timer.SetActive(!timer.activeSelf);
         timerExplaination.SetActive(!timerExplaination.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
+              //  Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
     }
 }

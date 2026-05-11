@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System;
 
 public class TutorialUIManager : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class TutorialUIManager : MonoBehaviour
         instructions.SetActive(!instructions.activeSelf);
         ghostCount.SetActive(!ghostCount.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
+                Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
     }
 }
