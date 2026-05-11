@@ -97,7 +97,7 @@ public class AudioManager : MonoBehaviour
         MainThemeAudio.Stop();
         MainThemeAudio.time = 0f;
         MainThemeAudio.mute = false;
-        MainThemeAudio.volume = 1f;
+        MainThemeAudio.volume = .5f;
         MainThemeAudio.Play();
     }
 
