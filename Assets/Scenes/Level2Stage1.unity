@@ -286,6 +286,30 @@ PrefabInstance:
         Wraith: A random
         subject lies'
       objectReference: {fileID: 0}
+    - target: {fileID: 1782723121172210822, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.69803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782723121172210822, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.84705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782723121172210822, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.93333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782723121172210822, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4289911022
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397827453617121186, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397827453617121186, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6007857137893288414, guid: 80c99754b4c834afdbb13de775345896, type: 3}
     - target: {fileID: 7178253644178797337, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
@@ -930,12 +954,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6148280440964660050, guid: 96ec5a247b40b483cbfb59dbfe2e42a4, type: 3}
+  m_Sprite: {fileID: 5718469909854450143, guid: 31151c3d1b9174d848fe4679d18991f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 39.612087, y: 28.8}
+  m_Size: {x: 50, y: 28.808594}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
