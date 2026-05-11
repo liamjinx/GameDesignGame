@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 public class Level1Stage1 : MonoBehaviour
 {
     private GameObject ghost1;
+    private static bool hasShownExplanation;
+
+    [SerializeField] private GameObject explanation;
 
     void Awake()
     {
@@ -15,6 +18,21 @@ public class Level1Stage1 : MonoBehaviour
     }
 
     private bool isLoading = false;
+    
+    void Start()
+    {
+        if (!hasShownExplanation)
+        {
+            explanation.SetActive(true);
+            hasShownExplanation = true;
+        }
+    }
+
+    public void CloseExplanation()
+    {
+        explanation.SetActive(false);
+    }
+    
     public void PlayAgain()
     {
         if (isLoading) return; // prevents double click
@@ -45,7 +63,8 @@ public class Level1Stage1 : MonoBehaviour
     {
         SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
-
+    
+    
     public void LoadMenu()
     {
         CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
