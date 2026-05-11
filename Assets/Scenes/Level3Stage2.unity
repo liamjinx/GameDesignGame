@@ -1481,6 +1481,7 @@ MonoBehaviour:
   timerTitleText: {fileID: 1804600648}
   timerExplanationText: {fileID: 1804600647}
   timerRetryText: {fileID: 1804600646}
+  startSeconds: 120
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
@@ -3384,7 +3385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8104470034387385820, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8636569078514583640, guid: 5c24ddf6a2367f842bcd2708696e1e1b, type: 3}
       propertyPath: m_Color.a
@@ -3504,7 +3505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4086875257844327648, guid: d7ab07afb0535da46bf9d453195190e9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4335260729810633458, guid: d7ab07afb0535da46bf9d453195190e9, type: 3}
       propertyPath: m_Pivot.x

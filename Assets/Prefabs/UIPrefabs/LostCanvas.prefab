@@ -375,7 +375,7 @@ RectTransform:
   m_GameObject: {fileID: 3952991417657981900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4111795795031656061}
@@ -768,6 +768,7 @@ GameObject:
   - component: {fileID: 2175198632434442993}
   - component: {fileID: 260306976115700171}
   - component: {fileID: 3162454837686645120}
+  - component: {fileID: 1048362103305341511}
   m_Layer: 5
   m_Name: LostCanvas
   m_TagString: LostStage
@@ -875,3 +876,17 @@ MonoBehaviour:
   Level1Stages: {fileID: 0}
   Level2Stages: {fileID: 0}
   Level3Stages: {fileID: 0}
+--- !u!114 &1048362103305341511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8396220897939183560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4090b53ceff4d15951fdccb02a2b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LostManager
+  lostScreen: {fileID: 8396220897939183560}
+  Title: {fileID: 2738082948832684247}

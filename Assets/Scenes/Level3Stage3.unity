@@ -972,6 +972,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1640403561}
     m_Modifications:
+    - target: {fileID: 1712714728925432981, guid: 196e3f8d5382abc4f900a6735ca831bf, type: 3}
+      propertyPath: m_fontSize
+      value: 1.15
+      objectReference: {fileID: 0}
     - target: {fileID: 4122968771550279253, guid: 196e3f8d5382abc4f900a6735ca831bf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1372,6 +1376,7 @@ MonoBehaviour:
   timerTitleText: {fileID: 1302183725}
   timerExplanationText: {fileID: 1302183724}
   timerRetryText: {fileID: 1302183723}
+  startSeconds: 150
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
@@ -3206,7 +3211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2310604560081232231, guid: ab3eadfd4ec232944af5705b3d91c2ba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3547016249131422208, guid: ab3eadfd4ec232944af5705b3d91c2ba, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
@@ -3458,7 +3463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4086875257844327648, guid: d7ab07afb0535da46bf9d453195190e9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4335260729810633458, guid: d7ab07afb0535da46bf9d453195190e9, type: 3}
       propertyPath: m_Pivot.x

@@ -50,7 +50,7 @@ public class Character_record : MonoBehaviour
     }
     public void ChangeDescription()
     {
-        Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+        //Debug.Log("ClickAudio played from: " + Environment.StackTrace);
 
         clickAudio.Play();
         dialoguept1.SetActive(!dialoguept1.activeSelf);

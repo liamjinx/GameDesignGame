@@ -1340,6 +1340,7 @@ MonoBehaviour:
   timerTitleText: {fileID: 17441849128765877}
   timerExplanationText: {fileID: 17441849128765876}
   timerRetryText: {fileID: 17441849128765878}
+  startSeconds: 150
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
