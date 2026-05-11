@@ -1580,6 +1580,7 @@ MonoBehaviour:
   timer: {fileID: 1565115210}
   timerExplaination: {fileID: 642719492}
   menuReturn: {fileID: 1168941945}
+  timerManager: {fileID: 1710691327}
 --- !u!224 &1887726399 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3215172848438398842, guid: df9c2bb7e7cc1924ebcc153a686de901, type: 3}

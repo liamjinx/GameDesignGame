@@ -1308,6 +1308,7 @@ GameObject:
   - component: {fileID: 1710691325}
   - component: {fileID: 1710691327}
   - component: {fileID: 1710691328}
+  - component: {fileID: 1710691329}
   m_Layer: 0
   m_Name: CharacterManager
   m_TagString: Untagged
@@ -1408,6 +1409,19 @@ MonoBehaviour:
   timer: {fileID: 1512860200}
   timerExplaination: {fileID: 1302183726}
   menuReturn: {fileID: 1640403566}
+  timerManager: {fileID: 1710691327}
+--- !u!114 &1710691329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710691322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da324a874844e4b6caeef09362fe57b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Helper
 --- !u!224 &1887726399 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3215172848438398842, guid: df9c2bb7e7cc1924ebcc153a686de901, type: 3}

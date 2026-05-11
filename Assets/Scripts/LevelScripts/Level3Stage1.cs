@@ -14,6 +14,7 @@ public class Level3Stage1 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
     [SerializeField] private GameObject menuReturn;
+    [SerializeField] private TimerManager timerManager;
     private AudioSource popUpAudio;
     private AudioSource clickAudio;
 
@@ -52,23 +53,9 @@ public class Level3Stage1 : MonoBehaviour
         clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
     }
 
-     private void ActivateWraith()
-    {
-        ghost1.layer = LayerMask.NameToLayer("Wraith");
-
-        int affected = Random.Range(0, max);
-        GameObject affectedSubject = transform.GetChild(affected).gameObject;
-        while (affectedSubject.tag != "Untagged")
-        {
-            affected = Random.Range(0, max);
-            affectedSubject = transform.GetChild(affected).gameObject;
-        }
-        affectedSubject.tag = "Lying";
-    }
-
     private void ActivateNuckelavee()
     {
-        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
+        ghost1.layer = LayerMask.NameToLayer("Nuckelavee");
 
         int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
@@ -123,6 +110,8 @@ public class Level3Stage1 : MonoBehaviour
         {
             ShowExplanation();
             hasShownStartExplanation = true;
+        } else {
+            HideExplanation();
         }
     }
 
@@ -149,7 +138,13 @@ public class Level3Stage1 : MonoBehaviour
         timer.SetActive(true);
         timerExplaination.SetActive(false);
         menuReturn.SetActive(true);
+               // Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
         clickAudio.Play();
+        if (timerManager != null)
+        {
+            timerManager.StartTimer();
+        }
     }
 
         public void ToggleExplanation()
@@ -160,6 +155,8 @@ public class Level3Stage1 : MonoBehaviour
        // timer.SetActive(!timer.activeSelf);
         timerExplaination.SetActive(!timerExplaination.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
-        popUpAudio.Play();
+              //  Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
+        clickAudio.Play();
     }
 }

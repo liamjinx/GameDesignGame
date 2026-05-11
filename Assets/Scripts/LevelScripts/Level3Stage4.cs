@@ -20,6 +20,8 @@ public class Level3Stage4 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
     [SerializeField] private GameObject menuReturn;
+    [SerializeField] private TimerManager timerManager;
+
     private AudioSource popUpAudio;
 
     private CharacterManager characterManager;
@@ -45,7 +47,7 @@ public class Level3Stage4 : MonoBehaviour
         ghost2.tag = "Ghost";
         ghost3.tag = "Ghost";
         ActivatePhantom();
-        ActivateWraith();
+        //ActivateWraith();
         ActivateNuckelavee();
         for (int i = 0; i < max; ++i)
         {
@@ -75,6 +77,11 @@ public class Level3Stage4 : MonoBehaviour
         Debug.Log(tempStage.gameObject);
     
         popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
+
+        if (timerManager != null)
+        {
+            timerManager.StartTimer();
+        }
     }
 
     private void ActivatePhantom()
@@ -96,25 +103,11 @@ public class Level3Stage4 : MonoBehaviour
         }
     }
 
-    private void ActivateWraith()
-    {
-        ghost2.layer = LayerMask.NameToLayer("Wraith");
-
-        int affected = Random.Range(0, max);
-        GameObject affectedSubject = transform.GetChild(affected).gameObject;
-        while (affectedSubject.tag != "Untagged")
-        {
-            affected = Random.Range(0, max);
-            affectedSubject = transform.GetChild(affected).gameObject;
-        }
-        affectedSubject.tag = "Lying";
-    }
-
      private void ActivateNuckelavee()
     {
-        ghost3.layer = LayerMask.NameToLayer("Nuckelavee");
+        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
 
-        int currentPos = ghost3.transform.GetSiblingIndex();
+        int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
         else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }

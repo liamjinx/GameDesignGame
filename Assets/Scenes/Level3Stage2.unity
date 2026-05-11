@@ -1004,6 +1004,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c31a574f16d96c47b1380284d1cad85, type: 3}
+--- !u!114 &1444560140 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3162454837686645120, guid: 7c31a574f16d96c47b1380284d1cad85, type: 3}
+  m_PrefabInstance: {fileID: 1444560139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebcfeb3946de24ac4a5fe8b406b11f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menu
 --- !u!1001 &1467899142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1260,6 +1271,7 @@ GameObject:
   - component: {fileID: 1710691325}
   - component: {fileID: 1710691327}
   - component: {fileID: 1710691328}
+  - component: {fileID: 1710691329}
   m_Layer: 0
   m_Name: CharacterManager
   m_TagString: Untagged
@@ -1332,7 +1344,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1710691328}
         m_TargetAssemblyTypeName: Level3Stage2, Assembly-CSharp
-        m_MethodName: ToggleExplanation
+        m_MethodName: ShowExplanation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1360,6 +1372,19 @@ MonoBehaviour:
   timer: {fileID: 1628839829}
   timerExplaination: {fileID: 1804600649}
   menuReturn: {fileID: 170895686}
+  timerManager: {fileID: 1710691327}
+--- !u!114 &1710691329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710691322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da324a874844e4b6caeef09362fe57b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Helper
 --- !u!1001 &1804600644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1487,7 +1512,7 @@ PrefabInstance:
     - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1710691328}
+      objectReference: {fileID: 1444560140}
     - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1498,7 +1523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Level3Stage2, Assembly-CSharp
+      value: Menu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5377379645350392467, guid: 427b27878d394274b9b107833f21bcfd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

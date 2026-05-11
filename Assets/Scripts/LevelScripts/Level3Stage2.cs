@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Level3Stage2 : MonoBehaviour
 {
@@ -15,28 +16,33 @@ public class Level3Stage2 : MonoBehaviour
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject timerExplaination;
     [SerializeField] private GameObject menuReturn;
+    [SerializeField] private TimerManager timerManager;
     private AudioSource popUpAudio;
+    private AudioSource clickAudio;
+
     private CharacterManager characterManager;
     private int max;
 
     private int lastIndex;
     void Awake()
     {
+
         characterManager = GetComponent<CharacterManager>();
         max = transform.childCount;
         lastIndex = max - 1;
-        int ghostnumber1 = Random.Range(0, max);
-        int ghostnumber2 = Random.Range(0, max);
+        int ghostnumber1 = UnityEngine.Random.Range(0, max);
+        int ghostnumber2 = UnityEngine.Random.Range(0, max);
         while (ghostnumber1 == ghostnumber2)
         {
-            ghostnumber2 = Random.Range(0, max);
+            ghostnumber2 = UnityEngine.Random.Range(0, max);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        ActivatePhantom();
-        ActivateNuckelavee();
+        //ActivatePhantom();
+       // ActivateNuckelavee();
+        ActivateWraith();
         for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
@@ -45,43 +51,31 @@ public class Level3Stage2 : MonoBehaviour
             if (character.tag == "Untagged") { characterManager.honest.Add(character); }
             else if (character.tag == "Lying") { characterManager.lying.Add(character); }
         }
-        popUpAudio = GameObject.FindGameObjectWithTag("popUpAudio").GetComponent<AudioSource>();
+        popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
+        clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
+
     }
 
-    private void ActivatePhantom()
+    private void ActivateWraith()
     {
-        ghost1.layer = LayerMask.NameToLayer("Phantom");
+        ghost1.layer = LayerMask.NameToLayer("Wraith");
 
-        int currentPos = ghost1.transform.GetSiblingIndex();
-        int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
-        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
-        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
-        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
+        int affected = UnityEngine.Random.Range(0, max);
+        GameObject affectedSubject = transform.GetChild(affected).gameObject;
+        while (affectedSubject.tag != "Untagged")
         {
-            transform.GetChild(beforePos).gameObject.tag = "Lying";
+            affected = UnityEngine.Random.Range(0, max);
+            affectedSubject = transform.GetChild(affected).gameObject;
         }
-        else if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
-        {
-            transform.GetChild(afterPos).gameObject.tag = "Lying";
-        }
+        affectedSubject.tag = "Lying";
     }
-     private void ActivateNuckelavee()
-    {
-        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
 
-        int currentPos = ghost2.transform.GetSiblingIndex();
-        int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
-        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
-        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
-        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
+
+    void Start()
+    {
+        if (timerManager != null)
         {
-            transform.GetChild(beforePos).gameObject.tag = "Lying";
-        }
-        if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
-        {
-            transform.GetChild(afterPos).gameObject.tag = "Lying";
+            timerManager.StartTimer();
         }
     }
 
@@ -128,10 +122,45 @@ public class Level3Stage2 : MonoBehaviour
         noteButton.SetActive(!noteButton.activeSelf);
         ghostCount.SetActive(!ghostCount.activeSelf);
         petrifyButton.SetActive(!petrifyButton.activeSelf);
-        timer.SetActive(!timer.activeSelf);
+        //timer.SetActive(!timer.activeSelf);
         timerExplaination.SetActive(!timerExplaination.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
         popUpAudio.Play();
     }
+
+    public void ShowExplanation()
+    {
+        noteButton.SetActive(false);
+        ghostCount.SetActive(false);
+        petrifyButton.SetActive(false);
+        timer.SetActive(false);
+        timerExplaination.SetActive(true);
+        menuReturn.SetActive(false);
+        popUpAudio.Play();
+    }
+
+    public void HideExplanation()
+    {
+        noteButton.SetActive(true);
+        ghostCount.SetActive(true);
+        petrifyButton.SetActive(true);
+        timer.SetActive(true);
+        timerExplaination.SetActive(false);
+        menuReturn.SetActive(true);
+                Debug.Log("ClickAudio played from: " + Environment.StackTrace);
+
+        clickAudio.Play();
+        //if (timerManager != null)
+       // {
+       //     timerManager.StartTimer();
+      //  }
+    }
+
+    void OnDisable()
+{
+    Debug.Log("Level3Stage2 disabled at runtime");
+    Debug.Log(Environment.StackTrace);
+
+}
     
 }
