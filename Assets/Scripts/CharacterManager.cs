@@ -35,7 +35,7 @@ public class CharacterManager : MonoBehaviour
         }
         if (safeAction.WasPressedThisFrame())
         {
-            selectedCharacter.GetComponent<SpriteRenderer>().color = Color.green;
+            selectedCharacter.GetComponent<SpriteRenderer>().color = new Color(0.69f, 1f, 0.64f);
         }
         if (neutralAction.WasPressedThisFrame())
         {
@@ -43,11 +43,11 @@ public class CharacterManager : MonoBehaviour
         }
         if (susAction.WasPressedThisFrame())
         {
-            selectedCharacter.GetComponent<SpriteRenderer>().color = Color.red;
+            selectedCharacter.GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.416f, 0.412f);
         }
         if (lyingAction.WasPressedThisFrame())
         {
-            selectedCharacter.GetComponent<SpriteRenderer>().color = Color.yellow;
+            selectedCharacter.GetComponent<SpriteRenderer>().color = new Color(0.996f, 1.0f, 0.573f);
         }
     }
 
