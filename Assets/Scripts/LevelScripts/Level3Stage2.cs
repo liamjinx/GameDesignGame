@@ -40,8 +40,9 @@ public class Level3Stage2 : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        ActivatePhantom();
-        ActivateNuckelavee();
+        //ActivatePhantom();
+       // ActivateNuckelavee();
+        ActivateWraith();
         for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
@@ -55,42 +56,20 @@ public class Level3Stage2 : MonoBehaviour
 
     }
 
-    private void ActivatePhantom()
+    private void ActivateWraith()
     {
-        ghost1.layer = LayerMask.NameToLayer("Phantom");
+        ghost1.layer = LayerMask.NameToLayer("Wraith");
 
-        int currentPos = ghost1.transform.GetSiblingIndex();
-        int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
-        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
-        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
-        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
+        int affected = UnityEngine.Random.Range(0, max);
+        GameObject affectedSubject = transform.GetChild(affected).gameObject;
+        while (affectedSubject.tag != "Untagged")
         {
-            transform.GetChild(beforePos).gameObject.tag = "Lying";
+            affected = UnityEngine.Random.Range(0, max);
+            affectedSubject = transform.GetChild(affected).gameObject;
         }
-        else if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
-        {
-            transform.GetChild(afterPos).gameObject.tag = "Lying";
-        }
+        affectedSubject.tag = "Lying";
     }
-     private void ActivateNuckelavee()
-    {
-        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
 
-        int currentPos = ghost2.transform.GetSiblingIndex();
-        int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
-        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
-        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
-        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
-        {
-            transform.GetChild(beforePos).gameObject.tag = "Lying";
-        }
-        if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
-        {
-            transform.GetChild(afterPos).gameObject.tag = "Lying";
-        }
-    }
 
     void Start()
     {

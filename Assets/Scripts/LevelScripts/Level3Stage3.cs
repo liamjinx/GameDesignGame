@@ -42,9 +42,10 @@ public class Level3Stage3 : MonoBehaviour
         ghost3 = transform.GetChild(ghostnumber3).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        ghost3.tag = "Ghost";
+        //ghost3.tag = "Ghost";
         ActivatePhantom();
-        ActivateWraith();
+        ActivateNuckelavee();
+        //ActivateWraith();
         for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
@@ -59,6 +60,7 @@ public class Level3Stage3 : MonoBehaviour
     private void ActivatePhantom()
     {
         ghost1.layer = LayerMask.NameToLayer("Phantom");
+
         int currentPos = ghost1.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
@@ -73,20 +75,25 @@ public class Level3Stage3 : MonoBehaviour
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
     }
-
-     private void ActivateWraith()
+     private void ActivateNuckelavee()
     {
-        ghost2.layer = LayerMask.NameToLayer("Wraith");
+        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
 
-        int affected = Random.Range(0, max);
-        GameObject affectedSubject = transform.GetChild(affected).gameObject;
-        while (affectedSubject.tag != "Untagged")
+        int currentPos = ghost2.transform.GetSiblingIndex();
+        int beforePos; int afterPos;
+        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
+        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
+        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
+        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
         {
-            affected = Random.Range(0, max);
-            affectedSubject = transform.GetChild(affected).gameObject;
+            transform.GetChild(beforePos).gameObject.tag = "Lying";
         }
-        affectedSubject.tag = "Lying";
+        if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
+        {
+            transform.GetChild(afterPos).gameObject.tag = "Lying";
+        }
     }
+
     void Start()
     {
         if (timerManager != null)

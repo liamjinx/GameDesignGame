@@ -53,23 +53,9 @@ public class Level3Stage1 : MonoBehaviour
         clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
     }
 
-     private void ActivateWraith()
-    {
-        ghost1.layer = LayerMask.NameToLayer("Wraith");
-
-        int affected = Random.Range(0, max);
-        GameObject affectedSubject = transform.GetChild(affected).gameObject;
-        while (affectedSubject.tag != "Untagged")
-        {
-            affected = Random.Range(0, max);
-            affectedSubject = transform.GetChild(affected).gameObject;
-        }
-        affectedSubject.tag = "Lying";
-    }
-
     private void ActivateNuckelavee()
     {
-        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
+        ghost1.layer = LayerMask.NameToLayer("Nuckelavee");
 
         int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
