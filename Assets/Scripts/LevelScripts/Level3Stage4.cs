@@ -47,7 +47,6 @@ public class Level3Stage4 : MonoBehaviour
         ghost2.tag = "Ghost";
         ghost3.tag = "Ghost";
         ActivatePhantom();
-        //ActivateWraith();
         ActivateNuckelavee();
         for (int i = 0; i < max; ++i)
         {
