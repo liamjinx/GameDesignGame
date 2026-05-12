@@ -49,8 +49,8 @@ public class CharacterDialogue : MonoBehaviour
         Life1 = GameObject.Find("Life1")?.GetComponent<Image>();
         Life2 = GameObject.Find("Life2")?.GetComponent<Image>();
         Life3 = GameObject.Find("Life3")?.GetComponent<Image>();
-        Life4 = GameObject.Find("Life3")?.GetComponent<Image>();
-        Life5 = GameObject.Find("Life3")?.GetComponent<Image>();
+        Life4 = GameObject.Find("Life4")?.GetComponent<Image>();
+        Life5 = GameObject.Find("Life5")?.GetComponent<Image>();
 
         // Tutorial ignore
         if (current == 1)
@@ -152,6 +152,8 @@ public class CharacterDialogue : MonoBehaviour
         if (Life1 != null) Life1.enabled = (lives >= 1);
         if (Life2 != null) Life2.enabled = (lives >= 2);
         if (Life3 != null) Life3.enabled = (lives >= 3);
+        if (Life4 != null) Life4.enabled = (lives >= 4);
+        if (Life5 != null) Life5.enabled = (lives >= 5);
     }
     public bool IsGameOver()
     {
