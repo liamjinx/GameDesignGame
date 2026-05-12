@@ -23,7 +23,6 @@ public class Level2Stage3 : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        ActivateWraith();
         ActivatePhantom();
         for (int i = 0; i < max; ++i)
         {

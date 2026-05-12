@@ -31,20 +31,22 @@ public class Level3Stage3 : MonoBehaviour
         lastIndex = max - 1;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
-        //int ghostnumber3 = Random.Range(0, max);
+        int ghostnumber3 = Random.Range(0, max);
         while (ghostnumber1 == ghostnumber2)
         {
             ghostnumber2 = Random.Range(0, max);
-            //ghostnumber3 = Random.Range(0, max);
+        }
+        while (ghostnumber1 == ghostnumber3 || ghostnumber3 == ghostnumber2)
+        {
+            ghostnumber3 = Random.Range(0, max);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
-        //ghost3 = transform.GetChild(ghostnumber3).gameObject;
+        ghost3 = transform.GetChild(ghostnumber3).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        //ghost3.tag = "Ghost";
+        ghost3.tag = "Ghost";
         ActivatePhantom();
-        //ActivateNuckelavee();
         ActivateWraith();
         for (int i = 0; i < max; ++i)
         {
@@ -77,7 +79,7 @@ public class Level3Stage3 : MonoBehaviour
     }
     private void ActivateWraith()
     {
-        ghost1.layer = LayerMask.NameToLayer("Wraith");
+        ghost2.layer = LayerMask.NameToLayer("Wraith");
 
         int affected = UnityEngine.Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;

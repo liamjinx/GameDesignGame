@@ -73,7 +73,6 @@ public class Level3Stage2 : MonoBehaviour
         }
     }
 
-
     void Start()
     {
         if (timerManager != null)
