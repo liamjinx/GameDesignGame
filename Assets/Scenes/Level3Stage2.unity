@@ -268,13 +268,18 @@ PrefabInstance:
         will call a ghost a lying subject and a lying subject a ghost
 
 
-        Alchemist:
-        States if they are next to at least one lying subject. If lying, will only
-        state they are next to lying subjects if adjacent to a ghost
+        Troubadour:
+        States two potential subjects that could be lying. Will select multiple lying
+        subjects if possible. If lying will only choose honest subjects. Will never
+        select ghosts
 
 
-        ALL
-        GHOSTS: Disguises as a subject and lies
+        Alchemist: States if they are next to at least one
+        lying subject. If lying, will only state they are next to lying subjects
+        if adjacent to a ghost
+
+
+        ALL GHOSTS: Disguises as a subject and lies
 
 
         <color=#ff3838>Wraith:</color>
@@ -1901,7 +1906,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.7, y: -19.500002}
+  m_AnchoredPosition: {x: 13.7, y: -20.07}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1832790047

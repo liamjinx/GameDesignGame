@@ -547,17 +547,27 @@ PrefabInstance:
         lying, will only state they are next to lying subjects if adjacent to a ghost
 
 
-        Troubadour:
-        States two potential subjects that could be lying. Will select multiple lying
-        subjects if possible. If lying will only choose honest subjects. Will never
-        select ghosts
+        Chef:
+        States a character is telling the truth. Will select lying subjects if lying.
+        Will never select ghosts
 
 
-        ALL GHOSTS: Disguises as a subject and lies
+        Butler: States a character is a lying
+        subject. Will always select ghosts if lying. If he picks himself, he is a
+        ghost
 
 
-        <color=#ff3838>Nuckelavee:</color>
-        Subjects next to me lie'
+        Troubadour: States two potential subjects that could be lying.
+        Will select multiple lying subjects if possible. If lying will only choose
+        honest subjects. Will never select ghosts
+
+
+        ALL GHOSTS: Disguises
+        as a subject and lies
+
+
+        <color=#ff3838>Nuckelavee:</color> Subjects
+        next to me lie'
       objectReference: {fileID: 0}
     - target: {fileID: 2122283977938353373, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive
@@ -1762,7 +1772,7 @@ RectTransform:
   m_GameObject: {fileID: 1790900789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 46341125}
@@ -1770,7 +1780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.437504, y: -18.5}
+  m_AnchoredPosition: {x: 14.437504, y: -20.3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1790900791
