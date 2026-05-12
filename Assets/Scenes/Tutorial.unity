@@ -1299,6 +1299,7 @@ MonoBehaviour:
   selectedCharacter: {fileID: 0}
   ghostCount: 0
   ghostNumber: {fileID: 1593749473}
+  selectedColor: {r: 1, g: 0.8, b: 0.3, a: 1}
   subjects: []
   ghosts: []
   honest: []
@@ -2109,6 +2110,18 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 3964851878477084057}
+    - target: {fileID: 7427193402019431563, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427193402019431563, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427193402019431563, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8237219545884850907, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
       propertyPath: m_SizeDelta.x
       value: -0.98260015
