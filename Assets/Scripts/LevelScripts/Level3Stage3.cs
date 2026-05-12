@@ -31,21 +31,21 @@ public class Level3Stage3 : MonoBehaviour
         lastIndex = max - 1;
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
-        int ghostnumber3 = Random.Range(0, max);
-        while (ghostnumber1 == ghostnumber2 || ghostnumber1 == ghostnumber3 || ghostnumber2 == ghostnumber3)
+        //int ghostnumber3 = Random.Range(0, max);
+        while (ghostnumber1 == ghostnumber2)
         {
             ghostnumber2 = Random.Range(0, max);
-            ghostnumber3 = Random.Range(0, max);
+            //ghostnumber3 = Random.Range(0, max);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
-        ghost3 = transform.GetChild(ghostnumber3).gameObject;
+        //ghost3 = transform.GetChild(ghostnumber3).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
         //ghost3.tag = "Ghost";
         ActivatePhantom();
-        ActivateNuckelavee();
-        //ActivateWraith();
+        //ActivateNuckelavee();
+        ActivateWraith();
         for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
@@ -75,23 +75,18 @@ public class Level3Stage3 : MonoBehaviour
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
     }
-     private void ActivateNuckelavee()
+    private void ActivateWraith()
     {
-        ghost2.layer = LayerMask.NameToLayer("Nuckelavee");
+        ghost1.layer = LayerMask.NameToLayer("Wraith");
 
-        int currentPos = ghost2.transform.GetSiblingIndex();
-        int beforePos; int afterPos;
-        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
-        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
-        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
-        if (transform.GetChild(beforePos).gameObject.CompareTag("Untagged"))
+        int affected = UnityEngine.Random.Range(0, max);
+        GameObject affectedSubject = transform.GetChild(affected).gameObject;
+        while (!affectedSubject.CompareTag("Untagged"))
         {
-            transform.GetChild(beforePos).gameObject.tag = "Lying";
+            affected = UnityEngine.Random.Range(0, max);
+            affectedSubject = transform.GetChild(affected).gameObject;
         }
-        if (transform.GetChild(afterPos).gameObject.CompareTag("Untagged"))
-        {
-            transform.GetChild(afterPos).gameObject.tag = "Lying";
-        }
+        affectedSubject.tag = "Lying";
     }
 
     void Start()
