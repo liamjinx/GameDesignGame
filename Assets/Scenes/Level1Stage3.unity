@@ -638,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7507808377788325949, guid: 0071d3939cbe1494c86ab5487d377b70, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -699,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239068734619284319, guid: 7ef38325816fdd04596120377bd80027, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -760,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991435307069256459, guid: 5dedd92badcffb9418c5300b7a56b6ab, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -918,7 +918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8369966776193067006, guid: 5f5988c0caa26d6449ab43c588929d7c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1371,18 +1371,18 @@ PrefabInstance:
         If he picks himself, he is a lying subject
 
 
-        Jester: Either the
-        Jester or another subject is the ghost. If the chosen subject isn''t the
-        ghost, then the Jester is lying
+        Jester: Either the Jester
+        or another subject is the ghost. If the chosen subject isn''t the ghost,
+        then the Jester is lying
 
 
-        Priest: Only one of three characters
-        is a ghost. If lying, none of them are. If he picks himself, he is telling
-        the truth
+        Priest: Only one of three characters is
+        a ghost. If lying, none of them are. If he picks himself, he is telling the
+        truth
 
 
-        Maid: States a character is a ghost. Will always select
-        subjects if lying. If she picks herself, she is a lying subject'
+        Maid: States a character is a ghost. Will always select subjects
+        if lying. If she picks herself, she is a lying subject'
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontSize
@@ -1429,6 +1429,15 @@ PrefabInstance:
     - target: {fileID: 2252707102340332701, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: characterpt2
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572255144094099630, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_text
+      value: <color=#B1FFA5>1 - Safe</color> \n 2 - Neutral \n <color=#FF6A69>3 -
+        Suspicious</color>
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572255144094099630, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 6371304111096550638, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive
@@ -1611,7 +1620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610539779971265993, guid: b5fea08cda45f4c47a614b66a90627a6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1812,7 +1821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1432506012122863451, guid: d19604cc1c9e8224baa5c5cc1ab151b6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4643523628066109912, guid: d19604cc1c9e8224baa5c5cc1ab151b6, type: 3}
       propertyPath: m_LocalPosition.x

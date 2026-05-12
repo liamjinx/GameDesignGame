@@ -1552,6 +1552,15 @@ PrefabInstance:
       propertyPath: characterpt2
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5572255144094099630, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_text
+      value: <color=#B1FFA5>1 - Safe</color> \n 2 - Neutral \n <color=#FF6A69>3 -
+        Suspicious</color>
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572255144094099630, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 3.75
+      objectReference: {fileID: 0}
     - target: {fileID: 5710038832091973236, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_Sprite
       value: 
