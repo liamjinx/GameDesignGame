@@ -951,6 +951,15 @@ PrefabInstance:
       propertyPath: characterpt2
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5572255144094099630, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_text
+      value: <color=#B1FFA5>1 - Safe</color> \n 2 - Neutral \n <color=#FF6A69>3 -
+        Suspicious
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572255144094099630, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 3.75
+      objectReference: {fileID: 0}
     - target: {fileID: 6371304111096550638, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1962,6 +1971,10 @@ PrefabInstance:
     - target: {fileID: 4967133523076438074, guid: 5fba4a2cba6e3c34f923e7b0eb2b0792, type: 3}
       propertyPath: m_Name
       value: Instructions
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967133523076438074, guid: 5fba4a2cba6e3c34f923e7b0eb2b0792, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6946024811824848187, guid: 5fba4a2cba6e3c34f923e7b0eb2b0792, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
