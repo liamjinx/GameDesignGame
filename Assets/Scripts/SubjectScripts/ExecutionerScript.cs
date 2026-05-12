@@ -46,5 +46,10 @@ public class ExecutionerScript : MonoBehaviour
     {
         accused2Number = Random.Range(0, characterManager.ghosts.Count);
         accused2 = characterManager.ghosts[accused2Number];
+        while (characterManager.ghosts.Count > 1 && accused2.name == accused1.name)
+        {
+            accused2Number = Random.Range(0, characterManager.ghosts.Count);
+            accused2 = characterManager.ghosts[accused2Number];
+        }
     }
 }

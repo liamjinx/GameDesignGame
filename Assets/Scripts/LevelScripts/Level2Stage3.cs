@@ -51,40 +51,16 @@ public class Level2Stage3 : MonoBehaviour
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
     }
-    private bool isLoading = false;
-    public void PlayAgain()
+    private void ActivateWraith()
     {
-        if (isLoading) return; // prevents double click
-
-        isLoading = true;
-
-        Debug.Log("PlayAgain clicked");
-        
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null && cd.IsGameOver())
+        ghost2.layer = LayerMask.NameToLayer("Wraith");
+        int affected = Random.Range(0, max);
+        GameObject affectedSubject = transform.GetChild(affected).gameObject;
+        while (!affectedSubject.CompareTag("Untagged"))
         {
-            cd.ResetLives();
-            SceneManager.LoadScene(5); // back to stage 1
+            affected = Random.Range(0, max);
+            affectedSubject = transform.GetChild(affected).gameObject;
         }
-        else
-        {
-            SceneManager.LoadScene(7); // retry stage 3
-        }
-    }
-    
-    public void LoadNextLevel()
-    {
-        SceneManager.LoadScene(8, LoadSceneMode.Single); //load stage 4
-    }
-    public void LoadMenu()
-    {
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null)
-        {
-            cd.ResetLives();
-        }
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
+        affectedSubject.tag = "Lying";
     }
 }

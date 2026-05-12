@@ -69,40 +69,4 @@ public class Level2Stage4 : MonoBehaviour
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
     }
-    private bool isLoading = false;
-    public void PlayAgain()
-    {
-        if (isLoading) return; // prevents double click
-
-        isLoading = true;
-
-        Debug.Log("PlayAgain clicked");
-
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null && cd.IsGameOver())
-        {
-            cd.ResetLives();
-            SceneManager.LoadScene(5); // back to stage 1
-        }
-        else
-        {
-            SceneManager.LoadScene(8); // retry stage 4
-        }
-    }
-
-    public void LoadNextLevel()
-    {
-        SceneManager.LoadScene(9, LoadSceneMode.Single); //load level 4
-    }
-    public void LoadMenu()
-    {
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null)
-        {
-            cd.ResetLives();
-        }
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
-    }
 }

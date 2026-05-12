@@ -40,6 +40,7 @@ public class Level3Stage2 : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
+        //ActivatePhantom();
         ActivateNuckelavee();
         for (int i = 0; i < max; ++i)
         {
@@ -57,7 +58,7 @@ public class Level3Stage2 : MonoBehaviour
     {
         ghost1.layer = LayerMask.NameToLayer("Nuckelavee");
 
-        int currentPos = ghost1.transform.GetSiblingIndex();
+        int currentPos = ghost2.transform.GetSiblingIndex();
         int beforePos; int afterPos;
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
         else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
@@ -78,44 +79,6 @@ public class Level3Stage2 : MonoBehaviour
         {
             timerManager.StartTimer();
         }
-    }
-
-    private bool isLoading = false;
-    public void PlayAgain()
-    {
-        if (isLoading) return; // prevents double click
-
-        isLoading = true;
-
-        Debug.Log("PlayAgain clicked");
-
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null && cd.IsGameOver())
-        {
-            cd.ResetLives();
-            SceneManager.LoadScene(9); // back to stage 1
-        }
-        else
-        {
-            SceneManager.LoadScene(10); // retry stage 2
-        }
-    }
-
-    public void LoadMenu()
-    {
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null)
-        {
-            cd.ResetLives();
-        }
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
-    }
-
-    public void LoadNextLevel()
-    {
-        SceneManager.LoadScene(11, LoadSceneMode.Single); //load stage 3
     }
 
     public void ToggleExplanation()

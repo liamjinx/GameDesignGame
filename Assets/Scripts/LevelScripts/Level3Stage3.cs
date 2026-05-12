@@ -32,7 +32,7 @@ public class Level3Stage3 : MonoBehaviour
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         int ghostnumber3 = Random.Range(0, max);
-        while (ghostnumber1 == ghostnumber2)
+        while (ghostnumber1 == ghostnumber2 || (Mathf.Abs(ghostnumber1 - ghostnumber2) == 1))
         {
             ghostnumber2 = Random.Range(0, max);
         }
@@ -97,43 +97,6 @@ public class Level3Stage3 : MonoBehaviour
         {
             timerManager.StartTimer();
         }
-    }
-    private bool isLoading = false;
-    public void PlayAgain()
-    {
-        if (isLoading) return; // prevents double click
-
-        isLoading = true;
-
-        Debug.Log("PlayAgain clicked");
-
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null && cd.IsGameOver())
-        {
-            cd.ResetLives();
-            SceneManager.LoadScene(9); // back to stage 1
-        }
-        else
-        {
-            SceneManager.LoadScene(11); // retry stage 3
-        }
-    }
-
-    public void LoadMenu()
-    {
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null)
-        {
-            cd.ResetLives();
-        }
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
-    }
-
-    public void LoadNextLevel()
-    {
-        SceneManager.LoadScene(12, LoadSceneMode.Single); //load stage 4
     }
 
     public void ToggleExplanation()

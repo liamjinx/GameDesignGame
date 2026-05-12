@@ -66,39 +66,6 @@ public class Level3Stage1 : MonoBehaviour
         }
         affectedSubject.tag = "Lying";
     }
-
-    private bool isLoading = false;
-    public void PlayAgain()
-    {
-        if (isLoading) return; // prevents double click
-
-        isLoading = true;
-
-        Debug.Log("PlayAgain clicked");
-
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null && cd.IsGameOver())
-        {
-            cd.ResetLives();
-            SceneManager.LoadScene(9); // back to stage 1
-        }
-        else
-        {
-            SceneManager.LoadScene(9); // retry stage 1
-        }
-    }
-
-    public void LoadMenu()
-    {
-        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-
-        if (cd != null)
-        {
-            cd.ResetLives();
-        }
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
-    }
     void Start()
     {
         if (!hasShownStartExplanation)

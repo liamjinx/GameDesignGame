@@ -24,7 +24,9 @@ public class CharacterDialogue : MonoBehaviour
     private Image Life1;
     private Image Life2;
     private Image Life3;
-    
+    private Image Life4;
+    private Image Life5;
+
     private bool isTutorial = false;
 
     public string lastSpokenLine = "";
@@ -32,6 +34,8 @@ public class CharacterDialogue : MonoBehaviour
 
     public void Start()
     {
+        int current = SceneManager.GetActiveScene().buildIndex;
+        if (current == 0) { return; }
         petrifyManager = FindAnyObjectByType<PetrifyManager>();
         ghostCount = GetComponentInParent<CharacterManager>();
 
@@ -41,13 +45,12 @@ public class CharacterDialogue : MonoBehaviour
         FoundGhost = GameObject.FindGameObjectWithTag("FoundGhostAudio").GetComponent<AudioSource>();
         NotGhost = GameObject.FindGameObjectWithTag("NotGhostAudio").GetComponent<AudioSource>();
         mainText = UICanvas.GetComponentInChildren<TextMeshProUGUI>();
-
         // 🔥 ALWAYS reassign hearts
         Life1 = GameObject.Find("Life1")?.GetComponent<Image>();
         Life2 = GameObject.Find("Life2")?.GetComponent<Image>();
         Life3 = GameObject.Find("Life3")?.GetComponent<Image>();
-        
-        int current = SceneManager.GetActiveScene().buildIndex;
+        Life4 = GameObject.Find("Life4")?.GetComponent<Image>();
+        Life5 = GameObject.Find("Life5")?.GetComponent<Image>();
 
         // Tutorial ignore
         if (current == 1)
@@ -66,7 +69,12 @@ public class CharacterDialogue : MonoBehaviour
             if (gameObject.CompareTag("Ghost"))
             {
                 FoundGhost.Play();
-                mainText.text = "Congratulations!\n You found a ghost!";
+                string ghostName = "a ghost";
+                if (LayerMask.LayerToName(gameObject.layer) != "Default")
+                {
+                    ghostName = "the " + LayerMask.LayerToName(gameObject.layer);
+                }
+                mainText.text = "Congratulations!\n You found " + ghostName + "!";
 
                 var anim = GetComponentInParent<PetrifyAnimation>();
                 if (anim != null)
@@ -144,15 +152,20 @@ public class CharacterDialogue : MonoBehaviour
         if (Life1 != null) Life1.enabled = (lives >= 1);
         if (Life2 != null) Life2.enabled = (lives >= 2);
         if (Life3 != null) Life3.enabled = (lives >= 3);
+        if (Life4 != null) Life4.enabled = (lives >= 4);
+        if (Life5 != null) Life5.enabled = (lives >= 5);
     }
     public bool IsGameOver()
     {
         return lives <= 0;
     }
     
-    public void ResetLives()
+    public void ResetLives(int sceneNo)
     {
-        lives = 3;
+        if (sceneNo >= 9) { lives = 5; }
+        else if (sceneNo >= 5) { lives = 4; }
+        else { lives = 3; }
         UpdateLivesUI();
+        Debug.Log(lives);
     }
 }
