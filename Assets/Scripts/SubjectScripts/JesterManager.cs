@@ -30,7 +30,6 @@ public class JesterManager : MonoBehaviour
     public void SpeakLies()
     {
         accusedNumber = Random.Range(0, characterManager.subjects.Count);
-        Debug.Log(accusedNumber);
         accused = characterManager.subjects[accusedNumber];
         while (accused.name == gameObject.name)
         {

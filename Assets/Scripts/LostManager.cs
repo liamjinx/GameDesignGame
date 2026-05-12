@@ -13,10 +13,10 @@ public class LostManager : MonoBehaviour
         var ghostNames = ghosts.Select(g => g.name);
         if (ghostNames.Count() == 1)
         {
-        Title.text = "Oh no!\nThat was one of the kingdom's innocent subjects!! \nThe ghost was: " + string.Join(", ", ghostNames);
+        Title.text = "Oh no!\nYou petrified too many subjects\nThe ghost was: " + string.Join(", ", ghostNames);
             return;
         } else {
-        Title.text = "Oh no!\nThat was one of the kingdom's innocent subjects!! \nThe ghosts were: " + string.Join(", ", ghostNames);
+        Title.text = "Oh no!\nYou petrified too many subjects\nThe ghosts were: " + string.Join(", ", ghostNames);
         }
         
     }

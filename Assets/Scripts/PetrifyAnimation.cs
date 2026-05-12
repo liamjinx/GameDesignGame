@@ -13,7 +13,7 @@ public class PetrifyAnimation : MonoBehaviour
 
         ///if (gameObject.tag == "Ghost")
         //{
-            //animator.SetTrigger("PetrifyGhost");
+        //animator.SetTrigger("PetrifyGhost");
             if (gameObject.layer == LayerMask.NameToLayer("Phantom"))
             {
                 animator.SetTrigger("PetrifyPhantom");

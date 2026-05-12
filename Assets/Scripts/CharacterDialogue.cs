@@ -66,7 +66,12 @@ public class CharacterDialogue : MonoBehaviour
             if (gameObject.CompareTag("Ghost"))
             {
                 FoundGhost.Play();
-                mainText.text = "Congratulations!\n You found a ghost!";
+                string ghostName = "a ghost";
+                if (LayerMask.LayerToName(gameObject.layer) != "Default")
+                {
+                    ghostName = "the " + LayerMask.LayerToName(gameObject.layer);
+                }
+                mainText.text = "Congratulations!\n You found " + ghostName + "!";
 
                 var anim = GetComponentInParent<PetrifyAnimation>();
                 if (anim != null)
