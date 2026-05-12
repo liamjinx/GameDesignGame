@@ -311,7 +311,7 @@ PrefabInstance:
 
 
         Incorrectly petrifying
-        an innocent subject will cause the player to lose a life, but the level will
+        an innocent subject will cause the player to lose a life, but the stage will
         continue rather than immediately restarting. This allows players to recover
         from mistakes and continue investigating remaining subjects.
 

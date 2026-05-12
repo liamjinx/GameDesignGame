@@ -95,6 +95,7 @@ public class CharacterDialogue : MonoBehaviour
                     anim.playPetrifyAnimation();
 
                 LoseLife();
+                if (lives > 0) { return; }
                 if (petrifyManager.isActive)
                 {
                     petrifyManager.isActive = false;

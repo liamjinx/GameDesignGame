@@ -8,6 +8,7 @@ public class Tutorial : MonoBehaviour
     private CharacterManager characterManager;
     void Awake()
     {
+        characterManager = GetComponent<CharacterManager>();
         int max = transform.childCount;
         int ghostnumber1 = Random.Range(0, max);        
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
