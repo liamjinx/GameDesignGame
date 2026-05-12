@@ -39,7 +39,7 @@ public class Level3Stage4 : MonoBehaviour
         {
             ghostnumber2 = Random.Range(0, max);
         }
-        while (ghostnumber1 == ghostnumber3 || ghostnumber3 == ghostnumber2 || CheckAdjacent(ghostnumber1, ghostnumber2) || CheckAdjacent(ghostnumber3, ghostnumber2))
+        while (ghostnumber1 == ghostnumber3 || ghostnumber3 == ghostnumber2 || (CheckAdjacent(ghostnumber1, ghostnumber2) && CheckAdjacent(ghostnumber3, ghostnumber2)))
         {
             ghostnumber3 = Random.Range(0, max);
         }

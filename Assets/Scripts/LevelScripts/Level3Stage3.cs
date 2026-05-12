@@ -32,11 +32,11 @@ public class Level3Stage3 : MonoBehaviour
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         int ghostnumber3 = Random.Range(0, max);
-        while (ghostnumber1 == ghostnumber2 || (Mathf.Abs(ghostnumber1 - ghostnumber2) == 1))
+        while (ghostnumber1 == ghostnumber2)
         {
             ghostnumber2 = Random.Range(0, max);
         }
-        while (ghostnumber1 == ghostnumber3 || ghostnumber3 == ghostnumber2)
+        while (ghostnumber1 == ghostnumber3 || ghostnumber3 == ghostnumber2 || (CheckAdjacent(ghostnumber1, ghostnumber2) && CheckAdjacent(ghostnumber3, ghostnumber2)))
         {
             ghostnumber3 = Random.Range(0, max);
         }
@@ -108,5 +108,15 @@ public class Level3Stage3 : MonoBehaviour
         timerExplaination.SetActive(!timerExplaination.activeSelf);
         menuReturn.SetActive(!menuReturn.activeSelf);
         popUpAudio.Play();
+    }
+    private bool CheckAdjacent(int ghostNumber1, int ghostNumber2)
+    {
+        int currentPos = ghostNumber2;
+        int beforePos; int afterPos;
+        if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
+        else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
+        else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
+        if (beforePos == ghostNumber1 || afterPos == ghostNumber1) { return true; }
+        return false;
     }
 }

@@ -694,7 +694,13 @@ PrefabInstance:
 
 
         Maid: States a character is a ghost. Will always select
-        subjects if lying. If she picks herself, she is a lying subject'
+        subjects if lying. If she picks herself, she is a lying subject
+
+
+        Executioner:
+        the second character is a subject if and only if the first is a subject.
+        If lying, the second character is always a ghost. If he picks himself, he
+        is a ghost'
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontSize
@@ -714,23 +720,18 @@ PrefabInstance:
         lying, will only state they are next to lying subjects if adjacent to a ghost
 
 
-        Executioner:
-        the second character is a subject if and only if the first is a subject.
-        If lying, the second character is always a ghost. If he picks himself, he
-        is a ghost
+        Butler:
+        States a character is a lying subject. Will always select ghosts if lying.
+        If he picks himself, he is a ghost
 
 
-        Butler: States a character is a lying subject. Will
-        always select ghosts if lying. If he picks himself, he is a ghost
+        Troubadour: States two potential
+        subjects that could be lying. Will select multiple lying subjects if possible.
+        If lying will only choose honest subjects. Will never select ghosts
 
 
-        Troubadour:
-        States two potential subjects that could be lying. Will select multiple lying
-        subjects if possible. If lying will only choose honest subjects. Will never
-        select ghosts
-
-
-        ALL GHOSTS: Disguises as a subject and lies
+        ALL
+        GHOSTS: Disguises as a subject and lies
 
 
         <color=#ff3838>Wraith:</color>
@@ -3550,34 +3551,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1710691323}
     m_Modifications:
-    - target: {fileID: 1537561675092407962, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
-      propertyPath: m_Color.a
-      value: 0.78431374
-      objectReference: {fileID: 0}
-    - target: {fileID: 1537561675092407962, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1537561675092407962, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1537561675092407962, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2720085584836950186, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 470
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672662207544410587, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7133281621662360876, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 172245305242330222, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
       propertyPath: m_SizeDelta.x
       value: -1.447
@@ -3594,18 +3567,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.009399891
       objectReference: {fileID: 0}
-    - target: {fileID: 5832935796805010262, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
-      propertyPath: m_Name
-      value: Executioner
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832935796805010262, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5838186693392112914, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 7882449859541346611}
     - target: {fileID: 3243525824336325255, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
       propertyPath: m_SizeDelta.x
       value: 7.5
@@ -3622,10 +3583,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 9087164205396312023, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 519420031}
+    - target: {fileID: 3319352052169595335, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3381701725510358000, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
       propertyPath: NotGhost
       value: 
@@ -3634,18 +3595,22 @@ PrefabInstance:
       propertyPath: FoundGhost
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5832935796805010262, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
+      propertyPath: m_Name
+      value: Executioner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832935796805010262, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5838186693392112914, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7882449859541346611}
     - target: {fileID: 5908653821786833689, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3319352052169595335, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7720815567975349549, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7072659349557332754, guid: 6903d596ec7e141e3a20be77575c44a8, type: 3}
     - target: {fileID: 7325542876907017714, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3725,6 +3690,42 @@ PrefabInstance:
     - target: {fileID: 7325542876907017714, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720815567975349549, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7072659349557332754, guid: 6903d596ec7e141e3a20be77575c44a8, type: 3}
+    - target: {fileID: 9087164205396312023, guid: ca6a7f672c4785d4db182c3a577f0b38, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 1537561675092407962, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537561675092407962, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537561675092407962, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537561675092407962, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2720085584836950186, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 470
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672662207544410587, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133281621662360876, guid: f9696e90ac0e0bb4fa88991f95064ace, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
