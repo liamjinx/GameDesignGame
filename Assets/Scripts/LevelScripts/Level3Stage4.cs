@@ -35,9 +35,12 @@ public class Level3Stage4 : MonoBehaviour
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         int ghostnumber3 = Random.Range(0, max);
-        while (ghostnumber1 == ghostnumber2 || ghostnumber1 == ghostnumber3 || ghostnumber2 == ghostnumber3)
+        while (ghostnumber1 == ghostnumber2 || (Mathf.Abs(ghostnumber1 - ghostnumber2) == 1))
         {
             ghostnumber2 = Random.Range(0, max);
+        }
+        while (ghostnumber1 == ghostnumber3 || ghostnumber3 == ghostnumber2)
+        {
             ghostnumber3 = Random.Range(0, max);
         }
         ghost1 = transform.GetChild(ghostnumber1).gameObject;
@@ -55,6 +58,10 @@ public class Level3Stage4 : MonoBehaviour
             else { characterManager.subjects.Add(character); }
             if (character.CompareTag("Untagged")) { characterManager.honest.Add(character); }
             else if (character.CompareTag("Lying")) { characterManager.lying.Add(character); }
+            Debug.Log(characterManager.honest.Count);
+            Debug.Log(characterManager.lying.Count);
+            Debug.Log(characterManager.subjects.Count);
+            Debug.Log(characterManager.ghosts.Count);
         }
         GameObject tempStage = GameObject.FindGameObjectWithTag("LostStage");
         DestroyImmediate(GameObject.FindGameObjectWithTag("BeatStage"));

@@ -32,7 +32,7 @@ public class Level3Stage3 : MonoBehaviour
         int ghostnumber1 = Random.Range(0, max);
         int ghostnumber2 = Random.Range(0, max);
         int ghostnumber3 = Random.Range(0, max);
-        while (ghostnumber1 == ghostnumber2)
+        while (ghostnumber1 == ghostnumber2 || (Mathf.Abs(ghostnumber1 - ghostnumber2) == 1))
         {
             ghostnumber2 = Random.Range(0, max);
         }
