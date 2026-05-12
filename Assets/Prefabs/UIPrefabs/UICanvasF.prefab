@@ -1437,7 +1437,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8411507438717288428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2128,8 +2128,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2151583198562702702, guid: bf9d1b47b27d648fc8b1b618f12fe00d, type: 3}
       propertyPath: m_text
-      value: <color=#B1FFA5>1 - Safe,</color> \n 2 - Neutral, \n <color=#FF6A69>3
-        - Suspicious,</color>\n <color=#FEFF92>4 - Lying,</color>
+      value: <color=#B1FFA5>1 - Safe</color> \n 2 - Neutral \n <color=#FF6A69>3 -
+        Suspicious</color>\n <color=#FEFF92>4 - Lying</color>
       objectReference: {fileID: 0}
     - target: {fileID: 2151583198562702702, guid: bf9d1b47b27d648fc8b1b618f12fe00d, type: 3}
       propertyPath: m_fontSize

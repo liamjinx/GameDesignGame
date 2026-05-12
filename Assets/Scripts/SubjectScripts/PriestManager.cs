@@ -11,26 +11,26 @@ public class PriestManager : MonoBehaviour
     private GameObject accused2;
     private int accused3Number;
     private GameObject accused3;
+    private CharacterManager characterManager;
     void Start()
     {
+        characterManager = transform.parent.GetComponent<CharacterManager>();
         max = transform.parent.childCount;
-        accused1Number = Random.Range(0, max);
-        accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
-        accused2Number = Random.Range(0, max);
-        accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        accused3Number = Random.Range(0, max);
-        accused3 = gameObject.transform.parent.GetChild(accused3Number).gameObject;
-        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        accused2Number = Random.Range(0, characterManager.subjects.Count);
+        accused2 = characterManager.subjects[accused2Number];
+        accused3Number = Random.Range(0, characterManager.subjects.Count);
+        accused3 = characterManager.subjects[accused3Number];
+        if (!gameObject.CompareTag("Untagged")) { SpeakLies(); }
         else { SpeakTruth(); }
-        while (accused2Number == accused1Number || accused2.tag == "Ghost")
+        while (accused2.name == accused1.name)
         {
-            accused2Number = Random.Range(0, max);
-            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
+            accused2Number = Random.Range(0, characterManager.subjects.Count);
+            accused2 = characterManager.subjects[accused2Number];
         }
-        while (accused3Number == accused2Number || accused3Number == accused1Number || accused3.tag == "Ghost")
+        while (accused3.name == accused1.name || accused3.name == accused2.name)
         {
-            accused3Number = Random.Range(0, max);
-            accused3 = gameObject.transform.parent.GetChild(accused3Number).gameObject;
+            accused3Number = Random.Range(0, characterManager.subjects.Count);
+            accused3 = characterManager.subjects[accused3Number];
         }
         dialogue = "Only one of " + accused1.name + ", " + accused2.name + ", or " + accused3.name + " is a ghost";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
@@ -42,18 +42,12 @@ public class PriestManager : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        while (accused1.tag != "Ghost")
-        {
-            accused1Number = Random.Range(0, max);
-            accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
-        }
+        accused1Number = Random.Range(0, characterManager.ghosts.Count);
+        accused1 = characterManager.ghosts[accused1Number];
     }
     public void SpeakLies()
     {
-        while (accused1.tag == "Ghost")
-        {
-            accused1Number = Random.Range(0, max);
-            accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
-        }
+        accused1Number = Random.Range(0, characterManager.subjects.Count);
+        accused1 = characterManager.subjects[accused1Number];
     }
 }

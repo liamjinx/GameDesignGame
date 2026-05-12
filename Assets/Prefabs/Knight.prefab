@@ -548,8 +548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogue
   dialogueText: {fileID: 698323838334383364}
-  FoundGhost: {fileID: 0}
-  NotGhost: {fileID: 0}
   lastSpokenLine: 
   characterName: 
 --- !u!114 &3010453969364560540
@@ -880,11 +878,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283049856392380181, guid: 4376cf0b7d9b5214ea5423de5cffbf24, type: 3}
       propertyPath: m_fontSize
-      value: 0.9
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 6283049856392380181, guid: 4376cf0b7d9b5214ea5423de5cffbf24, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0.9
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

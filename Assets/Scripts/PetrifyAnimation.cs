@@ -23,7 +23,7 @@ public class PetrifyAnimation : MonoBehaviour
             } else if (gameObject.layer == LayerMask.NameToLayer("Nuckelavee"))
             {
                 animator.SetTrigger("PetrifyNuckelavee");
-            } else if (gameObject.tag == "Ghost")
+            } else if (gameObject.CompareTag("Ghost"))
             {
                 animator.SetTrigger("PetrifyGhost");
             }

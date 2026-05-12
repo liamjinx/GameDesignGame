@@ -10,7 +10,7 @@ public class ChefManager : MonoBehaviour
     void Start()
     {
         characterManager = transform.parent.GetComponent<CharacterManager>();
-        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        if (!gameObject.CompareTag("Untagged")) { SpeakLies(); }
         else { SpeakTruth(); }
         dialogue = accused1.name + " is an honest subject";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
@@ -19,11 +19,21 @@ public class ChefManager : MonoBehaviour
     {
         accused1Number = Random.Range(0, characterManager.honest.Count);
         accused1 = characterManager.honest[accused1Number];
+        while (accused1.name == gameObject.name)
+        {
+            accused1Number = Random.Range(0, characterManager.honest.Count);
+            accused1 = characterManager.honest[accused1Number];
+        }
     }
     public void SpeakLies()
     {
         accused1Number = Random.Range(0, characterManager.lying.Count);
         accused1 = characterManager.lying[accused1Number];
+        while (accused1.name == gameObject.name)
+        {
+            accused1Number = Random.Range(0, characterManager.lying.Count);
+            accused1 = characterManager.lying[accused1Number];
+        }
     }
     public void OnMouseUpAsButton()
     {

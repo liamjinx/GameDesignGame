@@ -17,7 +17,7 @@ public class BlacksmithManager : MonoBehaviour
         {
             string before = transform.parent.GetChild(beforePos).gameObject.tag;
             string after = transform.parent.GetChild(afterPos).gameObject.tag;
-            if (gameObject.tag == "Untagged")
+            if (gameObject.CompareTag("Untagged"))
             {
                 if (before == "Lying" || after == "Lying") { distance = i + 1; break; }
             }

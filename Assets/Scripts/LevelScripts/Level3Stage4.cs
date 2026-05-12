@@ -52,10 +52,10 @@ public class Level3Stage4 : MonoBehaviour
         for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
-            if (character.tag == "Ghost") { characterManager.ghosts.Add(character); }
+            if (character.CompareTag("Ghost")) { characterManager.ghosts.Add(character); }
             else { characterManager.subjects.Add(character); }
-            if (character.tag == "Untagged") { characterManager.honest.Add(character); }
-            else if (character.tag == "Lying") { characterManager.lying.Add(character); }
+            if (character.CompareTag("Untagged")) { characterManager.honest.Add(character); }
+            else if (character.CompareTag("Lying")) { characterManager.lying.Add(character); }
         }
         GameObject tempStage = GameObject.FindGameObjectWithTag("LostStage");
         DestroyImmediate(GameObject.FindGameObjectWithTag("BeatStage"));
@@ -93,11 +93,11 @@ public class Level3Stage4 : MonoBehaviour
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
         else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
-        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
+        if (transform.GetChild(beforePos).gameObject.CompareTag("Untagged"))
         {
             transform.GetChild(beforePos).gameObject.tag = "Lying";
         }
-        else if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
+        else if (transform.GetChild(afterPos).gameObject.CompareTag("Untagged"))
         {
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
@@ -112,11 +112,11 @@ public class Level3Stage4 : MonoBehaviour
         if (currentPos == 0) { beforePos = lastIndex; afterPos = currentPos + 1; }
         else if (currentPos == lastIndex) { beforePos = currentPos - 1; afterPos = 0; }
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
-        if (transform.GetChild(beforePos).gameObject.tag == "Untagged")
+        if (transform.GetChild(beforePos).gameObject.CompareTag("Untagged"))
         {
             transform.GetChild(beforePos).gameObject.tag = "Lying";
         }
-        if (transform.GetChild(afterPos).gameObject.tag == "Untagged")
+        if (transform.GetChild(afterPos).gameObject.CompareTag("Untagged"))
         {
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }

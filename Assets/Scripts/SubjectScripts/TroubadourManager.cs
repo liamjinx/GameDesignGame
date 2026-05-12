@@ -14,15 +14,8 @@ public class TroubadourManager : MonoBehaviour
     {
         max = transform.parent.childCount; 
         characterManager = transform.parent.GetComponent<CharacterManager>();
-        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        if (!gameObject.CompareTag("Untagged")) { SpeakLies(); }
         else { SpeakTruth(); }
-        accused2Number = Random.Range(0, max);
-        accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        while ((accused2.tag == "Lying" && gameObject.tag != "Untagged") || (accused2.tag == "Ghost" && gameObject.tag == "Untagged") || accused2.name == accused1.name)
-        {
-            accused2Number = Random.Range(0, max);
-            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        }
         dialogue = accused1.name + " and " + accused2.name + " could be lying subjects";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
@@ -34,10 +27,30 @@ public class TroubadourManager : MonoBehaviour
     {
         accused1Number = Random.Range(0, characterManager.lying.Count);
         accused1 = characterManager.lying[accused1Number];
+        if (characterManager.lying.Count == 1)
+        {
+            accused2Number = Random.Range(0, characterManager.honest.Count);
+            accused2 = characterManager.honest[accused2Number];
+            return;
+        }
+        accused2Number = Random.Range(0, characterManager.lying.Count);
+        accused2 = characterManager.lying[accused2Number];
+        while (accused2.name == accused1.name)
+        {
+            accused2Number = Random.Range(0, characterManager.lying.Count);
+            accused2 = characterManager.lying[accused2Number];
+        }
     }
     public void SpeakLies()
     {
-        accused1Number = Random.Range(0, characterManager.ghosts.Count);
-        accused1 = characterManager.ghosts[accused1Number];
+        accused1Number = Random.Range(0, characterManager.honest.Count);
+        accused1 = characterManager.honest[accused1Number];
+        accused2Number = Random.Range(0, characterManager.honest.Count);
+        accused2 = characterManager.honest[accused2Number];
+        while (accused2.name == accused1.name)
+        {
+            accused2Number = Random.Range(0, characterManager.honest.Count);
+            accused2 = characterManager.honest[accused2Number];
+        }
     }
 }

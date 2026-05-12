@@ -9,14 +9,19 @@ public class ExecutionerScript : MonoBehaviour
     private GameObject accused1;
     private int accused2Number;
     private GameObject accused2;
+    private CharacterManager characterManager;
     void Start()
     {
+        characterManager = transform.parent.GetComponent<CharacterManager>();
         max = transform.parent.childCount;
         accused1Number = Random.Range(0, max);
         accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
-        accused2Number = Random.Range(0, max);
-        accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        while (accused1.name == gameObject.name)
+        {
+            accused1Number = Random.Range(0, max);
+            accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
+        }
+        if (!gameObject.CompareTag("Untagged")) { SpeakLies(); }
         else { SpeakTruth(); }
         dialogue = accused2.name + " is a subject if and only if " + accused1.name + " is a subject";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
@@ -28,19 +33,18 @@ public class ExecutionerScript : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        if (accused1.tag == "Ghost") { SpeakLies(); return; }
-        while (accused2.tag == "Ghost" || accused2.name == accused1.name)
+        if (accused1.CompareTag("Ghost")) { SpeakLies(); return; }
+        accused2Number = Random.Range(0, characterManager.subjects.Count);
+        accused2 = characterManager.subjects[accused2Number];
+        while (accused2.name == accused1.name)
         {
-            accused2Number = Random.Range(0, max);
-            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
+            accused2Number = Random.Range(0, characterManager.subjects.Count);
+            accused2 = characterManager.subjects[accused2Number];
         }
     }
     public void SpeakLies()
     {
-        while (accused2.tag != "Ghost" || accused2.name == accused1.name)
-        {
-            accused2Number = Random.Range(0, max);
-            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        }
+        accused2Number = Random.Range(0, characterManager.ghosts.Count);
+        accused2 = characterManager.ghosts[accused2Number];
     }
 }

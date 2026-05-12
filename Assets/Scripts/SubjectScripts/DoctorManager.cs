@@ -17,7 +17,7 @@ public class DoctorManager : MonoBehaviour
         characterManager = transform.parent.GetComponent<CharacterManager>();
         accused1Number = Random.Range(0, characterManager.honest.Count);
         accused1 = characterManager.honest[accused1Number];
-        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        if (!gameObject.CompareTag("Untagged")) { SpeakLies(); }
         else { SpeakTruth(); }
         dialogue = accused1.name + " is an honest subject, " + accused2.name + " is a lying subject, and " + accused3.name + " is a ghost";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);

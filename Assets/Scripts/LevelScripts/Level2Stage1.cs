@@ -32,10 +32,10 @@ public class Level2Stage1 : MonoBehaviour
         for (int i = 0; i < max; ++i)
         {
             GameObject character = transform.GetChild(i).gameObject;
-            if (character.tag == "Ghost") { characterManager.ghosts.Add(character); }
+            if (character.CompareTag("Ghost")) { characterManager.ghosts.Add(character); }
             else { characterManager.subjects.Add(character); }
-            if (character.tag == "Untagged") { characterManager.honest.Add(character); }
-            else if (character.tag == "Lying") { characterManager.lying.Add(character); }
+            if (character.CompareTag("Untagged")) { characterManager.honest.Add(character); }
+            else if (character.CompareTag("Lying")) { characterManager.lying.Add(character); }
         }
         popUpAudio = GameObject.FindGameObjectWithTag("PopUpAudio").GetComponent<AudioSource>();
     }
@@ -45,7 +45,7 @@ public class Level2Stage1 : MonoBehaviour
 
         int affected = Random.Range(0, max);
         GameObject affectedSubject = transform.GetChild(affected).gameObject;
-        while (affectedSubject.tag != "Untagged")
+        while (!affectedSubject.CompareTag("Untagged"))
         {
             affected = Random.Range(0, max);
             affectedSubject = transform.GetChild(affected).gameObject;
