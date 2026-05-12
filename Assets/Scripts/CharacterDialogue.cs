@@ -24,7 +24,9 @@ public class CharacterDialogue : MonoBehaviour
     private Image Life1;
     private Image Life2;
     private Image Life3;
-    
+    private Image Life4;
+    private Image Life5;
+
     private bool isTutorial = false;
 
     public string lastSpokenLine = "";
@@ -32,6 +34,8 @@ public class CharacterDialogue : MonoBehaviour
 
     public void Start()
     {
+        int current = SceneManager.GetActiveScene().buildIndex;
+        if (current == 0) { return; }
         petrifyManager = FindAnyObjectByType<PetrifyManager>();
         ghostCount = GetComponentInParent<CharacterManager>();
 
@@ -41,13 +45,12 @@ public class CharacterDialogue : MonoBehaviour
         FoundGhost = GameObject.FindGameObjectWithTag("FoundGhostAudio").GetComponent<AudioSource>();
         NotGhost = GameObject.FindGameObjectWithTag("NotGhostAudio").GetComponent<AudioSource>();
         mainText = UICanvas.GetComponentInChildren<TextMeshProUGUI>();
-
         // 🔥 ALWAYS reassign hearts
         Life1 = GameObject.Find("Life1")?.GetComponent<Image>();
         Life2 = GameObject.Find("Life2")?.GetComponent<Image>();
         Life3 = GameObject.Find("Life3")?.GetComponent<Image>();
-        
-        int current = SceneManager.GetActiveScene().buildIndex;
+        Life4 = GameObject.Find("Life3")?.GetComponent<Image>();
+        Life5 = GameObject.Find("Life3")?.GetComponent<Image>();
 
         // Tutorial ignore
         if (current == 1)
@@ -155,9 +158,12 @@ public class CharacterDialogue : MonoBehaviour
         return lives <= 0;
     }
     
-    public void ResetLives()
+    public void ResetLives(int sceneNo)
     {
-        lives = 3;
+        if (sceneNo >= 9) { lives = 5; }
+        else if (sceneNo >= 5) { lives = 4; }
+        else { lives = 3; }
         UpdateLivesUI();
+        Debug.Log(lives);
     }
 }

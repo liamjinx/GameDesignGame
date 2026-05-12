@@ -25,7 +25,9 @@ public class Menu : MonoBehaviour
     public void LoadLevel1()
     {
                 Debug.Log("ClickAudio played from: " + Environment.StackTrace);
-
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+        Debug.Log(cd);
+        if (cd != null) { cd.ResetLives(2); }
         clickAudio.Play();
         Level1Stages.SetActive(true);
         Levels.SetActive(false);
@@ -36,7 +38,8 @@ public class Menu : MonoBehaviour
     public void LoadLevel2()
     {
                 Debug.Log("ClickAudio played from: " + Environment.StackTrace);
-
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+        if (cd != null) { cd.ResetLives(5); }
         clickAudio.Play();
         Level2Stages.SetActive(true);
         Levels.SetActive(false);
@@ -47,7 +50,8 @@ public class Menu : MonoBehaviour
     public void LoadLevel3()
     {
                 Debug.Log("ClickAudio played from: " + Environment.StackTrace);
-
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+        if (cd != null) { cd.ResetLives(9); }
         clickAudio.Play();
         Level3Stages.SetActive(true);
         Levels.SetActive(false);
@@ -154,16 +158,15 @@ public class Menu : MonoBehaviour
     public void LoadMenu()
     {
         CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-        if (cd != null) { cd.ResetLives(); }
-            StartCoroutine(PlayClickThenLoad(0));
+        StartCoroutine(PlayClickThenLoad(0));
     }
     public void LoadNextLevel()
     {
         int nextSceneNo = SceneManager.GetActiveScene().buildIndex + 1;
-        if (nextSceneNo == 5 || nextSceneNo == 9)
+        if (nextSceneNo == 2 || nextSceneNo == 5 || nextSceneNo == 9)
         {
             CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
-            if (cd != null) { cd.ResetLives(); }
+            if (cd != null) { cd.ResetLives(nextSceneNo); }
         }
         StartCoroutine(PlayClickThenLoad(nextSceneNo));
         gameObject.GetComponent<Canvas>().enabled = false;
@@ -177,7 +180,8 @@ public class Menu : MonoBehaviour
         CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
         if (cd != null && cd.IsGameOver())
         {
-            cd.ResetLives();
+            sceneNo = SceneManager.GetActiveScene().buildIndex;
+            cd.ResetLives(sceneNo);
             SceneManager.LoadScene(levelStart); // back to stage 1
         }
         else
