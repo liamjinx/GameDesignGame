@@ -14,24 +14,21 @@ public class KingManager : MonoBehaviour
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         string before = transform.parent.GetChild(beforePos).gameObject.tag;
         string after = transform.parent.GetChild(afterPos).gameObject.tag;
-        if (gameObject.tag != "Untagged")
+        int subjectCount = 0;
+        if (gameObject.CompareTag("Untagged"))
         {
-            if (before != "Ghost" && after != "Ghost") { dialogue = "I am not next to at any subjects"; }
-            else { dialogue = "I am next to at least one subject"; }
-        }
-        else
+            if (before != "Ghost") { ++subjectCount; }
+            if (after != "Ghost") { ++subjectCount; }
+        } else
         {
-            if (before != "Ghost" || after != "Ghost") { dialogue = "I am next to at least one subject"; }
-            else { dialogue = "I am not next to at any subjects"; }
+            if (before == "Ghost" || after == "Ghost") { subjectCount = 2; }
+            else { subjectCount = 0; }
         }
-        Speak();
+        dialogue = "I am next to " + subjectCount + " subjects";
+        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
     public void OnMouseUpAsButton()
     {
         gameObject.GetComponent<CharacterDialogue>().Petrify();
-    }
-    public void Speak()
-    {
-        gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
 }

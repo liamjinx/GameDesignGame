@@ -576,15 +576,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: "Manservant: States if a character is a subject. Will always select
-        ghosts if lying, or subjects if telling the truth\n\nNun: States two potential
-        subjects the ghost could be. One or both of the subjects could be ghosts.
-        If lying, neither will be ghosts\n\nKing: States if they are next to at least
-        one safe character. Could be one ghost and one subject, or two subjects\n\nQueen:
-        States if they are next to at least one ghost. Could be one ghost and one
-        subject, or two subjects\n\nPriest: Only one of three characters is a ghost.
-        If lying, none of them are \n\nKnight: If the first character is a subject,
-        then the second is a ghost. If lying, are the second character is a subject\n "
+      value: 'Queen: States if they are next to at least one ghost. If lying, will
+        only state they are next to ghosts if surrounded by subjects
+
+
+        Maid:
+        States a character is a ghost. Will always select subjects if lying. If she
+        picks herself, she is a lying subject
+
+
+        Nun: States two potential
+        subjects the ghost could be. Will select multiple ghosts if possible, and
+        will only select subjects if lying. If she picks herself, she is a lying
+        subject
+
+
+        Priest: Only one of three characters is a ghost. If lying,
+        none of them are. If he picks himself, he is telling the truth
+
+
+        Knight:
+        the second character is a ghost if and only if the first is a subject. If
+        lying, the second character is always a subject. If he picks himself, he
+        is a lying subject'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_HorizontalAlignment

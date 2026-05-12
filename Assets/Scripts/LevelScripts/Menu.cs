@@ -14,7 +14,6 @@ public class Menu : MonoBehaviour
 
     private void Start()
     {
-
         clickAudio = GameObject.FindGameObjectWithTag("ClickAudio").GetComponent<AudioSource>();
     }
     public void LoadTutorial()
@@ -154,11 +153,18 @@ public class Menu : MonoBehaviour
     }
     public void LoadMenu()
     {
-        StartCoroutine(PlayClickThenLoad(0));
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+        if (cd != null) { cd.ResetLives(); }
+            StartCoroutine(PlayClickThenLoad(0));
     }
     public void LoadNextLevel()
     {
         int nextSceneNo = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextSceneNo == 5 || nextSceneNo == 9)
+        {
+            CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+            if (cd != null) { cd.ResetLives(); }
+        }
         StartCoroutine(PlayClickThenLoad(nextSceneNo));
         gameObject.GetComponent<Canvas>().enabled = false;
     }
@@ -168,7 +174,7 @@ public class Menu : MonoBehaviour
         int levelStart = 2;
         if (sceneNo >= 9) { levelStart = 9; }
         else if (sceneNo >= 5) { levelStart = 5; }
-            CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
+        CharacterDialogue cd = FindAnyObjectByType<CharacterDialogue>();
         if (cd != null && cd.IsGameOver())
         {
             cd.ResetLives();

@@ -533,6 +533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jester
       objectReference: {fileID: 0}
+    - target: {fileID: 7153787546359176545, guid: 45919525e7326f745a6e6282628848d5, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8344188707789098255, guid: 45919525e7326f745a6e6282628848d5, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 400
@@ -634,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7507808377788325949, guid: 0071d3939cbe1494c86ab5487d377b70, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -695,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239068734619284319, guid: 7ef38325816fdd04596120377bd80027, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -756,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6991435307069256459, guid: 5dedd92badcffb9418c5300b7a56b6ab, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -914,7 +918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8369966776193067006, guid: 5f5988c0caa26d6449ab43c588929d7c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1028,6 +1032,10 @@ PrefabInstance:
     - target: {fileID: 2930451281236445098, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
       propertyPath: m_Name
       value: Maid
+      objectReference: {fileID: 0}
+    - target: {fileID: 2930451281236445098, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3504514795759978784, guid: de735bd333dacec43b7e206ab1ab2a10, type: 3}
       propertyPath: NotGhost
@@ -1348,15 +1356,45 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: "Manservant: States if a character is a subject. Will always select
-        ghosts if lying, or subjects if telling the truth\n\nNun: States two potential
-        subjects the ghost could be. One or both of the subjects could be ghosts.
-        If lying, neither will be ghosts\n\nKing: States if they are next to at least
-        one safe character. Could be one ghost and one subject, or two subjects\n\nQueen:
-        States if they are next to at least one ghost. Could be one ghost and one
-        subject, or two subjects\n\nPriest: Only one of three characters is a ghost.
-        If lying, none of them are \n\nKnight: If the first character is a subject,
-        then the second is a ghost. If lying, are the second character is a subject\n "
+      value: 'Manservant: States a character is a subject. Will always select ghosts
+        if lying. If he picks himself, he is a ghost
+
+
+        Nun: States two potential
+        subjects the ghost could be. Will select multiple ghosts if possible, and
+        will only select subjects if lying. If she picks herself, she is a lying
+        subject
+
+
+        Knight: the second character is a ghost if and only if
+        the first is a subject. If lying, the second character is always a subject.
+        If he picks himself, he is a lying subject
+
+
+        Jester: Either the
+        Jester or another subject is the ghost. If the chosen subject isn''t the
+        ghost, then the Jester is lying
+
+
+        Priest: Only one of three characters
+        is a ghost. If lying, none of them are. If he picks himself, he is telling
+        the truth
+
+
+        Maid: States a character is a ghost. Will always select
+        subjects if lying. If she picks herself, she is a lying subject'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -1403,6 +1441,14 @@ PrefabInstance:
     - target: {fileID: 7115311949181475846, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115311949181475846, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115311949181475846, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7178253644178797337, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -1565,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6610539779971265993, guid: b5fea08cda45f4c47a614b66a90627a6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1659,6 +1705,10 @@ PrefabInstance:
     - target: {fileID: 29614510478130933, guid: 7fc635c3671dda64ca1d8bbdd4fc7702, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426206856694299214, guid: 7fc635c3671dda64ca1d8bbdd4fc7702, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3998601139535768555, guid: 7fc635c3671dda64ca1d8bbdd4fc7702, type: 3}
       propertyPath: m_Name
@@ -1762,7 +1812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1432506012122863451, guid: d19604cc1c9e8224baa5c5cc1ab151b6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4643523628066109912, guid: d19604cc1c9e8224baa5c5cc1ab151b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2083,6 +2133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manservant
       objectReference: {fileID: 0}
+    - target: {fileID: 4008656650652572689, guid: a49753e4c91a03947872527dbb399c41, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5678817222535685528, guid: a49753e4c91a03947872527dbb399c41, type: 3}
       propertyPath: m_SizeDelta.x
       value: -0.5177
@@ -2331,6 +2385,10 @@ PrefabInstance:
     - target: {fileID: 8075414529482060867, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
       propertyPath: m_Name
       value: Priest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075414529482060867, guid: f12324c6d50984742990968fb4dba1ef, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

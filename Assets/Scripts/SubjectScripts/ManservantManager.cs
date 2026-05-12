@@ -7,12 +7,12 @@ public class ManservantManager : MonoBehaviour
     private int max;
     private int accusedNumber;
     private GameObject accused;
+    private CharacterManager characterManager;
     void Start()
     {
+        characterManager = transform.parent.GetComponent<CharacterManager>();
         max = transform.parent.childCount;
-        accusedNumber = Random.Range(0, max);
-        accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        if (!gameObject.CompareTag("Untagged")) { SpeakLies(); }
         else { SpeakTruth(); }
         dialogue = accused.name + " is a subject";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
@@ -24,18 +24,17 @@ public class ManservantManager : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        while (accused.tag == "Ghost")
+        accusedNumber = Random.Range(0, characterManager.subjects.Count);
+        accused = characterManager.subjects[accusedNumber];
+        while (accused.name == gameObject.name)
         {
-            accusedNumber = Random.Range(0, max);
-            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
+            accusedNumber = Random.Range(0, characterManager.subjects.Count);
+            accused = characterManager.subjects[accusedNumber];
         }
     }
     public void SpeakLies()
     {
-        while (accused.tag != "Ghost")
-        {
-            accusedNumber = Random.Range(0, max);
-            accused = gameObject.transform.parent.GetChild(accusedNumber).gameObject;
-        }
+        accusedNumber = Random.Range(0, characterManager.ghosts.Count);
+        accused = characterManager.ghosts[accusedNumber];
     }
 }

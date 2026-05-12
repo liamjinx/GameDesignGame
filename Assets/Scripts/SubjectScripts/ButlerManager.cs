@@ -10,7 +10,7 @@ public class ButlerManager : MonoBehaviour
     void Start()
     {
         characterManager = transform.parent.GetComponent<CharacterManager>();
-        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        if (!gameObject.CompareTag("Untagged")) { SpeakLies(); }
         else { SpeakTruth(); }
         dialogue = accused1.name + " is a lying subject";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);

@@ -14,7 +14,7 @@ public class AlchemistManager : MonoBehaviour
         else { beforePos = currentPos - 1; afterPos = currentPos + 1; }
         string before = transform.parent.GetChild(beforePos).gameObject.tag;
         string after = transform.parent.GetChild(afterPos).gameObject.tag;
-        if (gameObject.tag != "Untagged")
+        if (!gameObject.CompareTag("Untagged"))
         {
             if (before == "Ghost" || after == "Ghost") { dialogue = "I am next to at least one lying subject"; }
             else { dialogue = "I am next to no lying subjects"; }

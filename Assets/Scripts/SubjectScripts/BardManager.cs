@@ -18,7 +18,7 @@ public class BardManager : MonoBehaviour
         {
             string before = transform.parent.GetChild(beforePos).gameObject.tag;
             string after = transform.parent.GetChild(afterPos).gameObject.tag;
-            if (gameObject.tag == "Untagged")
+            if (gameObject.CompareTag("Untagged"))
             {
                 if (before == "Ghost" || after == "Ghost") { distance = i+1; break; }
             }

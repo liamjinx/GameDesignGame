@@ -1094,60 +1094,71 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 321053737242813839, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'King: States if they are next to at least one safe character. Could
-        be one ghost and one subject, or two subjects
+      value: 'King: States how many subjects are next to them. If lying, will state
+        two subjects if next to a ghost, and no subjects if not
 
 
-        Queen: States if
-        they are next to at least one ghost. Could be one ghost and one subject,
-        or two subjects
+        Queen:
+        States if they are next to at least one ghost. If lying, will only state
+        they are next to ghosts if surrounded by subjects
 
 
-        Maid: States a character is a ghost. Will always
-        select subjects if lying, or ghosts if telling the truth
+        Maid: States
+        a character is a ghost. Will always select subjects if lying. If she picks
+        herself, she is a lying subject
 
 
-        Bard:
-        States how far away they are from the closest ghost. If lying, states how
-        far away they are from the closest subject
+        Manservant: States a character
+        is a subject. Will always select ghosts if lying. If he picks himself, he
+        is a ghost
 
 
-        Executioner: the second
-        character is a subject if and only if the first is a subject. If lying, the
-        second character is a ghost'
+        Bard: States how far they are from the closest ghost.
+        If lying, states how far they are from the closest subject'
       objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'Doctor: States an honest subject, lying subject and a ghost. If lying,
-        will call a ghost a lying subject and a lying subject a ghost
+      value: 'Butler: States a character is a lying subject. Will always select ghosts
+        if lying. If he picks himself, he is a ghost
 
 
-        Blacksmith:
-        States how far away they are from the closest lying subject. If lying, states
-        how far away they are from the closest ghost
+        Blacksmith: States
+        how far they are from the closest lying subject. If lying, states how far
+        they are from the closest ghost
 
 
-        Alchemist: States
-        if they are next to at least one lying subject. Could be one ghost and one
-        subject, or two subjects
+        Alchemist: States if they are next
+        to at least one lying subject. If lying, will only state they are next to
+        lying subjects if adjacent to a ghost
 
 
-        Chef: States a character is telling the
-        truth. Will always select lying subjects if lying, or honest subjects if
-        telling the truth
+        Chef: States a character
+        is telling the truth. Will select lying subjects if lying. Will never select
+        ghosts
 
 
-        ALL GHOSTS: Disguises as a random subject and
-        gives false information
-
-
-        Wraith: A random subject lies
+        ALL GHOSTS: Disguises as a subject and lies
 
 
         Phantom:
-        A subject next to me lies'
+        A subject next to me lies
+
+
+        Nuckelavee: Subjects next to me lie'
+      objectReference: {fileID: 0}
+    - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2122283977938353373, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive

@@ -895,22 +895,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'Maid: States if a character is a ghost. Will always select subjects
-        if lying, or ghosts if telling the truth
+      value: 'Maid: States a character is a ghost. Will always select subjects if
+        lying. If she picks herself, she is a lying subject
 
 
-        Nun: States two potential
-        subjects the ghost could be. One or both of the subjects could be ghosts.
-        If lying, neither will be ghosts
+        Nun: States
+        two potential subjects the ghost could be. Will select multiple ghosts if
+        possible, and will only select subjects if lying. If she picks herself, she
+        is a lying subject
 
 
-        Jester: Either the Jester or another
-        subject is the ghost. If the chosen subject isnt the ghost, then the Jester
-        is lying
+        Jester: Either the Jester or another subject
+        is the ghost. If the chosen subject isn''t the ghost, then the Jester is
+        lying
 
 
-        Queen: States if they are next to at least one ghost.
-        Could be one ghost and one subject, or two subjects'
+        Queen: States if they are next to at least one ghost. If
+        lying, will only state they are next to ghosts if surrounded by subjects'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_HorizontalAlignment

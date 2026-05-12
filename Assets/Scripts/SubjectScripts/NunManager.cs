@@ -9,20 +9,13 @@ public class NunManager : MonoBehaviour
     private GameObject accused1;
     private int accused2Number;
     private GameObject accused2;
+    private CharacterManager characterManager;
     void Start()
     {
+        characterManager = transform.parent.GetComponent<CharacterManager>();
         max = transform.parent.childCount;
-        accused1Number = Random.Range(0, max);
-        accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
-        accused2Number = Random.Range(0, max);
-        accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        if (gameObject.tag != "Untagged") { SpeakLies(); }
+        if (!gameObject.CompareTag("Untagged")) { SpeakLies(); }
         else { SpeakTruth(); }
-        while ((accused2.tag == "Ghost" && gameObject.tag != "Untagged") || accused2Number == accused1Number)
-        {
-            accused2Number = Random.Range(0, max);
-            accused2 = gameObject.transform.parent.GetChild(accused2Number).gameObject;
-        }
         dialogue = accused1.name + " and " + accused2.name + " could be ghosts";
         gameObject.GetComponent<CharacterDialogue>().Speak(dialogue);
     }
@@ -33,18 +26,32 @@ public class NunManager : MonoBehaviour
     }
     public void SpeakTruth()
     {
-        while (accused1.tag != "Ghost")
+        accused1Number = Random.Range(0, characterManager.ghosts.Count);
+        accused1 = characterManager.ghosts[accused1Number];
+        if (characterManager.ghosts.Count == 1)
         {
-            accused1Number = Random.Range(0, max);
-            accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
+            accused2Number = Random.Range(0, characterManager.subjects.Count);
+            accused2 = characterManager.subjects[accused2Number];
+            return;
+        }
+        accused2Number = Random.Range(0, characterManager.ghosts.Count);
+        accused2 = characterManager.ghosts[accused2Number];
+        while (accused2.name == accused1.name)
+        {
+            accused2Number = Random.Range(0, characterManager.ghosts.Count);
+            accused2 = characterManager.ghosts[accused2Number];
         }
     }
     public void SpeakLies()
     {
-        while (accused1.tag == "Ghost")
+        accused1Number = Random.Range(0, characterManager.subjects.Count);
+        accused1 = characterManager.subjects[accused1Number];
+        accused2Number = Random.Range(0, characterManager.subjects.Count);
+        accused2 = characterManager.subjects[accused2Number];
+        while (accused2.name == accused1.name)
         {
-            accused1Number = Random.Range(0, max);
-            accused1 = gameObject.transform.parent.GetChild(accused1Number).gameObject;
+            accused2Number = Random.Range(0, characterManager.subjects.Count);
+            accused2 = characterManager.subjects[accused2Number];
         }
     }
 }
