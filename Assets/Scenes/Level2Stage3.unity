@@ -3412,11 +3412,11 @@ PrefabInstance:
         information
 
 
-        Wraith: A random subject lies
+        <color=#ff3838>Wraith:</color> A random subject lies
 
 
-        Phantom: A
-        subject next to me lies'
+        <color=#ff3838>Phantom:</color>
+        A subject next to me lies'
       objectReference: {fileID: 0}
     - target: {fileID: 2122283977938353373, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive
