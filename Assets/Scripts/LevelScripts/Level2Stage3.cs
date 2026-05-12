@@ -23,7 +23,6 @@ public class Level2Stage3 : MonoBehaviour
         ghost2 = transform.GetChild(ghostnumber2).gameObject;
         ghost1.tag = "Ghost";
         ghost2.tag = "Ghost";
-        ActivateWraith();
         ActivatePhantom();
         for (int i = 0; i < max; ++i)
         {
@@ -51,18 +50,6 @@ public class Level2Stage3 : MonoBehaviour
         {
             transform.GetChild(afterPos).gameObject.tag = "Lying";
         }
-    }
-    private void ActivateWraith()
-    {
-        ghost2.layer = LayerMask.NameToLayer("Wraith");
-        int affected = Random.Range(0, max);
-        GameObject affectedSubject = transform.GetChild(affected).gameObject;
-        while (!affectedSubject.CompareTag("Untagged"))
-        {
-            affected = Random.Range(0, max);
-            affectedSubject = transform.GetChild(affected).gameObject;
-        }
-        affectedSubject.tag = "Lying";
     }
     private bool isLoading = false;
     public void PlayAgain()
