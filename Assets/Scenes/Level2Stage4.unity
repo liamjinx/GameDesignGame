@@ -1355,7 +1355,11 @@ PrefabInstance:
 
         Queen: States if they are next to at least
         one ghost. If lying, will only state they are next to ghosts if surrounded
-        by subjects'
+        by subjects
+
+
+        Manservant: States a character is a subject. Will always
+        select ghosts if lying. If he picks himself, he is a ghost'
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontSize
