@@ -612,11 +612,12 @@ PrefabInstance:
         as a subject and lies
 
 
-        Phantom: A subject next to me lies
+        <color=#ff3838>Phantom:</color> A subject
+        next to me lies
 
 
-        Nuckelavee:
-        Subjects next to me lie'
+        <color=#ff3838>Nuckelavee:</color> Subjects next
+        to me lie'
       objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontSize
