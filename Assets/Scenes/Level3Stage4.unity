@@ -448,13 +448,78 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_text
+      value: 'King: States how many subjects are next to them. If lying, will state
+        two subjects if next to a ghost, and no subjects if not
+
+
+        Jester:
+        Either the Jester or another subject is the ghost. If the chosen subject
+        isn''t the ghost, then the Jester is lying
+
+
+        Maid: States a character
+        is a ghost. Will always select subjects if lying. If she picks herself, she
+        is a lying subject
+
+
+        Manservant: States a character is a subject.
+        Will always select ghosts if lying. If he picks himself, he is a ghost
+
+
+        Executioner:
+        the second character is a subject if and only if the first is a subject.
+        If lying, the second character is always a ghost. If he picks himself, he
+        is a ghost'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_text
+      value: 'Doctor: States an honest subject, lying subject and a ghost. If lying,
+        will call a ghost a lying subject and a lying subject a ghost
+
+
+        Blacksmith:
+        States how far they are from the closest lying subject. If lying, states
+        how far they are from the closest ghost
+
+
+        Alchemist: States if they
+        are next to at least one lying subject. If lying, will only state they are
+        next to lying subjects if adjacent to a ghost
+
+
+        Chef: States a character
+        is telling the truth. Will select lying subjects if lying. Will never select
+        ghosts
+
+
+        Troubadour: States two potential subjects that could be
+        lying. Will select multiple lying subjects if possible. If lying will only
+        choose honest subjects. Will never select ghosts
+
+
+        ALL GHOSTS: Disguises
+        as a subject and lies
+
+
+        Phantom: A subject next to me lies
+
+
+        Nuckelavee:
+        Subjects next to me lie'
+      objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontSize
-      value: 0.9
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0.9
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 2122283977938353373, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive

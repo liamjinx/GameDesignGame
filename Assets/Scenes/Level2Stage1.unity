@@ -251,44 +251,48 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 321053737242813839, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'King: States if they are next to at least one safe character. Could
-        be one ghost and one subject, or two subjects
+      value: 'Jester: Either the Jester or another subject is the ghost. If the chosen
+        subject isn''t the ghost, then the Jester is lying
 
 
-        Jester: Either the
-        Jester or another subject is the ghost. If the chosen subject isn''t the
-        ghost, then the Jester is lying
+        King: States
+        how many subjects are next to them. If lying, will state two subjects if
+        next to a ghost, and no subjects if not
 
 
-        Manservant: States a character
-        is a subject. Will always select ghosts if lying, or subjects if telling
-        the truth
+        Priest: Only one of three
+        characters is a ghost. If lying, none of them are. If he picks himself, he
+        is telling the truth
 
 
-        Priest: Only one of three characters is a ghost. If lying,
-        none of them are '
+        Manservant: States a character is a subject.
+        Will always select ghosts if lying. If he picks himself, he is a ghost'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'Blacksmith: States how far away they are from the closest lying subject.
-        If lying, states how far away they are from the closest ghost
+      value: 'Blacksmith: States how far they are from the closest lying subject.
+        If lying, states how far they are from the closest ghost
 
 
-        Chef:
-        States a character is telling the truth. Will always select lying subjects
-        if lying, or honest subjects if telling the truth
+        Troubadour:
+        States two potential subjects that could be lying. Will select multiple lying
+        subjects if possible. If lying will only choose honest subjects. Will never
+        select ghosts
 
 
-        ALL GHOSTS: Disguises
-        as a random subject and gives false information
+        ALL GHOSTS: Disguises as a random subject and gives
+        false information
 
 
-        Wraith: A random
-        subject lies'
+        Wraith: A random subject lies'
       objectReference: {fileID: 0}
     - target: {fileID: 1782723121172210822, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontColor.b
@@ -307,6 +311,10 @@ PrefabInstance:
       value: 4289911022
       objectReference: {fileID: 0}
     - target: {fileID: 2122283977938353373, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371304111096550638, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

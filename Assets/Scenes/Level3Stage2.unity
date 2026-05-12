@@ -205,36 +205,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'King: States if they are next to at least one safe character. Could
-        be one ghost and one subject, or two subjects
+      value: 'Priest: Only one of three characters is a ghost. If lying, none of
+        them are. If he picks himself, he is telling the truth
 
 
-        Queen: States if
-        they are next to at least one ghost. Could be one ghost and one subject,
-        or two subjects
+        Bard: States
+        how far they are from the closest ghost. If lying, states how far they are
+        from the closest subject
 
 
-        Maid: States a character is a ghost. Will always
-        select subjects if lying, or ghosts if telling the truth
+        Nun: States two potential subjects the
+        ghost could be. Will select multiple ghosts if possible, and will only select
+        subjects if lying. If she picks herself, she is a lying subject
 
 
-        Bard:
-        States how far away they are from the closest ghost. If lying, states how
-        far away they are from the closest subject
+        Executioner:
+        the second character is a subject if and only if the first is a subject.
+        If lying, the second character is always a ghost. If he picks himself, he
+        is a ghost
 
 
-        Nun: States two potential
-        subjects the ghost could be. One or both of the subjects could be ghosts.
-        If lying, neither will be ghosts
+        Queen: States if they are next to at least one ghost.
+        If lying, will only state they are next to ghosts if surrounded by subjects
 
 
-        Executioner: the second character
-        is a subject if and only if the first is a subject. If lying, the second
-        character is a ghost
+        Maid:
+        States a character is a ghost. Will always select subjects if lying. If she
+        picks herself, she is a lying subject
 
 
-        Knight: the second character is a ghost if
-        and only if the first is a subject. If lying, the second character is a subject'
+        Knight: the second character
+        is a ghost if and only if the first is a subject. If lying, the second character
+        is always a subject. If he picks himself, he is a lying subject'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_margin.w
@@ -248,6 +254,14 @@ PrefabInstance:
       propertyPath: m_margin.z
       value: -1.7316971
       objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
       value: 'Doctor: States an honest subject, lying subject and a ghost. If lying,
@@ -255,19 +269,16 @@ PrefabInstance:
 
 
         Alchemist:
-        States if they are next to at least one lying subject. Could be one ghost
-        and one subject, or two subjects
+        States if they are next to at least one lying subject. If lying, will only
+        state they are next to lying subjects if adjacent to a ghost
 
 
-        ALL GHOSTS: Disguises as a random
-        subject and gives false information
+        ALL
+        GHOSTS: Disguises as a subject and lies
 
 
-        Phantom: A subject next to
-        me lies
-
-
-        Nuckelavee: Subjects next to me lie'
+        Wraith: A random subject
+        lies'
       objectReference: {fileID: 0}
     - target: {fileID: 660498700682116532, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_fontSize

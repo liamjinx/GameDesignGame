@@ -1683,12 +1683,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 321053737242813839, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'Queen: States if they are next to at least one ghost. Could be one
-        ghost and one subject, or two subjects
+      value: 'Bard: States how far they are from the closest ghost. If lying, states
+        how far they are from the closest subject
 
 
         Jester: Either the Jester
@@ -1696,37 +1696,45 @@ PrefabInstance:
         then the Jester is lying
 
 
-        Maid: States a character is a ghost. Will
-        always select subjects if lying, or ghosts if telling the truth
+        Queen: States if they are next to at
+        least one ghost. If lying, will only state they are next to ghosts if surrounded
+        by subjects
 
 
-        Bard:
-        States how far away they are from the closest ghost. If lying, states how
-        far away they are from the closest subject'
+        Maid: States a character is a ghost. Will always select
+        subjects if lying. If she picks herself, she is a lying subject'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'Butler: States a character is lying. Will always select ghosts if lying,
-        or ghosts if telling the truth
+      value: 'Butler: States a character is a lying subject. Will always select ghosts
+        if lying. If he picks himself, he is a ghost
 
 
-        Blacksmith: States how far away
-        they are from the closest lying subject. If lying, states how far away they
-        are from the closest ghost
+        Alchemist: States
+        if they are next to at least one lying subject. If lying, will only state
+        they are next to lying subjects if adjacent to a ghost
 
 
-        Alchemist: States if they are next to
-        at least one lying subject. Could be one ghost and one subject, or two subjects
+        Chef: States
+        a character is telling the truth. Will select lying subjects if lying. Will
+        never select ghosts
 
 
-        ALL
-        GHOSTS: Disguises as a random subject and gives false information
+        ALL GHOSTS: Disguises as a random subject and
+        gives false information
 
 
-        Nuckelavee:
-        Subjects next to me lie'
+        Nuckelavee: Subjects next to me lie'
       objectReference: {fileID: 0}
     - target: {fileID: 2122283977938353373, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371304111096550638, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

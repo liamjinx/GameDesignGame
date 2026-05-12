@@ -357,49 +357,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'King: States if they are next to at least one safe character. Could
-        be one ghost and one subject, or two subjects
+      value: 'King: States how many subjects are next to them. If lying, will state
+        two subjects if next to a ghost, and no subjects if not
 
 
-        Queen: States if
-        they are next to at least one ghost. Could be one ghost and one subject,
-        or two subjects
+        Manservant:
+        States a character is a subject. Will always select ghosts if lying. If he
+        picks himself, he is a ghost
 
 
-        Jester: Either the Jester or another subject is
-        the ghost. If the chosen subject isn''t the ghost, then the Jester is lying
+        Jester: Either the Jester or another
+        subject is the ghost. If the chosen subject isn''t the ghost, then the Jester
+        is lying
+
+
+        Queen: States if they are next to at least one ghost.
+        If lying, will only state they are next to ghosts if surrounded by subjects
 
 
         Maid:
-        States a character is a ghost. Will always select subjects if lying, or ghosts
-        if telling the truth
+        States a character is a ghost. Will always select subjects if lying. If she
+        picks herself, she is a lying subject
 
 
-        Manservant: States a character is a subject.
-        Will always select ghosts if lying, or subjects if telling the truth
-
-
-        Nun:
-        States two potential subjects the ghost could be. One or both of the subjects
-        could be ghosts. If lying, neither will be ghosts'
+        Nun: States two potential
+        subjects the ghost could be. Will select multiple ghosts if possible, and
+        will only select subjects if lying. If she picks herself, she is a lying
+        subject'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'Alchemist: States if they are next to at least one lying subject. Could
-        be one ghost and one subject, or two subjects
+      value: 'Alchemist: States if they are next to at least one lying subject. If
+        lying, will only state they are next to lying subjects if adjacent to a ghost
 
 
-        Troubadour: States
-        two potential subjects that could be lying. One or both of the subjects could
-        be lying. If lying, will choose one more more ghosts, and will never pick
-        lying subjects
+        Troubadour:
+        States two potential subjects that could be lying. Will select multiple lying
+        subjects if possible. If lying will only choose honest subjects. Will never
+        select ghosts
 
 
-        ALL GHOSTS: Disguises as a random subject and gives
-        false information
-
-
-        Wraith: A random subject lies
+        ALL GHOSTS: Disguises as a subject and lies
 
 
         Nuckelavee:
@@ -412,6 +422,10 @@ PrefabInstance:
     - target: {fileID: 2754551246970551226, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 12.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371304111096550638, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7178253644178797337, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_PresetInfoIsWorld

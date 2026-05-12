@@ -1332,53 +1332,59 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 321053737242813839, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'Queen: States if they are next to at least one ghost. Could be one
-        ghost and one subject, or two subjects
+      value: 'Bard: States how far they are from the closest ghost. If lying, states
+        how far they are from the closest subject
 
 
-        Manservant: States a character
-        is a subject. Will always select ghosts if lying, or subjects if telling
-        the truth
-
-
-        Bard: States how far away they are from the closest ghost.
-        If lying, states how far away they are from the closest subject
+        Knight: the second character
+        is a ghost if and only if the first is a subject. If lying, the second character
+        is always a subject. If he picks himself, he is a lying subject
 
 
         Nun:
-        States two potential subjects the ghost could be. One or both of the subjects
-        could be ghosts. If lying, neither will be ghosts
+        States two potential subjects the ghost could be. Will select multiple ghosts
+        if possible, and will only select subjects if lying. If she picks herself,
+        she is a lying subject
 
 
-        Knight: the second
-        character is a ghost if and only if the first is a subject. If lying, the
-        second character is a subject'
+        Queen: States if they are next to at least
+        one ghost. If lying, will only state they are next to ghosts if surrounded
+        by subjects'
+      objectReference: {fileID: 0}
+    - target: {fileID: 564308043685198918, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
+      propertyPath: m_fontSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 649765280201625091, guid: 07a58fb99198d8f429d06902a541622e, type: 3}
       propertyPath: m_text
-      value: 'Butler: States a character is lying. Will always select ghosts if lying,
-        or ghosts if telling the truth
+      value: 'Butler: States a character is a lying subject. Will always select ghosts
+        if lying. If he picks himself, he is a ghost
 
 
-        Doctor: States an honest subject,
-        lying subject and a ghost. If lying, will call a ghost a lying subject and
-        a lying subject a ghost
+        Doctor: States an
+        honest subject, lying subject and a ghost. If lying, will call a ghost a
+        lying subject and a lying subject a ghost
 
 
-        Alchemist: States if they are next to at
-        least one lying subject. Could be one ghost and one subject, or two subjects
+        Alchemist: States if
+        they are next to at least one lying subject. If lying, will only state they
+        are next to lying subjects if adjacent to a ghost
 
 
-        Troubadour:
-        States two potential subjects that could be lying. One or both of the subjects
-        could be lying. If lying, will choose one more more ghosts, and will never
-        pick lying subjects
+        Troubadour: States
+        two potential subjects that could be lying. Will select multiple lying subjects
+        if possible. If lying will only choose honest subjects. Will never select
+        ghosts
 
 
-        ALL GHOSTS: Disguises as a random subject and
-        gives false information
+        ALL GHOSTS: Disguises as a random subject and gives false
+        information
 
 
         Phantom: A subject next to me lies
